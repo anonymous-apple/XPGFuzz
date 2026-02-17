@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+PASV
+RETR file.txt
+RETR file.tar
+RETR file.gz
+RETR file.tar.gz
+RETR .tar.gz
+RETR .tar
+RETR .gz
+RETR file.TAR.GZ
+RETR file.TAR
+RETR file.GZ
+QUIT

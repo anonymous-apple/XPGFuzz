@@ -1,0 +1,10 @@
+USER ubuntu
+PASS ubuntu
+CWD /very/long/path/that/goes/on/and/on/and/on
+MKD very/long/directory/name/that/is/very/long
+RETR very/long/file/path/that/is/very/long/file.txt
+STOR very/long/upload/path/that/is/very/long/upload.txt
+LIST very/long/path/that/goes/on/and/on
+SIZE very/long/file/path/that/is/very/long/file.txt
+MDTM very/long/file/path/that/is/very/long/file.txt
+QUIT

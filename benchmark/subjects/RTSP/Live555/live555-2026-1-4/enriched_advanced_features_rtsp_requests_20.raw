@@ -1,0 +1,53 @@
+DESCRIBE rtsp://127.0.0.1:8554/aacAudioTest RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+SETUP rtsp://127.0.0.1:8554/aacAudioTest/track1 RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;multicast;destination=224.2.0.1;port=5000-5001;ttl=8
+
+PLAY rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=now-
+Scale: 1.0
+Speed: 1.0
+
+PAUSE rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+PLAY rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: smpte=0:05:00-0:10:00
+Scale: 1.5
+Speed: 1.2
+
+GET_PARAMETER rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Content-Type: text/parameters
+Content-Length: 50
+
+packets_received
+lost_packets
+jitter
+rtt
+bandwidth
+packets_lost
+packets_duplicate
+packets_reordered
+
+TEARDOWN rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

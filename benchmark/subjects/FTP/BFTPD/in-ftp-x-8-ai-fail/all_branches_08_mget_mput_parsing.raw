@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+PASV
+MGET file1.txt file2.txt file3.txt
+MGET file1 file2
+MGET singlefile
+MGET 
+MPUT upload1.txt upload2.txt upload3.txt
+MPUT upload1 upload2
+MPUT singleupload
+MPUT 
+QUIT

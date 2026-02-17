@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SITE HELP
+SITE help
+SITE Help
+SITE CHMOD 755 file.txt
+SITE CHOWN user file.txt
+SITE MD5 file.txt
+SITE UNKNOWN
+SITE 
+QUIT

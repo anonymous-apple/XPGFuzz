@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+DELE file.txt
+DELE directory
+DELE /absolute/file.txt
+DELE /absolute/directory
+DELE relative/file.txt
+DELE relative/directory
+DELE ../file.txt
+DELE ../directory
+DELE .
+DELE ..
+DELE 
+QUIT

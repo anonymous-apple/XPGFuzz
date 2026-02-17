@@ -1,0 +1,5 @@
+USER ubuntu
+PASS ubuntu
+SITE MD5 small1.txt
+SITE MD5 small3.txt
+QUIT

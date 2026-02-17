@@ -1,0 +1,39 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+HELP
+HELP RETR
+TYPE A
+PASV
+LIST
+CWD /
+PWD
+MKD dir1
+CWD dir1
+MKD subdir
+CWD subdir
+PWD
+CDUP
+PWD
+CDUP
+PWD
+TYPE I
+EPSV
+STOR binary.dat
+RETR binary.dat
+SIZE binary.dat
+MDTM binary.dat
+RNFR binary.dat
+RNTO renamed.dat
+DELE renamed.dat
+CWD ..
+RMD subdir
+CWD ..
+RMD dir1
+LIST
+STAT
+SITE HELP
+OPTS UTF8 ON
+QUIT

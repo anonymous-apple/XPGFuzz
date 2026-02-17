@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+APPE testfile.txt
+CWD test
+PWD
+XMKD test
+APPE testfile.txt
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT
+

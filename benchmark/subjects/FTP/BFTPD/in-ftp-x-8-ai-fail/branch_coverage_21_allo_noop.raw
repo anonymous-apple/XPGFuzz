@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+ALLO 1024
+ALLO 0
+ALLO 999999999
+NOOP
+NOOP test
+QUIT

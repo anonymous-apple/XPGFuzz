@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+PASV
+STOR newfile.txt
+STOR existing.txt
+APPE append.txt
+TYPE I
+PASV
+STOR newbinary.dat
+STOR existing.dat
+APPE append.dat
+QUIT

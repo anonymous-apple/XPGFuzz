@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+RNFR oldfile.txt
+RNTO newfile.txt
+RNFR nonexistent.txt
+RNTO newname.txt
+RNFR file.txt
+RNTO
+RNFR
+RNTO newname.txt
+QUIT

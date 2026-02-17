@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+RNFR oldfile.txt
+RNTO newfile.txt
+DELE tempfile.txt
+SIZE somefile.txt
+MDTM anotherfile.txt
+QUIT

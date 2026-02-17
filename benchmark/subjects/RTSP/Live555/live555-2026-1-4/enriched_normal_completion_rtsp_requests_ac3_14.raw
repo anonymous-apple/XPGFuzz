@@ -1,0 +1,31 @@
+OPTIONS rtsp://127.0.0.1:8554/ac3AudioTest/this/is/a/very/long/path/name/that/tests/boundaries/edge/Case RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+
+DESCRIBE rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Accept: application/sdp
+Accept-Language: en-US
+
+RECORD rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Session: 000022B8
+Range: npt=0.000-
+
+SETUP rtsp://127.0.0.1:8554/ac3AudioTest/track1 RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Transport: RTP/AVP;unicast;client_port=33900-33901
+
+PLAY rtsp://127.0.0.1:8554/ac3AudioTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Session: 000022B8
+Range: npt=0.000-
+
+TEARDOWN rtsp://127.0.0.1:8554/ac3AudioTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Session: 000022B8

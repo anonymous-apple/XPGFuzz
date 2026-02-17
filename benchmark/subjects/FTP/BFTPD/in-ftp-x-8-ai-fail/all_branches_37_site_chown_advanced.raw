@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+PASV
+STOR testfile.txt
+SITE CHOWN ubuntu testfile.txt
+SITE CHOWN 1000 testfile.txt
+SITE CHOWN 0 testfile.txt
+SITE CHOWN ubuntu.ubuntu testfile.txt
+SITE CHOWN 1000.1000 testfile.txt
+SITE CHOWN 0.0 testfile.txt
+SITE CHOWN root testfile.txt
+SITE CHOWN root.root testfile.txt
+SITE CHOWN ubuntu.users testfile.txt
+SITE CHOWN 1000.users testfile.txt
+SITE CHOWN ubuntu.1000 testfile.txt
+SITE MD5 testfile.txt
+RETR testfile.txt
+SITE CHOWN ubuntu testfile.txt
+QUIT

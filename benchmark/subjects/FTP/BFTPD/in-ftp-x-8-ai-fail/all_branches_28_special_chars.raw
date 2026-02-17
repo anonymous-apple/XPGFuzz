@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+MKD dir-with-dash
+MKD dir_with_underscore
+MKD dir.with.dot
+MKD dir@with@at
+MKD dir#with#hash
+MKD dir$with$dollar
+RETR file-with-dash.txt
+RETR file_with_underscore.txt
+RETR file.with.dot.txt
+STOR upload-with-dash.txt
+STOR upload_with_underscore.txt
+DELE file-with-dash.txt
+LIST dir-with-dash
+QUIT

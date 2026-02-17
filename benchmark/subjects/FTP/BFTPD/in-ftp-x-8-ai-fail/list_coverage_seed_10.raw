@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+MKD dir1
+MKD dir2
+MKD dir3
+CWD dir1
+PWD
+CDUP
+CWD dir2
+PWD
+CDUP
+CWD dir3
+PWD
+CDUP
+RMD dir1
+RMD dir2
+RMD dir3
+QUIT

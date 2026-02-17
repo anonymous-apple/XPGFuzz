@@ -1,0 +1,23 @@
+USER ubuntu
+PASS ubuntu
+PASV
+STOR testfile.txt
+SITE CHMOD 0 testfile.txt
+SITE CHMOD 111 testfile.txt
+SITE CHMOD 222 testfile.txt
+SITE CHMOD 333 testfile.txt
+SITE CHMOD 444 testfile.txt
+SITE CHMOD 555 testfile.txt
+SITE CHMOD 666 testfile.txt
+SITE CHMOD 777 testfile.txt
+SITE CHMOD 001 testfile.txt
+SITE CHMOD 010 testfile.txt
+SITE CHMOD 100 testfile.txt
+SITE CHMOD 400 testfile.txt
+SITE CHMOD 600 testfile.txt
+SITE CHMOD 700 testfile.txt
+SITE CHMOD 7777 testfile.txt
+SITE MD5 testfile.txt
+RETR testfile.txt
+SITE CHMOD 644 testfile.txt
+QUIT

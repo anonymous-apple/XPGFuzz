@@ -1,0 +1,23 @@
+USER ubuntu
+PASS ubuntu
+SITE
+SITE UNKNOWN
+SITE CHMOD
+SITE CHMOD 755
+SITE CHMOD file.txt
+SITE CHMOD 99999 file.txt
+SITE CHMOD invalid file.txt
+SITE CHOWN
+SITE CHOWN user
+SITE CHOWN file.txt
+SITE CHOWN invaliduser file.txt
+SITE CHOWN user.invalidgroup file.txt
+SITE CHOWN 99999.99999 file.txt
+SITE MD5
+SITE HELP
+SITE help
+SITE Help
+SITE CHMOD 755 nonexistent.txt
+SITE CHOWN user nonexistent.txt
+SITE MD5 nonexistent.txt
+QUIT

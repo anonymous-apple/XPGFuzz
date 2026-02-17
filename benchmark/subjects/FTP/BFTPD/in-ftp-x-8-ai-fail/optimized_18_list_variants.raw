@@ -1,0 +1,40 @@
+USER ubuntu
+PASS ubuntu
+LIST
+LIST -a
+LIST -l
+LIST -al
+LIST -la
+LIST -A
+LIST -L
+LIST -aL
+LIST -Al
+LIST -a -l
+LIST -l -a
+LIST /
+LIST /test
+LIST test
+LIST ../test
+LIST ../../test
+LIST -a /
+LIST -l /
+LIST -al /
+LIST nonexistent
+LIST /nonexistent
+LIST ../nonexistent
+NLST
+NLST /
+NLST /test
+NLST test
+NLST ../test
+NLST nonexistent
+NLST /nonexistent
+MLSD
+MLSD /
+MLSD /test
+MLSD test
+MLST
+MLST file.txt
+MLST /file.txt
+MLST nonexistent.txt
+QUIT

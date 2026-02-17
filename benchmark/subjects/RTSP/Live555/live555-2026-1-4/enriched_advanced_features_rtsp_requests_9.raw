@@ -1,0 +1,53 @@
+OPTIONS rtsp://127.0.0.1:8554/mpgFileTest RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Require: on-demand-ping
+
+DESCRIBE rtsp://127.0.0.1:8554/mpgFileTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+If-Modified-Since: Fri, 31 Dec 2023 23:59:59 GMT
+
+SETUP rtsp://127.0.0.1:8554/mpgFileTest/track1 RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=38784-38785
+Require: setup.rtp.rtcp.mux
+
+PLAY rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+Scale: 2.5
+Speed: 1.25
+
+PAUSE rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+PLAY rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: clock=20240101T000000Z-20240101T010000Z
+
+GET_PARAMETER rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Content-Type: text/parameters
+Content-Length: 30
+
+packets_received
+lost_packets
+jitter
+rtt
+
+TEARDOWN rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 8
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

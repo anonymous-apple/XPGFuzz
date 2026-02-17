@@ -1,0 +1,9 @@
+USER ubuntu
+PASS ubuntu
+SITE md5 empty.txt
+SITE MD5 
+SITE MD5  small1.txt
+SITE MD5	block64.txt
+SITE MD5 nonexistent
+SITE MD5 /invalid/path/file.txt
+QUIT

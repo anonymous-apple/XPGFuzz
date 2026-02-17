@@ -1,0 +1,29 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+HELP
+HELP SITE
+SITE HELP
+SITE CHMOD 755 testfile.txt
+SITE CHOWN ubuntu testfile.txt
+SITE MD5 testfile.txt
+TYPE A
+PASV
+LIST
+CWD /
+PWD
+MKD testdir
+CWD testdir
+STOR file.txt
+SITE MD5 file.txt
+SITE CHMOD 644 file.txt
+RETR file.txt
+RNFR file.txt
+RNTO renamed.txt
+SITE MD5 renamed.txt
+DELE renamed.txt
+CWD ..
+RMD testdir
+QUIT

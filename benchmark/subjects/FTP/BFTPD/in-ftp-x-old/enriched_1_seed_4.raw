@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+RNFR todeletenow
+XMKD todeletetoo
+RNFR todeletetoo
+LIST
+RMD todeletenow
+RNFR todeletetoo
+XRMD todeletetoo
+LIST
+QUIT
+

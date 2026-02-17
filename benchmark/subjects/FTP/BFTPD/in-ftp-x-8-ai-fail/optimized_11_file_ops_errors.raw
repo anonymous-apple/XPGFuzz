@@ -1,0 +1,22 @@
+USER ubuntu
+PASS ubuntu
+RETR nonexistent_file_12345.txt
+RETR /nonexistent/path/file.txt
+RETR ../nonexistent.txt
+RETR ../../nonexistent.txt
+STOR nonexistent_dir/file.txt
+STOR /nonexistent/path/file.txt
+SIZE nonexistent_file_12345.txt
+MDTM nonexistent_file_12345.txt
+DELE nonexistent_file_12345.txt
+RNFR nonexistent_file_12345.txt
+RNTO newname.txt
+CWD nonexistent_directory_12345
+CWD /nonexistent/path
+MKD existing_dir
+MKD existing_dir
+RMD nonexistent_directory_12345
+RMD /nonexistent/path
+LIST nonexistent_directory_12345
+LIST /nonexistent/path
+QUIT

@@ -1,0 +1,24 @@
+USER ubuntu
+PASS ubuntu
+PASV
+STOR testfile.txt
+STOR binary.dat
+STOR archive.tar
+STOR compressed.gz
+SITE MD5 testfile.txt
+SITE MD5 binary.dat
+SITE MD5 archive.tar
+SITE MD5 compressed.gz
+SITE MD5 /absolute/path/testfile.txt
+SITE MD5 relative/path/binary.dat
+SITE MD5 ./testfile.txt
+SITE MD5 ../binary.dat
+SITE MD5 nonexistent.txt
+SITE MD5 nonexistent.dat
+SITE MD5 .
+SITE MD5 ..
+SITE MD5 directory
+LIST
+SITE MD5 testfile.txt
+RETR testfile.txt
+QUIT

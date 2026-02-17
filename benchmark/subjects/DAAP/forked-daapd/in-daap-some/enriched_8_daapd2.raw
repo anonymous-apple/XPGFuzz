@@ -1,0 +1,38 @@
+GET /api/settings HTTP/1.1
+OPTIONS /api/settings HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FDavid+Hilowitz HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FDavid+Hilowitz%2FGradual+Sunrise HTTP/1.1
+POST /api/queue/items/add?uris=library:track:6&position=0 HTTP/1.1
+Content-Length: 0
+GET /api/queue HTTP/1.1
+DELETE /api/queue/items/0 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FDavid+Hilowitz HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FMild_Wild HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FMild_Wild%2Fa_Line_Spacing_b_Say_Goodnight HTTP/1.1
+POST /api/queue/items/add?uris=library:track:5&position=0 HTTP/1.1
+Content-Length: 0
+GET /api/queue HTTP/1.1
+DELETE /api/queue/items/0 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FMild_Wild HTTP/1.1
+POST /api/queue/items/add?expression=path+starts+with+%22%2Ftmp%2FMP3%2FMild_Wild%2FParticular_PacePrimary_Colors%22+order+by+path+asc HTTP/1.1
+Content-Length: 0
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FMild_Wild%2Fa_Line_Spacing_b_Say_Goodnight HTTP/1.1
+GET /api/queue HTTP/1.1
+DELETE /api/queue/items/0 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FMild_Wild HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FScott+Holmes HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FScott+Holmes%2FUpbeat+Party HTTP/1.1
+POST /api/queue/items/add?uris=library:track:1&position=0 HTTP/1.1
+Content-Length: 0
+GET /api/queue HTTP/1.1
+DELETE /api/queue/items/0 HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FScott+Holmes HTTP/1.1
+GET /api/library/files?directory=%2Ftmp%2FMP3%2FScott+Holmes%2FStorybook HTTP/1.1
+OPTIONS /api/queue/items/add HTTP/1.1
+POST /api/queue/items/add?uri
+
+
+

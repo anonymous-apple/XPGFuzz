@@ -1,0 +1,24 @@
+USER ubuntu
+PASS ubuntu
+RNFR file.txt
+RNFR another.txt
+RNTO newname.txt
+RNFR file.txt
+RNTO newname.txt
+QUIT
+USER ubuntu
+PASS ubuntu
+RNTO without_rnfr.txt
+QUIT
+USER ubuntu
+PASS ubuntu
+RNFR file.txt
+RNFR another.txt
+QUIT
+USER ubuntu
+PASS ubuntu
+RNFR file.txt
+RNTO newname.txt
+RNFR newname.txt
+RNTO another.txt
+QUIT

@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+PORT
+MKD test
+PORT
+CWD test
+PWD
+PORT
+XMKD test
+PORT
+XCWD test
+XPWD
+PORT
+CDUP
+PORT
+XCUP
+PWD
+QUIT
+

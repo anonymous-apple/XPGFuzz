@@ -1,0 +1,5 @@
+USER ubuntu
+PASS ubuntu
+SITE MD5 large1k.txt
+SITE MD5 large2k.txt
+QUIT

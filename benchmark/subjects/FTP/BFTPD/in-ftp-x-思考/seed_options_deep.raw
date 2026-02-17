@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+CWD /home/ubuntu/ftpshare
+PWD
+CWD data
+PWD
+CWD subdir1
+PWD
+CWD subdir2
+PWD
+LIST
+CWD ../..
+PWD
+QUIT

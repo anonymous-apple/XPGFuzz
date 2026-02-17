@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+HELP
+STAT
+PWD
+TYPE A
+TYPE I
+QUIT

@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+MKD dir!@#$%^&*()
+MKD dir()[]{}|\\:;\"'<>?,.
+MKD dir\t\n\r
+MKD dir\x00\x01\x02
+MKD dir\u0000\u0001
+RETR file!@#$%^&*().txt
+RETR file()[]{}|\\:;\"'<>?,..txt
+STOR upload!@#$%^&*().txt
+STOR upload()[]{}|\\:;\"'<>?,..txt
+DELE file!@#$%^&*().txt
+LIST dir!@#$%^&*()
+CWD dir!@#$%^&*()
+RNFR file!@#$%^&*().txt
+RNTO new!@#$%^&*().txt
+SIZE file!@#$%^&*().txt
+MDTM file!@#$%^&*().txt
+QUIT

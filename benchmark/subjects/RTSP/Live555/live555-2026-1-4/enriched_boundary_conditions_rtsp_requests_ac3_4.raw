@@ -1,0 +1,62 @@
+DESCRIBE rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+ANNOUNCE rtsp://127.0.0.1:8554/ac3AudioTest/longpath/that/overflows/length/and/has/unicode/éøß RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Content-Type: application/sdp
+Content-Length: 123
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=Announce SDP with unusual chars √
+c=IN IP4 127.0.0.1
+t=0 0
+m=audio 5004 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+SETUP rtsp://127.0.0.1:8554/ac3AudioTest/track1 RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=33900-33901
+
+PLAY rtsp://127.0.0.1:8554/ac3AudioTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+GET_PARAMETER rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+PAUSE rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+ANNOUNCE rtsp://127.0.0.1:8554/ac3AudioTest/again RTSP/1.0
+CSeq: 8
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) Ω
+Content-Type: application/sdp
+Content-Length: 110
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+s=Second Announce SDP
+c=IN IP4 127.0.0.1
+t=0 0
+m=audio 6006 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+
+GET_PARAMETER rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 9
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28) 
+Session: 000022B8
+
+PAUSE rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 10
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

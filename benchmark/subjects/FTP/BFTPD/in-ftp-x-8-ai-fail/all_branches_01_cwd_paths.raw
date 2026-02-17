@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+CWD /
+CWD .
+CWD ..
+CWD ./subdir
+CWD ../parent
+CWD /absolute/path
+CWD relative/path
+CWD .././../path
+CWD /path/with/../parent
+PWD
+QUIT

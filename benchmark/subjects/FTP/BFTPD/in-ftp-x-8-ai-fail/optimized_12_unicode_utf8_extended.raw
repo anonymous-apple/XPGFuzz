@@ -1,0 +1,27 @@
+USER ubuntu
+PASS ubuntu
+OPTS UTF8 ON
+MKD 目录
+MKD フォルダ
+MKD папка
+MKD 目录/子目录
+CWD 目录
+CWD フォルダ
+CWD папка
+RETR 文件.txt
+RETR файл.txt
+RETR ファイル.txt
+STOR 上传.txt
+STOR загрузка.txt
+STOR アップロード.txt
+DELE 文件.txt
+DELE файл.txt
+DELE ファイル.txt
+LIST 目录
+LIST フォルダ
+LIST папка
+RNFR 旧文件.txt
+RNTO 新文件.txt
+SIZE 文件.txt
+MDTM 文件.txt
+QUIT

@@ -1,0 +1,14 @@
+PASS ubuntu
+RETR file.txt
+STOR file.txt
+CWD /
+MKD dir
+QUIT
+USER ubuntu
+RETR file.txt
+STOR file.txt
+QUIT
+USER ubuntu
+PASS ubuntu
+RNTO newname.txt
+QUIT

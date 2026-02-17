@@ -1,0 +1,40 @@
+OPTIONS rtsp://127.0.0.1:8554/matroskaFileTest/this/is/a/very/long/path/with/many/segments/edge/cases/Δ RTSP/1.0
+CSeq: 1
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+
+DESCRIBE rtsp://127.0.0.1:8554/matroskaFileTest RTSP/1.0
+CSeq: 2
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+SETUP rtsp://127.0.0.1:8554/matroskaFileTest/track1/with/a/really/long/path/that/extents/beyond/normal/lengths RTSP/1.0
+CSeq: 3
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=37216-37217
+
+RECORD rtsp://127.0.0.1:8554/matroskaFileTest/track1 RTSP/1.0
+CSeq: 4
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+SETUP rtsp://127.0.0.1:8554/matroskaFileTest/track2 RTSP/1.0
+CSeq: 5
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport:  RTP/AVP;unicast;client_port=49022-49023
+
+RECORD rtsp://127.0.0.1:8554/matroskaFileTest/track2 RTSP/1.0
+CSeq: 6
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+PLAY rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 7
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+TEARDOWN rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 8
+User-Agent: αβγ/testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

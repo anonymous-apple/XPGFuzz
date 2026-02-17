@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+REST 0
+REST 100
+REST 1024
+REST 999999
+PASV
+RETR file.txt
+REST 500
+PASV
+RETR file.txt
+QUIT

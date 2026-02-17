@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SIZE file.txt
+SIZE directory
+SIZE nonexistent
+SIZE /absolute/file.txt
+SIZE relative/file.txt
+MDTM file.txt
+MDTM directory
+MDTM nonexistent
+MDTM /absolute/file.txt
+STAT file.txt
+STAT directory
+STAT nonexistent
+STAT /absolute/file.txt
+QUIT

@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+STAT
+XCWD /tmp
+PORT 127,0,0,1,14,178
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+XCWD /var
+STAT
+LIST
+NLST
+MLSD /
+QUIT
+
+
+

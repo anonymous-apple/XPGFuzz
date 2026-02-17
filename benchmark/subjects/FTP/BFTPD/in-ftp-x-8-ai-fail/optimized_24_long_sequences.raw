@@ -1,0 +1,50 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+HELP
+HELP RETR
+HELP STOR
+HELP LIST
+STAT
+PWD
+TYPE A
+TYPE I
+TYPE A
+PASV
+EPSV
+PORT 127,0,0,1,20,80
+EPRT |1|127.0.0.1|1025|
+CWD /
+CWD .
+CWD ..
+CWD /
+PWD
+MKD test1
+MKD test2
+MKD test3
+MKD test4
+MKD test5
+CWD test1
+CWD test2
+CWD test3
+CWD test4
+CWD test5
+CWD ..
+CWD ..
+CWD ..
+CWD ..
+CWD ..
+CWD /
+RMD test1
+RMD test2
+RMD test3
+RMD test4
+RMD test5
+LIST
+LIST -a
+LIST -l
+NLST
+STAT
+QUIT

@@ -1,0 +1,42 @@
+OPTIONS rtsp://127.0.0.1:8554/aacAudioTest RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Require: on-demand-ping,setup.rtp.rtcp.mux
+
+DESCRIBE rtsp://127.0.0.1:8554/aacAudioTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+Authorization: Digest username="test", realm="LIVE555", nonce="abc123", uri="rtsp://127.0.0.1:8554/aacAudioTest", response="def456"
+
+SETUP rtsp://127.0.0.1:8554/aacAudioTest/track1 RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1;mode=PLAY
+
+PLAY rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=now-
+Scale: 0.5
+Speed: 0.75
+
+PAUSE rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+PLAY rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=5.0-15.0
+Scale: -1.0
+Speed: 2.0
+
+TEARDOWN rtsp://127.0.0.1:8554/aacAudioTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

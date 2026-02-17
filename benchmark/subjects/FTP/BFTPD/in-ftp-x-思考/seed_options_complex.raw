@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+MKD test_dir1
+CWD test_dir1
+PWD
+MKD test_dir2
+CWD test_dir2
+PWD
+LIST
+CWD ..
+RMD test_dir2
+CWD ..
+RMD test_dir1
+PWD
+QUIT

@@ -1,0 +1,39 @@
+DESCRIBE rtsp://127.0.0.1:8554/wavAudioTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Accept: application/sdp
+
+REDIRECT  rtsp://127.0.0.1:8554/wavAudioTest/redirect_target/with_extremely_long_path_component_name_exceeding_normal_lengths_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789/edge RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+
+DESCRIBE rtsp://127.0.0.1:8554/wavAudioTest/track1/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Accept: application/sdp
+
+SETUP rtsp://127.0.0.1:8554/wavAudioTest/track1 RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=37960-37961
+
+PLAY rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+PAUSE rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Session: 000022B8
+
+RECORD rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 8
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Session: 000022B8
+
+TEARDOWN rtsp://127.0.0.1:8554/wavAudioTest/ RTSP/1.0
+CSeq: 9
+User-Agent: ./testRTSPClient (LIVE555 Streaming Mêdia v2018.08.28)
+Session: 000022B8

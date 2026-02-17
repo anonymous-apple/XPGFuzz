@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+CWD   /path/with/spaces
+MKD   dir with spaces
+RETR  file with spaces.txt
+STOR  upload with spaces.txt
+DELE  file with spaces.txt
+SIZE  file with spaces.txt
+LIST  path with spaces
+SITE CHMOD   755   file.txt
+SITE CHOWN   user   file.txt
+RNFR  old file.txt
+RNTO  new file.txt
+QUIT

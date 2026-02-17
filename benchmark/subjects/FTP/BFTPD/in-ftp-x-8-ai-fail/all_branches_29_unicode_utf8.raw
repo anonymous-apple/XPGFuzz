@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+OPTS UTF8 ON
+MKD 目录
+MKD каталог
+MKD Verzeichnis
+CWD 目录
+CWD каталог
+RETR файл.txt
+RETR datei.txt
+STOR загрузка.txt
+STOR hochladen.txt
+LIST 目录
+LIST каталог
+DELE файл.txt
+QUIT

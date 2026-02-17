@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+PASV
+LIST
+LIST -a
+LIST -l
+LIST -al
+LIST .
+LIST .*
+LIST hidden
+LIST *hidden*
+LIST .hidden
+NLST
+NLST -a
+NLST .
+NLST .*
+QUIT

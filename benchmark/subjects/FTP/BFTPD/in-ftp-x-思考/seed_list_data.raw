@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+PASV
+LIST
+PORT 127,0,0,1,14,178
+LIST
+QUIT

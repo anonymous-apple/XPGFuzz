@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+PASV
+RETR file.txt
+RETR file.tar
+RETR file.gz
+RETR file.tar.gz
+RETR nonexistent.txt
+RETR directory
+TYPE I
+PASV
+RETR binary.dat
+REST 100
+RETR file.txt
+QUIT

@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+TYPE I
+TYPE B
+TYPE a
+TYPE i
+QUIT

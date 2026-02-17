@@ -1,0 +1,48 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+TYPE A
+PASV
+LIST
+CWD /
+PWD
+MKD dir1
+CWD dir1
+PWD
+MKD dir2
+CWD dir2
+PWD
+MKD dir3
+CWD dir3
+PWD
+CDUP
+PWD
+CDUP
+PWD
+CDUP
+PWD
+TYPE I
+EPSV
+STOR file1.bin
+RETR file1.bin
+SIZE file1.bin
+MDTM file1.bin
+RNFR file1.bin
+RNTO file1_renamed.bin
+SIZE file1_renamed.bin
+MDTM file1_renamed.bin
+DELE file1_renamed.bin
+CWD ..
+RMD dir3
+CWD ..
+RMD dir2
+CWD ..
+RMD dir1
+LIST
+STAT
+OPTS UTF8 ON
+HELP
+HELP RETR
+QUIT

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+CWD /
+CWD existing
+CWD nonexistent
+CWD ..
+CDUP
+XCWD xdir
+XCUP
+PWD
+XPWD
+QUIT

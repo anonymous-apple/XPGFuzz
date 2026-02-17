@@ -1,0 +1,40 @@
+USER ubuntu
+PASS ubuntu
+UsEr ubuntu
+UsEr ubuntu
+PaSs ubuntu
+PaSs ubuntu
+TyPe A
+TyPe I
+TyPe a
+TyPe i
+TyPe AsCiI
+TyPe BiNaRy
+TyPe ImAgE
+CuWd /
+CuWd .
+CuWd ..
+PwD
+PwD
+LiSt
+LiSt
+LiSt -a
+LiSt -l
+LiSt -Al
+NlSt
+NlSt
+ReTr file.txt
+ReTr FILE.TXT
+StOr file.txt
+StOr FILE.TXT
+DeLe file.txt
+DeLe FILE.TXT
+SiZe file.txt
+SiZe FILE.TXT
+MdTm file.txt
+MdTm FILE.TXT
+RnFr file.txt
+RnTo newfile.txt
+MkD dir
+RmD dir
+QuIt

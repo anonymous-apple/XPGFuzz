@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+MLSD
+XMKD test
+XCWD test
+XPWD
+RNTO newname
+CDUP
+XCUP
+PWD
+QUIT
+
+
+

@@ -1,0 +1,7 @@
+USER ubuntu
+USER test
+PASS ubuntu
+PASS wrongpass
+USER anonymous
+PASS anonymous
+QUIT

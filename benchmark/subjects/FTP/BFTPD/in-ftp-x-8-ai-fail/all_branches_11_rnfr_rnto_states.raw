@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+RNFR file1.txt
+RNTO file2.txt
+RNFR file2.txt
+RNTO file1.txt
+RNFR nonexistent.txt
+RNTO newname.txt
+RNFR 
+RNTO newname.txt
+RNFR file.txt
+RNTO 
+RNFR file.txt
+RNTO /absolute/path/newname.txt
+QUIT

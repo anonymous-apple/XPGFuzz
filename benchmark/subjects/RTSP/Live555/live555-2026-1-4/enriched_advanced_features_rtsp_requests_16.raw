@@ -1,0 +1,35 @@
+DESCRIBE rtsp://127.0.0.1:8554/mpgFileTest RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+Authorization: Digest username="user", realm="LIVE555", nonce="xyz789", uri="rtsp://127.0.0.1:8554/mpgFileTest", response="abc123"
+
+SETUP rtsp://127.0.0.1:8554/mpgFileTest/track1 RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=5000-5001;server_port=5002-5003
+
+SETUP rtsp://127.0.0.1:8554/mpgFileTest/track2 RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP/TCP;unicast;interleaved=2-3
+Session: 000022B8
+
+PLAY rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=5.5-15.5
+Scale: 0.5
+Speed: 0.75
+
+GET_PARAMETER rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+TEARDOWN rtsp://127.0.0.1:8554/mpgFileTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

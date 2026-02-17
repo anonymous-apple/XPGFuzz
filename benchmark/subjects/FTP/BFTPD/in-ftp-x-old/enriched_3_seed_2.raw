@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+RNFR test
+CWD test
+PWD
+XMKD test
+RNFR test
+XCWD test
+XPWD
+CDUP
+RNFR test
+XCUP
+PWD
+QUIT
+

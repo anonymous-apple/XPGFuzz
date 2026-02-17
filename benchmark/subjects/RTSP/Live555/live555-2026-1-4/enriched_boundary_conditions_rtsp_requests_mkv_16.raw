@@ -1,0 +1,47 @@
+DESCRIBE rtsp://127.0.0.1:8554/matroskaFileTest/averylongpath/that/continues/for/fuzz/edge/01/02/03/04/05/06/07/08/09/10 RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+SET_PARAMETER rtsp://127.0.0.1:8554/matroskaFileTest/edgecases/parameter RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Content-Type: text/parameters
+Content-Length: 21
+
+keepalive=1;mode=test
+
+SETUP rtsp://127.0.0.1:8554/matroskaFileTest/track1 RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=37216-37217
+
+SETUP rtsp://127.0.0.1:8554/matroskaFileTest/track2 RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=49022-49023
+Session: 000022B8
+
+PAUSE rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+SET_PARAMETER rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Content-Type: text/parameters
+Content-Length: 16
+
+volume=78;gain=0
+
+PLAY rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 8
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+TEARDOWN rtsp://127.0.0.1:8554/matroskaFileTest/ RTSP/1.0
+CSeq: 9
+User-Agent: ./testRTSPClient-测试♫ (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8

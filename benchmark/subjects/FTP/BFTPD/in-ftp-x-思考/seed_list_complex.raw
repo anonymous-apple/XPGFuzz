@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+CWD /
+PWD
+MKD test_dir
+CWD test_dir
+PWD
+LIST
+NLST
+MLSD /
+MLST /
+CWD ..
+RMD test_dir
+QUIT

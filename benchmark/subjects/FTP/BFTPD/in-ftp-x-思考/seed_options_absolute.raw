@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+CWD /home/ubuntu/ftpshare
+PWD
+CWD /home/ubuntu/ftpshare/data
+PWD
+CWD /home/ubuntu/ftpshare
+PWD
+CWD /
+PWD
+CWD /home/ubuntu/ftpshare/data
+PWD
+QUIT

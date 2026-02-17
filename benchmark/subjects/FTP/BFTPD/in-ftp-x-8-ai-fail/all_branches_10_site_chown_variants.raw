@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SITE CHOWN user file.txt
+SITE CHOWN user.group file.txt
+SITE CHOWN 1000 file.txt
+SITE CHOWN 1000.1000 file.txt
+SITE CHOWN 0 file.txt
+SITE CHOWN 0.0 file.txt
+SITE CHOWN root file.txt
+SITE CHOWN root.root file.txt
+SITE CHOWN 
+SITE CHOWN user
+QUIT

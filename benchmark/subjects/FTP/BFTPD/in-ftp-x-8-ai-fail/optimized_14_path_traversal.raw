@@ -1,0 +1,26 @@
+USER ubuntu
+PASS ubuntu
+CWD ../
+CWD ../../
+CWD ../../../
+CWD ../../../../
+CWD ../../../../../
+CWD ./../
+CWD ./../../
+CWD ./../../../
+CWD /../
+CWD /../../
+CWD /../../../
+RETR ../file.txt
+RETR ../../file.txt
+RETR ../../../file.txt
+STOR ../file.txt
+STOR ../../file.txt
+STOR ../../../file.txt
+LIST ../
+LIST ../../
+LIST ../../../
+CWD /home/ubuntu/../root
+CWD /home/ubuntu/../../etc
+CWD /home/ubuntu/../../../bin
+QUIT

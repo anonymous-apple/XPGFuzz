@@ -1,0 +1,46 @@
+OPTIONS rtsp://127.0.0.1:8554/mkvFileTest RTSP/1.0
+CSeq: 1
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Require: setup.rtp.rtcp.mux
+
+DESCRIBE rtsp://127.0.0.1:8554/mkvFileTest RTSP/1.0
+CSeq: 2
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+If-Modified-Since: Sun, 01 Jan 2023 00:00:00 GMT
+
+SETUP rtsp://127.0.0.1:8554/mkvFileTest/track1 RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP/TCP;unicast;interleaved=0-1;mode=PLAY
+
+PLAY rtsp://127.0.0.1:8554/mkvFileTest/ RTSP/1.0
+CSeq: 4
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: clock=20230101T000000Z-
+Scale: 2.0
+Speed: 1.5
+
+PAUSE rtsp://127.0.0.1:8554/mkvFileTest/ RTSP/1.0
+CSeq: 5
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+SET_PARAMETER rtsp://127.0.0.1:8554/mkvFileTest/ RTSP/1.0
+CSeq: 6
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Content-Type: text/parameters
+Content-Length: 35
+
+position=30.0
+volume=0.6
+mute=0
+balance=0.5
+
+TEARDOWN rtsp://127.0.0.1:8554/mkvFileTest/ RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+

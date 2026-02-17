@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+SITE MD5 block63.txt
+SITE MD5 block64.txt
+SITE MD5 block65.txt
+SITE MD5 block127.txt
+SITE MD5 block128.txt
+QUIT

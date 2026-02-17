@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+STAT
+PORT 127,0,0,1,14,178
+LPRT 6,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,4,1,2
+EPRT ,2,0:0:0:0:0:0:0:0,1025,
+LIST
+MLST /
+RNTO newname
+STAT
+LIST
+NLST
+MLSD /
+QUIT
+
+
+

@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+MKD test
+CWD test
+PWD
+RETR
+XMKD test
+XCWD test
+XPWD
+RETR
+CDUP
+XCUP
+PWD
+RETR
+QUIT
+

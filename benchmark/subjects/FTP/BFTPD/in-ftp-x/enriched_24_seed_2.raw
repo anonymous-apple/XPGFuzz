@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+MKD test
+CWD test
+PWD
+RNFR oldname
+XMKD test
+XCWD test
+XPWD
+CDUP
+XCUP
+PWD
+QUIT
+
+
+

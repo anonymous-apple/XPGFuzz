@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+CWD /
+CWD //
+CWD /.
+CWD /..
+CWD /path/..
+CWD /path/../..
+CWD path/..
+CWD path/../..
+CWD ../..
+CWD ../../..
+RETR /absolute/file.txt
+RETR relative/file.txt
+RETR ../file.txt
+RETR ./file.txt
+STOR /absolute/upload.txt
+STOR relative/upload.txt
+STOR ../upload.txt
+STOR ./upload.txt
+QUIT

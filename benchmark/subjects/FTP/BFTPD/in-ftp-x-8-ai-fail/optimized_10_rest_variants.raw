@@ -1,0 +1,31 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+REST 0
+RETR file.txt
+REST 1
+RETR file.txt
+REST 10
+RETR file.txt
+REST 100
+RETR file.txt
+REST 1000
+RETR file.txt
+REST 10000
+RETR file.txt
+REST 100000
+RETR file.txt
+REST 1000000
+RETR file.txt
+REST 2147483647
+RETR file.txt
+REST 4294967295
+RETR file.txt
+REST -1
+RETR file.txt
+REST abc
+RETR file.txt
+REST 0x100
+RETR file.txt
+QUIT

@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+SYST
+REST 0
+MKD todeletenow
+REST 0
+XMKD todeletetoo
+LIST
+REST 0
+RMD todeletenow
+REST 0
+XRMD todeletetoo
+LIST
+QUIT
+

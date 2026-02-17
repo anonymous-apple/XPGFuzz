@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+MKD test
+CWD test
+PWD
+XMKD test
+XCWD test
+XPWD
+DELE file.txt
+CDUP
+XCUP
+PWD
+QUIT
+
+
+

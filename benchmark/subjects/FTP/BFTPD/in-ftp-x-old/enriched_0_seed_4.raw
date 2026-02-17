@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+APPE file1.txt
+XMKD todeletetoo
+APPE file2.txt
+LIST
+RMD todeletenow
+APPE file3.txt
+XRMD todeletetoo
+LIST
+QUIT
+

@@ -1,0 +1,26 @@
+USER ubuntu
+PASS ubuntu
+SITE MD5 empty.txt
+SITE MD5 size1.txt
+SITE MD5 small1.txt
+SITE MD5 small3.txt
+SITE MD5 size31.txt
+SITE MD5 size32.txt
+SITE MD5 size33.txt
+SITE MD5 block63.txt
+SITE MD5 block64.txt
+SITE MD5 block65.txt
+SITE MD5 size95.txt
+SITE MD5 size96.txt
+SITE MD5 size97.txt
+SITE MD5 block127.txt
+SITE MD5 block128.txt
+SITE MD5 size1023.txt
+SITE MD5 size1024.txt
+SITE MD5 size1025.txt
+SITE MD5 large1k.txt
+SITE MD5 size2047.txt
+SITE MD5 size2048.txt
+SITE MD5 size2049.txt
+SITE MD5 large2k.txt
+QUIT

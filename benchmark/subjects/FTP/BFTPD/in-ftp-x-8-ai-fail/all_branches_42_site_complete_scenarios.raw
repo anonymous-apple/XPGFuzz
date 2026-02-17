@@ -1,0 +1,32 @@
+USER ubuntu
+PASS ubuntu
+PASV
+STOR original.txt
+SITE MD5 original.txt
+SITE CHMOD 644 original.txt
+SITE CHOWN ubuntu original.txt
+SITE MD5 original.txt
+RETR original.txt
+SITE CHMOD 755 original.txt
+SITE CHOWN ubuntu.ubuntu original.txt
+SITE MD5 original.txt
+RNFR original.txt
+RNTO renamed.txt
+SITE MD5 renamed.txt
+SITE CHMOD 600 renamed.txt
+SITE CHOWN root.root renamed.txt
+SITE MD5 renamed.txt
+MKD testdir
+CWD testdir
+STOR nested.txt
+SITE MD5 nested.txt
+SITE CHMOD 644 nested.txt
+SITE CHOWN ubuntu nested.txt
+SITE MD5 nested.txt
+CWD ..
+LIST
+SITE MD5 renamed.txt
+SITE MD5 testdir/nested.txt
+DELE renamed.txt
+RMD testdir
+QUIT

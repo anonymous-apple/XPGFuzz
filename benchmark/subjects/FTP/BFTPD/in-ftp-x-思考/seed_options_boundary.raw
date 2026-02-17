@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+CWD /
+PWD
+CWD /home
+PWD
+CWD /home/ubuntu
+PWD
+CWD /home/ubuntu/ftpshare
+PWD
+LIST
+QUIT

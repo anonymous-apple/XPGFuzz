@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+STAT file.txt
+STAT directory
+STAT nonexistent
+SIZE file.txt
+SIZE directory
+SIZE nonexistent
+MDTM file.txt
+MDTM nonexistent
+QUIT

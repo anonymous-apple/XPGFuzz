@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+MKD newdir
+MKD existingdir
+MKD /absolute/newdir
+MKD relative/newdir
+MKD ../newdir
+MKD newdir/subdir
+RMD emptydir
+RMD nonemptydir
+RMD /absolute/emptydir
+RMD relative/emptydir
+RMD ../emptydir
+RMD nonexistent
+RMD 
+MKD 
+QUIT

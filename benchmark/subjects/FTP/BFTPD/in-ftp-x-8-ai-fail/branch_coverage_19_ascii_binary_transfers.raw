@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+PASV
+STOR ascii.txt
+RETR ascii.txt
+TYPE I
+PASV
+STOR binary.dat
+RETR binary.dat
+TYPE A
+PASV
+APPE append.txt
+QUIT

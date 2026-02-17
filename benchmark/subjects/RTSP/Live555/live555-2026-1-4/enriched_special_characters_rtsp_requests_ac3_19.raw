@@ -1,0 +1,43 @@
+OPTIONS rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 2
+User-Agent: têstRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+DESCRIBE rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 3
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+REDIRECT rtsp://127.0.0.1:8554/ac3AudioTest_redirect/long/path/for/fuzzing/edgecases/øåß RTSP/1.0
+CSeq: 4
+User-Agent: têstRTSPClient-redirect (LIVE555 Streaming Media v2018.08.28)
+
+SETUP rtsp://127.0.0.1:8554/ac3AudioTest_redirect/long/path/for/fuzzing/edgecases/øåß/track1 RTSP/1.0
+CSeq: 5
+User-Agent: têstRTSPClient-redirect (LIVE555 Streaming Media v2018.08.28)
+Transport: RTP/AVP;unicast;client_port=12345-12346
+
+PLAY rtsp://127.0.0.1:8554/ac3AudioTest_redirect/long/path/for/fuzzing/edgecases/øåß/track1 RTSP/1.0
+CSeq: 6
+User-Agent: têstRTSPClient-redirect (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+Range: npt=0.000-
+
+PAUSE rtsp://127.0.0.1:8554/ac3AudioTest_redirect/long/path/for/fuzzing/edgecases/øåß/track1 RTSP/1.0
+CSeq: 7
+User-Agent: ./testRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Session: 000022B8
+
+OPTIONS rtsp://127.0.0.1:8554/ac3AudioTest RTSP/1.0
+CSeq: 8
+User-Agent: têstRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+DESCRIBE  rtsp://127.0.0.1:8554/ac3AudioTest  RTSP/1.0
+CSeq: 9
+User-Agent: têstRTSPClient (LIVE555 Streaming Media v2018.08.28)
+Accept: application/sdp
+
+REDIRECT rtsp://127.0.0.1:8554/ac3AudioTest_redirect2/你/测试/路径/øåß RTSP/1.0
+CSeq: 10
+User-Agent: têstRTSPClient-redirect2 (LIVE555 Streaming Media v2018.08.28)

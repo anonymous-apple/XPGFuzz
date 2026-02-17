@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+SYST
+MKD todeletenow
+XMKD todeletetoo
+LIST
+STOR file.txt
+RNFR oldname
+RMD todeletenow
+XRMD todeletetoo
+LIST
+QUIT
+
+
+

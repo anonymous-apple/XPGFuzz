@@ -1,0 +1,22 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+NOOP
+TYPE A
+PASV
+LIST
+CWD /
+MKD testdir
+CWD testdir
+PWD
+STOR testfile.txt
+RETR testfile.txt
+SIZE testfile.txt
+MDTM testfile.txt
+RNFR testfile.txt
+RNTO renamed.txt
+DELE renamed.txt
+CDUP
+RMD testdir
+QUIT

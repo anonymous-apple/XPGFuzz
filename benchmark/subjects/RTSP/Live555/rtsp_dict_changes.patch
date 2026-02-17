@@ -1,0 +1,31 @@
+--- rtsp.dict	2026-01-03 20:30:22.497743393 +0800
++++ rtsp_xpgfuzz.dict	2026-01-03 20:25:43.939726501 +0800
+@@ -1 +1,26 @@
+-"OPTIONS"
+\ No newline at end of file
++"OPTIONS"
++"DESCRIBE"
++"SETUP"
++"TEARDOWN"
++"PLAY"
++"PAUSE"
++"GET_PARAMETER"
++"SET_PARAMETER"
++"127.0.0.1"
++"000022B8"
++"wavAudioTest"
++"ac3AudioTest"
++"matroskaFileTest"
++"webmFileTest"
++"RTSP/1.0"
++"Range"
++"Range: npt=9"
++"Transport"
++"RTP"
++"AVP"
++"TCP"
++"Cseq"
++"User-Agent"
++"Accept"
++"Accept"
++
