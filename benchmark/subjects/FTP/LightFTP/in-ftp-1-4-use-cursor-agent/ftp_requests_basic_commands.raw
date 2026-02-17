@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+NOOP
+HELP
+HELP USER
+SYST
+FEAT
+PWD
+QUIT
+

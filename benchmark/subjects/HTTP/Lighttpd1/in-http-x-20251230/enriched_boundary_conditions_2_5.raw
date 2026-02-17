@@ -1,0 +1,11 @@
+DELETE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+TRACE /this/is/a/very/long/request/path/to/test/HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+PROPPATCH /example HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0

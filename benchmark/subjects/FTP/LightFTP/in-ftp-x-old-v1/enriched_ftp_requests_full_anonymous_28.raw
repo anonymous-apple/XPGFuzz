@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+OPTS UTF8 ON
+PORT 127,0,0,1,152,193
+LIST
+ABOR
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+QUIT

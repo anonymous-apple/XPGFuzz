@@ -1,0 +1,71 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+HEAD /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+POST /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 8
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+data123
+
+PUT /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 16
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+Uploaded content
+
+DELETE /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+PATCH /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+patch
+
+OPTIONS /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+
+TRACE /protected.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Basic dXNlcjpwYXNz
+Connection: keep-alive
+

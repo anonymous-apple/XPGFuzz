@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PASV
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNFR test
+RNTO new_test
+QUIT

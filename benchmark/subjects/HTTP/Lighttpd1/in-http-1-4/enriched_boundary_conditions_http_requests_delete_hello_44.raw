@@ -1,0 +1,20 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /this/is/a/very/long/path/that/is/intentionally/designed/to/test/lighttpd/boundaries/limit/characters/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/edgecase?param=1%20param=2 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Language: en-US
+X-Fuzz: こんにちは 🚀
+
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz-test/1.0
+Accept: */*
+X-Forwarded-For: 192.0.2.1
+X-Fuzz: 探索 テスト 🚀
+Connection: close
+Content-Length: 0

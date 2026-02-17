@@ -1,0 +1,5 @@
+GET /.w?.txt HTTP/1xt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curDELETE1
+Accept: */*
+

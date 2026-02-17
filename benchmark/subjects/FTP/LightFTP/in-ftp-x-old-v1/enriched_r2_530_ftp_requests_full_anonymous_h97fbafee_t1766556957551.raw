@@ -1,0 +1,17 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+SITE HELP
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+XMKD new_folder
+REST 100
+RETR download.txt
+STOU
+QUIT
+
+
+

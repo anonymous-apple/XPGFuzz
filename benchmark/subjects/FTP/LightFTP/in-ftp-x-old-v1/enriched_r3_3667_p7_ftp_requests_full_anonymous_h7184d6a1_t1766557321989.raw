@@ -1,0 +1,22 @@
+USER anonymous
+PASS password
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /example
+XCWD /another_example
+SITE UMASK 022
+MODE S
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 0
+LIST
+CDUP
+RMD /old_directory
+XRMD /old_directory
+XMKD /new_directory
+QUIT
+
+
+

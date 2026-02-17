@@ -1,0 +1,20 @@
+USER ftp
+PASS pass
+SYST
+FEAT
+PWD
+CWD /data
+PORT 192,168,1,2,3,4
+ALLO 1024
+NLST
+LIST
+LPSV
+RNFR oldfile.txt
+RNTO newfile.txt
+XRMD olddir
+RETR file.txt
+STOR file.txt
+QUIT
+
+
+

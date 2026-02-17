@@ -1,0 +1,17 @@
+USER anonymous
+PASS 123456
+AUTH TLS
+SYST
+PWD
+EPRT |1|127.0.0.1|39089|
+MODE S
+REST 0
+LIST
+DELE file.txt
+RETR download.txt
+STOU
+SITE UMASK 022
+QUIT
+
+
+

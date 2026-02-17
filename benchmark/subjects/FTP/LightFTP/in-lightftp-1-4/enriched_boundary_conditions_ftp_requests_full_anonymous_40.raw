@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+SIZE README.md
+SIZE very_long_filename_with_extremely_verbose_description_that_tests_input_length_limits_and_boundary_conditions_for_the_SIZE_command.txt
+SIZE /path/with/utf8/文件名.txt
+APPE log_2026_01_04.txt
+APPE 新增文件.txt
+LIST
+SIZE /another/path/with/weird_name-αβγ.txt
+QUIT

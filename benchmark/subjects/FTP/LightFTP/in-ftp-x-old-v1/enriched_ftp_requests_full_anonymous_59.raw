@@ -1,0 +1,11 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+CWD /var/www
+ABOR
+PORT 127,0,0,1,152,193
+LIST
+CWD /home
+ABOR
+QUIT

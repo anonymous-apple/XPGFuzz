@@ -1,0 +1,14 @@
+USER guest
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+MLSD
+LIST
+MKD test
+MLST test
+QUIT
+
+
+

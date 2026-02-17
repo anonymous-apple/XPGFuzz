@@ -1,0 +1,25 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+Content-Length: 50
+Content-Language: en
+X-Emoji: 😄
+
+text=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF

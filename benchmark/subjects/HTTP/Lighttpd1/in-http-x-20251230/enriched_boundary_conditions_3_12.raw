@@ -1,0 +1,11 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+COPY /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+Destination: /hello%20copy.txt  
+LOCK /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+Timeout: Second-1000  
+If: <http://127.0.0.1:8080/hello.txt>

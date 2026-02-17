@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+OPTS
+OPTS INVALID
+OPTS UTF8 OFF
+QUIT
+

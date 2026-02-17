@@ -1,0 +1,13 @@
+USER anonymous
+PASS password
+SYST
+PWD
+CDUP
+XMKD new_directory
+XRMD old_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

@@ -1,0 +1,15 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS * HTTP/1.1
+Host: 1234567890123456789012345678901234567890.example
+User-Agent: fuzz/0.1
+Accept: */*
+
+OPTIONS       /こんにちは世界/テスト HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example
+User-Agent: fuzz/проверка/1.0
+Accept: */*
+Connection: keep-alive

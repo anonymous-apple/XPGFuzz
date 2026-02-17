@@ -1,0 +1,16 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT  127,0,0,1,152,193
+LIST
+APPE /uploads/initial.txt
+APPE /downloads/テスト.txt
+APPE /very/long/path/name/with/repeated/chars/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+PORT 10,0,0,2,0,20
+APPE /edge%20cases/space%20test.txt
+AUTH TLS
+APPE /path/with/special!@#$%^&*().txt
+APPE /path/with/unicode/ファイル名_最長_こんにちは.txt
+QUIT

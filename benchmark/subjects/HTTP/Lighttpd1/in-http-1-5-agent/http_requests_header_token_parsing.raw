@@ -1,0 +1,25 @@
+GET /test HTTP/1.1
+Host: example.com
+Accept: gzip, deflate, br
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: gzip,deflate,br
+
+GET /test HTTP/1.1
+Host: example.com
+Accept:  gzip , deflate , br 
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: gzip;q=0.9, deflate;q=0.8, br
+
+GET /test HTTP/1.1
+Host: example.com
+Accept-Encoding: gzip, deflate
+Connection: keep-alive, upgrade
+
+GET /test HTTP/1.1
+Host: example.com
+Cache-Control: no-cache, no-store, must-revalidate
+

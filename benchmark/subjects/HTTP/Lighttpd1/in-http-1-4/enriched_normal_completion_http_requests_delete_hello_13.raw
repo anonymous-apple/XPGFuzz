@@ -1,0 +1,33 @@
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded
+
+HEAD /hello.txt HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /hello.txt HTTP/1.1
+Host: verylonghostname-example-subdomain.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example.com:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+Content-Type: application/x-www-form-urlencoded
+
+HEAD /hello.txt HTTP/1.1
+Host: [2001:db8:85a3:0000:0000:8a2e:0370:7334]:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,12 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+MKCOL /新建集合 HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0  
+
+COPY /path/with sp@ce! HTTP/1.1  
+Host: 127.0.0.1:8080  
+Destination: /path/to/target/  
+Content-Length: 0

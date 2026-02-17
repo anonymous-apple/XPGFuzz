@@ -1,0 +1,59 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /files/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: text/plain
+Content-Length: 16
+User-Agent: fuzz/1.0
+X-Long-Path: true
+
+0123456789ABCDEF
+
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+User-Agent: fuzz/1.1
+Accept: */*
+
+field1=value1&field2=value2
+
+GET /path/%E2%9C%93 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Random-Header: ~!@#$%^&*()_+
+
+PUT /upload?name=%E2%9C%93 HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/octet-stream
+Content-Length: 4
+User-Agent: fuzz/2.0
+Accept: */*
+
+DATA
+
+POST /api/echo HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: text/plain
+Content-Length: 5
+User-Agent: test  1.0
+Accept: */*
+
+hello
+
+GET /space%20path HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /files/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: text/plain
+Content-Length: 8
+User-Agent: fuzz/1.5
+
+ABCDEFGH

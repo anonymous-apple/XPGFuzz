@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+MKD emptydir
+CWD emptydir
+TYPE I
+PASV
+LIST
+CDUP
+RMD emptydir
+QUIT
+

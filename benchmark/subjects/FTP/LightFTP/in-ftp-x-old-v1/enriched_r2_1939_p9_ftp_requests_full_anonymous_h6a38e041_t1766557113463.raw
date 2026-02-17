@@ -1,0 +1,19 @@
+USER anonymous
+PASS 123456
+SYST
+AUTH TLS
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+SITE CHMOD 755 new_folder
+RNFR old_folder
+RNTO renamed_folder
+MODE S
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+QUIT
+
+
+

@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+SYST
+AUTH TLS
+SITE HELP
+PWD
+XCWD /tmp
+CWD /tmp
+CDUP
+MODE S
+XMKD new_directory
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+QUIT
+
+
+

@@ -1,0 +1,18 @@
+USER root
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+CDUP
+XMKD new_directory
+SITE CHMOD 755 new_directory
+ALLOC 1000000
+REST 500
+PORT 127,0,0,1,152,193
+EPRT |1|127.0.0.1|39041|
+LIST
+QUIT
+
+
+

@@ -1,0 +1,17 @@
+PATCH /a/very/long/path/that/exceeds/typical/length/limits/to/test/boundary/conditions/and/ensure/proper/parsing
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 28
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 18
+New file contents
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+
+
+

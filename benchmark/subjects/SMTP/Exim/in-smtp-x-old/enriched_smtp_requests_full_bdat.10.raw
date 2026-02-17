@@ -1,0 +1,11 @@
+HELO localhost
+EHLO localhost
+MAIL FROM:<test@example.com>
+RCPT TO:<recipient@example.com>
+DATA
+Subject: Test Email
+Hello, this is a test email.
+.
+BDAT 10 LAST
+BDAT 5 LAST
+QUIT

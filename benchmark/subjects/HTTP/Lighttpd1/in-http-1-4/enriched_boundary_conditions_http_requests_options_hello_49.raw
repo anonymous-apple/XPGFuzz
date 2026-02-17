@@ -1,0 +1,36 @@
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Fuzz-Count: 1
+X-Emoji: 😊
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 33
+
+field1=value1&field2=%F0%9F%98%80
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 22
+X-Whitespace: "    \t"
+
+Updated content by PUT
+
+OPTIONS /path/with/a/very/long/name/that/is/intentionally/created/for/testing/boundaries HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+
+POST /submit?param=weird%20space HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+X-Whitespace: "spaces"
+
+data=xyz%21

@@ -1,0 +1,40 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-100
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=100-200
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=100-
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=-100
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-999999
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=-1
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes= 0 - 100
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-100,200-300
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-50,100-150,200-250
+

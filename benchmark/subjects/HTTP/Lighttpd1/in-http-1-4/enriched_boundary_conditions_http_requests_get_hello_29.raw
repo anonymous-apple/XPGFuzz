@@ -1,0 +1,27 @@
+PUT /uploads/verylongpath/segment1/segment2/segment3/segment4/segment5/segment6/segment7/segment8/segment9/segment10/segment11/segment12/segment13/segment14/segment15/segment16/segment17/segment18/segment19/segment20.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Content-Type: text/plain
+Content-Length: 5
+X-Emoji: 😺
+X-Unusual: ~!@#$%^&*()_+-={}[]|\:;"'<>,.?/
+Connection: keep-alive
+
+HELLO
+
+GET /path/with/very/long/name/that/keeps/going/and/going/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-NonASCII: Café
+
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+Content-Length: 0
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

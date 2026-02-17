@@ -1,0 +1,11 @@
+USER anonymous
+PASS ubuntu
+PBSZ 0
+RNFR /very/long/path/with/ミックス/ファイル名-abcdefghijklmnopqrstuvwxyz0123456789.txt
+RNTO /very/long/path/with/ミックス/ファイル名-abcdefghijklmnopqrstuvwxyz0123456789.txt.new
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+LIST
+QUIT

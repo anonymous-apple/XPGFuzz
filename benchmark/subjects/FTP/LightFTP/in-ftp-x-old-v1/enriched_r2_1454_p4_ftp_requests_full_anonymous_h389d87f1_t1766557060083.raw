@@ -1,0 +1,17 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+STRU F
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+REIN
+QUIT
+
+
+

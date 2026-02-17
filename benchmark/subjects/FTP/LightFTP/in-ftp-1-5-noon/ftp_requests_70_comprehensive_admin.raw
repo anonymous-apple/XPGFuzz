@@ -1,0 +1,21 @@
+USER admin
+PASS admin
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+MKD testdir
+CWD testdir
+STOR file1.txt
+APPE file1.txt
+RNFR file1.txt
+RNTO file2.txt
+DELE file2.txt
+CDUP
+RMD testdir
+SITE CHMOD 755 test.txt
+OPTS UTF8 ON
+QUIT
+

@@ -1,0 +1,22 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /pub
+MKD /pub/incoming
+XMKD /pub/temp
+CDUP
+RMD /pub/temp
+MODE S
+LPSV
+REST 0
+ALLO 1024
+PORT 127,0,0,1,152,193
+SITE HELP
+LIST
+QUIT
+
+
+

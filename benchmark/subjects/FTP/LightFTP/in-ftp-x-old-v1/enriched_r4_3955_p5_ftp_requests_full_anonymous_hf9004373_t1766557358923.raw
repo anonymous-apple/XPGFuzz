@@ -1,0 +1,21 @@
+USER ftp
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+TYPE I
+MODE S
+STRU F
+SMNT /default
+PORT 127,0,0,1,152,193
+ALLO 1024
+LIST
+RETR important_file.zip
+DELE old_file.txt
+ALLO 2048
+STOU file.txt
+QUIT
+
+
+

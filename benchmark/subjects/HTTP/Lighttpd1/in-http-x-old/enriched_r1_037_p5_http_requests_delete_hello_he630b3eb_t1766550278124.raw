@@ -1,0 +1,25 @@
+OPTIONS /a-very-long-path-that-exceeds-normal-length-limits-and-includes-many-subdirectories
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 11
+Content-Type: text/plain
+Hello World
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 6
+Content-Type: text/plain
+Patch!
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

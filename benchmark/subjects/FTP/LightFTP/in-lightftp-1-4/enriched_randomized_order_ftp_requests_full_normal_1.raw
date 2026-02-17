@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+SIZE test.txt
+SIZE /非常長的路徑/文件名-測試.txt
+AUTH TLS
+PWD
+LIST    
+QUIT

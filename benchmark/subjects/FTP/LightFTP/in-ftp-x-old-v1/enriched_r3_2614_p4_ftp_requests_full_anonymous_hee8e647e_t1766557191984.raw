@@ -1,0 +1,18 @@
+USER root
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /
+MKD new_directory
+XCWD another_directory
+XMKD another_new_directory
+XRMD old_directory
+EPRT |1|127.0.0.1|39041|
+LPSV
+LIST
+QUIT
+
+
+

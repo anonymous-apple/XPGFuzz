@@ -1,0 +1,21 @@
+USER anonymous
+PASS password
+ACCT default
+AUTH TLS
+SYST
+PWD
+SMNT /new_mount
+REIN
+USER anonymous
+PASS ubuntu
+PORT 127,0,0,1,152,193
+ALLO 1024
+STRU F
+REST 512
+RNFR oldfile.txt
+RNTO newfile.txt
+LIST
+QUIT
+
+
+

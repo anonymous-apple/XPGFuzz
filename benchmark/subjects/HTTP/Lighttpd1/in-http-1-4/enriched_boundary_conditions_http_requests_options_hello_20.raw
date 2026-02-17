@@ -1,0 +1,24 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /uploads/very/long/path/that/keeps/going/and/going/and/going/and/going/fuzz_test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+X-Delete-Mode: quick 漢字
+If-Unmodified-Since: Wed, 04 Jan 2026 00:00:00 GMT
+Accept: */*
+Connection: close
+
+PUT /uploads/very/long/path/that/keeps/going/and/going/and/going/and/going/fuzz_test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 33
+X-Fuzz-Char: 漢字 🚀
+X-Whitespace: "   "
+Accept: */*
+Connection: close
+
+Fuzz payload: café, 漢字, 🚀

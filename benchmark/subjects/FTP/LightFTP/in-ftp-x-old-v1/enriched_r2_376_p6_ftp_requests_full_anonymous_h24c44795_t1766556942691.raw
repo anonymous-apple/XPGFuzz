@@ -1,0 +1,17 @@
+USER
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE HELP
+LPSV
+REST 100
+ALLO 1024
+PORT 127,0,0,1,152,193
+LIST
+XRMD /old_directory
+QUIT
+
+
+

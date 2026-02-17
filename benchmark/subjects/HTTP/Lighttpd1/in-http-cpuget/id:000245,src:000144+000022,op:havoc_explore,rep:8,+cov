@@ -1,0 +1,56 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080¸	User-Agent: cuˇl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.tÖt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuˇl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuˇl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuˇl/8.6.1
+Accept: *
+
+GET /hel8080
+User-Agent: curl/8.0.1
+Ao.txt HTTP/1.1
+Host: 127.0.: curl/8.0.1
+Accept: */*
+
+HEAD/hello.txt HTTP/1.1
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept:Ë/*
+
+GET /hello.txt HTTP/1.1
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hWllo.txç HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: User-Agent
+Accept: */*
+
+GET /hello.txt HTTPhello.txt/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agt: *
+

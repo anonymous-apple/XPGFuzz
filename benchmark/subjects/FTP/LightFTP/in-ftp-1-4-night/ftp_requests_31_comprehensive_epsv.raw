@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+PWD
+TYPE I
+EPSV 2
+LIST
+RETR test.txt
+STOR upload.txt
+MLSD
+QUIT
+

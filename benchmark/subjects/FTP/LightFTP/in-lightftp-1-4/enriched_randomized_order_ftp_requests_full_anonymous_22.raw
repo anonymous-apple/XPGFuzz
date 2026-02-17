@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+PORT 127,0,0,1,255,255
+LIST
+APPE /uploads/テストファイル.txt
+SITE CHMOD 0644 /uploads/テストファイル.txt
+APPE /проба/файл_ƒ.txt
+SITE HELP
+APPE /uploads/очень/длинный/путь/verylongfilename_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+SITE CHMOD 755 /uploads/очень/длинный/путь/файл_ƒ.txt
+LIST
+QUIT

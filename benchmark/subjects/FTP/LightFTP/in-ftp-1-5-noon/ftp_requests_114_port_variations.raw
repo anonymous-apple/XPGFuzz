@@ -1,0 +1,15 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PORT 127,0,0,1,20,80
+LIST
+PORT 127,0,0,1,20,81
+RETR test.txt
+PORT 127,0,0,1,20,82
+STOR upload.txt
+PORT 127,0,0,1,20,83
+MLSD
+PORT 127,0,0,1,20,84
+APPE append.txt
+QUIT
+

@@ -1,0 +1,19 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+MODE S
+LPSV
+REST 0
+ALLO 1024
+PORT 127,0,0,1,152,193
+SITE HELP
+RNFR oldfile.txt
+RNTO newfile.txt
+LIST
+QUIT
+
+
+

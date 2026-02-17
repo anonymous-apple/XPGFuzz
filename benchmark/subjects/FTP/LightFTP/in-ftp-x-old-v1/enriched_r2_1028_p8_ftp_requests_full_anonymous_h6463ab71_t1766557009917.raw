@@ -1,0 +1,15 @@
+USER anonymous
+PASS test
+SYST
+PWD
+CWD /tmp
+XCWD /tmp
+CDUP
+XMKD new_directory
+PORT 127,0,0,1,152,193
+LIST
+XRMD old_directory
+QUIT
+
+
+

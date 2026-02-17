@@ -1,0 +1,6 @@
+USER admin
+PASS admin
+RNFR nonexistent.txt
+RNTO new.txt
+QUIT
+

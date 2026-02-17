@@ -1,0 +1,14 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+EPRT |1|127.0.0.1|39041|
+LIST
+LPSV
+QUIT
+
+
+

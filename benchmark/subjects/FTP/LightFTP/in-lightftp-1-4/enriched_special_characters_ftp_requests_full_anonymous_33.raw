@@ -1,0 +1,13 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+EPSV
+RNFR /old/ファイル名-テスト-测试-path.txt
+RNTO /new/ファイル名-テスト-测试-path-renamed.txt
+PORT 127,0,0,1,152,193
+LIST
+RNFR /path/to/oldname-abcdefghijklmnopqrstuvwxyz-0123456789-末端-末尾-長長長.txt
+RNTO /path/to/newname-ABCDEFGHIJKLMNOPQRSTUVWXYZ-9876543210-末端-escaping-ий.txt
+EPSV
+QUIT

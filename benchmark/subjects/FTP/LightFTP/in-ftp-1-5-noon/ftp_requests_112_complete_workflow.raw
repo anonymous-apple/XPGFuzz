@@ -1,0 +1,38 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+PWD
+NOOP
+TYPE I
+PASV
+LIST
+CWD /tmp
+MKD project
+CWD project
+PWD
+STOR readme.txt
+STOR config.txt
+STOR data.txt
+SIZE readme.txt
+SIZE config.txt
+SIZE data.txt
+LIST
+MLSD
+REST 0
+RETR readme.txt
+REST 10
+RETR config.txt
+REST 20
+RETR data.txt
+RNFR readme.txt
+RNTO README.txt
+RNFR config.txt
+RNTO CONFIG.txt
+APPE README.txt
+APPE CONFIG.txt
+DELE data.txt
+CDUP
+RMD project
+QUIT
+

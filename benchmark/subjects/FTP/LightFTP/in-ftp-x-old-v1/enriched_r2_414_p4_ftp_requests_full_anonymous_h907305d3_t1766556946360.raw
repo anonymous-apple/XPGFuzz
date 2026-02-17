@@ -1,0 +1,16 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+XCWD /uploads
+XMKD /uploads/temp
+PORT 127,0,0,1,152,193
+LIST
+XRMD /uploads/old
+DELE file.txt
+RETR download.txt
+STOU
+QUIT
+
+
+

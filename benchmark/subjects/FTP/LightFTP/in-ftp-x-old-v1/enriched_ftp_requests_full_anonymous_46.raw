@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+MKD new_folder
+DELE old_file.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT

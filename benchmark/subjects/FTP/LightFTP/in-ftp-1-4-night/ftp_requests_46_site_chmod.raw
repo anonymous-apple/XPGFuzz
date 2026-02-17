@@ -1,0 +1,7 @@
+USER admin
+PASS admin
+SITE CHMOD 755 test.txt
+SITE CHMOD 644 test.txt
+SITE CHMOD 777 test.txt
+QUIT
+

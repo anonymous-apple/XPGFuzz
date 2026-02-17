@@ -1,0 +1,20 @@
+USER anonymous
+PASS 123456
+ACCT default
+AUTH TLS
+SYST
+TYPE I
+PWD
+SMNT /
+REIN
+USER anonymous
+PASS ubuntu
+EPRT |1|127.0.0.1|39041|
+LPSV
+ALLO 1024
+REST 0
+LIST
+QUIT
+
+
+

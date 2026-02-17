@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+EPSV
+LIST
+EPSV 2
+MLSD
+EPSV 1
+RETR test.txt
+EPSV 2
+STOR upload.txt
+EPSV
+APPE append.txt
+EPSV 2
+LIST /tmp
+QUIT
+

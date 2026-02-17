@@ -1,0 +1,11 @@
+protocol,A12_branch_cov_%_xpgfuzz_vs_aflnet,A12_branch_cov_%_xpgfuzz_vs_chatafl,A12_line_cov_%_xpgfuzz_vs_aflnet,A12_line_cov_%_xpgfuzz_vs_chatafl,A12_states_xpgfuzz_vs_aflnet,A12_states_xpgfuzz_vs_chatafl,A12_transitions_xpgfuzz_vs_aflnet,A12_transitions_xpgfuzz_vs_chatafl
+bftpd,1.0,1.0,1.0,1.0,0.5,0.5,1.0,1.0
+exim,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+forked-daapd,0.96,1.0,0.94,1.0,0.5,0.06,0.34,0.22
+kamailio,0.7,1.0,0.92,0.98,0.86,0.92,0.92,1.0
+lightftp,0.5,0.5,0.5,0.5,0.0,0.0,0.0,0.0
+lighttpd1,0.0,0.5,0.5,1.0,0.5,0.5,1.0,0.0
+live555,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.9
+proftpd,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+pure-ftpd,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+

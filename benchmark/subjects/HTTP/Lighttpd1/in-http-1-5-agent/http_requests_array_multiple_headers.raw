@@ -1,0 +1,14 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/plain
+Accept-Language: en-US
+Accept-Language: en
+Accept-Language: zh-CN
+Accept-Encoding: gzip
+Accept-Encoding: deflate
+Accept-Encoding: br
+Connection: keep-alive
+Cache-Control: no-cache
+Cache-Control: no-store
+

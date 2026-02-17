@@ -1,0 +1,20 @@
+USER guest
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SMNT /default
+REIN
+USER anonymous
+PASS ubuntu
+PORT 127,0,0,1,152,193
+STRU F
+ALLO 1024
+REST 0
+LIST
+STOU file.txt
+QUIT
+
+
+

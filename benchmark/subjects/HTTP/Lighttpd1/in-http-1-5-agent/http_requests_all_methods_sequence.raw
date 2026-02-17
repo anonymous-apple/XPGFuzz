@@ -1,0 +1,61 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+POST /data.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 8
+Connection: keep-alive
+
+data123
+
+PUT /upload.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 16
+Connection: keep-alive
+
+Uploaded content
+
+DELETE /data.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+PATCH /patch.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+Connection: keep-alive
+
+patch
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+CONNECT 127.0.0.1:8080 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+

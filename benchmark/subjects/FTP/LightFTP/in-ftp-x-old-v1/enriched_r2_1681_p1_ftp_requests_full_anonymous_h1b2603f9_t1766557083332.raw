@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CDUP
+MKD new_directory
+XMKD another_directory
+OPTS UTF8 ON
+MODE S
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+SITE HELP
+QUIT
+
+
+

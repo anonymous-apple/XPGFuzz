@@ -1,0 +1,12 @@
+USER anonymous
+PASS test
+SYST
+PWD
+PASV
+EPSV
+LPRT 4,127,0,0,1,0,152,193
+LIST
+QUIT
+
+
+

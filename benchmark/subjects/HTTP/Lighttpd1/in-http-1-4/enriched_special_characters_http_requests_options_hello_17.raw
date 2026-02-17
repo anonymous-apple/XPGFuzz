@@ -1,0 +1,22 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1 漢字
+Accept: */*
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+Content-Length: 52
+User-Agent: curl/8.0.1 漢字
+Accept: */*
+{"op":"replace","path":"/title","value":"New Title"}
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt/this/is/a/very/long/path/for/boundary/testing/edge/cases/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

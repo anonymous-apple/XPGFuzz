@@ -1,0 +1,17 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PATCH    /api/update/%E6%9B%B4%E6%96%B0/%E4%BD%A0%E5%A5%BD/this/is/a/very/long/path/with/unicode/%E7%AC%AC1 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json; charset=utf-8
+Content-Length: 0
+X-Note: 漢字と文字
+X-Note-ASCII: ascii-only
+
+CONNECT [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:443 HTTP/1.1
+Host: [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:443
+User-Agent: fuzz/1.0
+X-Non-ASCII: äöüß

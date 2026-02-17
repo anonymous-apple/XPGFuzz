@@ -1,0 +1,14 @@
+EHLO localhost
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu>
+RCPT TO:<ubuntu@ubuntu>
+BDAT 3 LAST
+abc
+RSET
+MAIL FROM:<test@example.com>
+RCPT TO:<test@example.com>
+DATA
+Hello, this is a test
+.
+QUIT

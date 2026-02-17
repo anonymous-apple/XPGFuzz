@@ -1,0 +1,42 @@
+USER ubuntu
+PASS ubuntu
+SYST
+FEAT
+PWD
+NOOP
+HELP
+HELP USER
+TYPE A
+TYPE I
+PORT 127,0,0,1,20,80
+PASV
+EPSV
+EPSV 2
+LIST
+LIST -a
+LIST -l
+LIST /tmp
+MLSD
+MLSD /tmp
+CWD /tmp
+PWD
+MKD dir1
+MKD dir2
+CWD dir1
+PWD
+STOR file1.txt
+APPE file1.txt
+RNFR file1.txt
+RNTO file2.txt
+SIZE file2.txt
+REST 0
+REST 100
+REST 200
+RETR file2.txt
+DELE file2.txt
+CDUP
+PWD
+RMD dir1
+RMD dir2
+QUIT
+

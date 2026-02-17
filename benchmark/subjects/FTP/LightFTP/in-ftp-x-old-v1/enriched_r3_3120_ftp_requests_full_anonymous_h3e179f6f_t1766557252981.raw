@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE HELP
+CWD /pub
+CDUP
+MKD new_directory
+XMKD another_directory
+XRMD old_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

@@ -1,0 +1,19 @@
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+X-Fuzz-Char: 漢字
+Content-Type: application/json-patch+json
+Content-Length: 52
+Accept: */*
+[{"op":"replace","path":"/greeting","value":"Fuzz"}]
+
+CONNECT 127.0.0.1:443 HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example:443
+User-Agent: curl/8.0.1
+Accept: */*
+X-Emoji: 😊
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

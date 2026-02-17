@@ -1,0 +1,18 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+FEAT
+PWD
+PORT 127,0,0,1,152,193
+LIST
+SIZE important_file.zip
+RETR important_file.zip
+STAT
+DELE old_file.txt
+STOU file.txt
+QUIT
+
+
+

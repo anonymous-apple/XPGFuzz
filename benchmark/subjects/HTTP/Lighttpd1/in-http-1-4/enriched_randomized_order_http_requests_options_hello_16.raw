@@ -1,0 +1,19 @@
+PUT /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 5
+
+abcde
+
+CONNECT example.com:443 HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1
+Proxy-Connection: Keep-Alive
+X-Unicode: 測試
+
+OPTIONS /hello.txt HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: こんにちは世界

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+PWD
+CWD /tmp
+PWD
+MKD testdir
+PWD
+CDUP
+PWD
+RMD testdir
+QUIT
+

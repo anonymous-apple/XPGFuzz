@@ -1,0 +1,51 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close
+
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Origin: http://localhost
+
+GET /path/with%20spaces/and%20more%20data/abcdefghijklmnopqrstuvwxyz/0123456789 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Test-Long-Path: fuzz
+
+GET /café/mañana HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: application/json
+
+GET /a/very/long/path/that/continues/without/stop/adding/segments/each/more/than/ten/characters/for/testing/purposes/and/edge/cases/abcdefg/1234567890 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Cookie: session=αβγ
+Authorization: Bearer Δόκιμος
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+OPTIONS /..%2e%2e/%2e%2e HTTP/1.1
+Host: 12345678901234567890.example.invalid:8080
+User-Agent: curl/8.0.1
+Accept: */*

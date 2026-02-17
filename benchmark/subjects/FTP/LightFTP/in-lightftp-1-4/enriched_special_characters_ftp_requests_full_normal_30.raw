@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+SITE CHMOD 0777 /test
+CWD /test
+SITE HELP
+LIST
+CWD /this/is/a/very/long/path/with/unicode/テスト/пример/测试/END/edgecase/abcdefghijklmnopqrstuvwxyz0123456789
+LIST
+QUIT

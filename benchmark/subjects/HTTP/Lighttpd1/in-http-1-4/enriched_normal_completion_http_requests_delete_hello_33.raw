@@ -1,0 +1,25 @@
+DELETE /hello.txt HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Max-Forwards: 0
+
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 28
+X-Edge-Case: äöü-测试
+
+field1=value1&file=%E2%9C%93
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+User-Agent: curl/8.0.1
+Accept: */*

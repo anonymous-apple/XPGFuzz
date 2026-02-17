@@ -1,0 +1,10 @@
+GET hellU”er-Agento.txt/hellU”er-Agento.txt HTTP/1.1
+Host: 127.0,0.1:8K80
+User-Agent: carl/8.0.1curlš8.0.1
+Accept: *Ac
+
+GET /hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+

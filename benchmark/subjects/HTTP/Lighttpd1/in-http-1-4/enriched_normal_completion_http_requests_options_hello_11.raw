@@ -1,0 +1,34 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+X-Special: äøßΩ
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+
+param1=value1&param2=test
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host:    127.0.0.1:8080    
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /hello.txt HTTP/1.1
+Host: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Char: 漢字
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+
+param1=value1&param2=test

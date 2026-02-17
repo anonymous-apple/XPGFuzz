@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+MKD /uploads/dir_名字_测试_abcdefghijklmnopqrstuvwxyz_0123456789_extended
+LIST
+RNFR /uploads/dir_名字_测试_abcdefghijklmnopqrstuvwxyz_0123456789_extended
+RNTO /uploads/dir_名字_测试_abcdefghijklmnopqrstuvwxyz_0123456789_extended_renamed
+MKD /uploads/repeat_dir
+MKD /uploads/repeat_dir
+RNFR /uploads/dir_名字_测试_abcdefghijklmnopqrstuvwxyz_0123456789_extended_renamed
+RNTO /uploads/dir_名字_测试_abcdefghijklmnopqrstuvwxyz_0123456789_extended_renamed_final
+QUIT

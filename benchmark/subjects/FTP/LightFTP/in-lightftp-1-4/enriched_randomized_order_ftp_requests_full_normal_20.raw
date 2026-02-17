@@ -1,0 +1,19 @@
+USER ubuntu
+PASS ubuntu
+EPSV
+REST 0
+SYST
+PWD
+LIST
+PORT  127,0,0,1,132,209  
+EPSV
+MKD test
+REST 18446744073709551615
+PWD
+LIST
+MKD tést
+MKD aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+REST 777
+EPSV
+LIST
+QUIT

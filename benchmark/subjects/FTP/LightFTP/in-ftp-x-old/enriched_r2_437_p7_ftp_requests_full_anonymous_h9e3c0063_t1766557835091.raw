@@ -1,0 +1,14 @@
+USER anonymous
+PASS password
+SYST
+PWD
+EPSV
+LIST
+PORT 127,0,0,1,152,193
+APPE newfile.txt
+DELE oldfile.txt
+STOU
+QUIT
+
+
+

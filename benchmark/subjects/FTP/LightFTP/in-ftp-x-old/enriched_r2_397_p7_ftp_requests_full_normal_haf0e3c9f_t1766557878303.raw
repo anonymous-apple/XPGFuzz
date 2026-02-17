@@ -1,0 +1,17 @@
+USER
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+OPTS UTF8 ON
+PBSZ 0
+PORT 127,0,0,1,132,209
+REST 100
+MDTM 20240101000000 file.txt
+LIST
+MKD test
+STOU unique.txt
+QUIT
+
+
+

@@ -1,0 +1,14 @@
+USER anonymous
+PASS 123456
+SYST
+PWD
+CWD /example
+CDUP
+PORT 127,0,0,1,152,193
+SIZE /example/file.txt
+LIST
+XRMD /old_directory
+QUIT
+
+
+

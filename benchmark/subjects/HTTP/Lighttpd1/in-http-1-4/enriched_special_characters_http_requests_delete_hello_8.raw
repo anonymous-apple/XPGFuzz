@@ -1,0 +1,28 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /uploads/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: text/plain; charset=utf-8
+Content-Length: 7
+X-Non-ASCII: 測試
+
+payload
+
+CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: fuzz/1.0
+Proxy-Connection: keep-alive
+
+PUT /tiny.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*      
+Content-Type: text/plain
+Content-Length: 11
+X-Non-ASCII: こんにちは
+
+Hello World

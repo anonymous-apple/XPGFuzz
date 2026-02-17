@@ -1,0 +1,84 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+POST /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 20
+Connection: keep-alive
+
+{"key":"value"}
+
+PUT /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 25
+Connection: keep-alive
+
+{"key":"value","num":123}
+
+PATCH /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 20
+Connection: keep-alive
+
+{"op":"replace"}
+
+POST /form.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+Connection: keep-alive
+
+key1=value1
+
+PUT /xml.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/xml
+Content-Length: 30
+Connection: keep-alive
+
+<root><key>value</key></root>
+
+POST /html.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/html
+Content-Length: 20
+Connection: keep-alive
+
+<html>test</html>
+
+DELETE /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+HEAD /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: application/json
+Connection: keep-alive
+
+OPTIONS /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+TRACE /json.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+

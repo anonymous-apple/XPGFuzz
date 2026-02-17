@@ -1,0 +1,14 @@
+USER ftp
+PASS ubuntu
+SYST
+PWD
+CWD /example
+CDUP
+PORT 127,0,0,1,152,193
+LIST
+XRMD /old_directory
+STOU newfile.txt
+QUIT
+
+
+

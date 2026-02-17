@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+SIZE test
+RETR test
+RETR "测试文件.txt"
+SIZE /this/is/a/very/long/path/that/exists/for/testing/boundaries/filename-with-characters-and-length-extremely-long-name-to-test-edge-cases-0123456789abcdefghijklmnopqrstuvwxyz-ABCDEFGHIJKLMNOPQRSTUVWXYZ-ファイル-测试-специфика.txt
+LIST
+SIZE "path with spaces/ファイル名 0123测试.txt"
+RETR /nonexistent/edgecase/emptyfile.txt
+RETR /path/with/Spaces/filename with spaces.txt
+QUIT

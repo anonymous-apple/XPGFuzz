@@ -1,0 +1,22 @@
+CONNECT :27.0.0.1:8080 HTTP/1.1
+Host: 127.0.0.1:808.
+GET /hello.txt HTTP/1.12Host: 127.0.0.1:8080
+User-AgqVt: curl/8.S.1 Accept: */*
+HEAD /hello txt HTTP/1.1
+Host: 12l/8.0.1
+Ac ept: */*0.1 @0
+Uqe.1User-Agen: curl/8 0.1
+Accept: */*ALcept: */*
+DELETE /hello.txt1HTT@@1.1DELETE /hello.txt1HTT@@1.1
+Host: 127.0 0.128 0
+U`er-Agent: curl/8.0.1
+Accept: /*
+
+OPTIONS /hel o.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1User-Agent: curl/8.0.1
+ccept: */*
+DELETE /hello.txt HTTP/1.1
+Host: 120 0
+User-Agent: curl/8.0.1
+Accet: */*

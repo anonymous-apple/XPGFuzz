@@ -1,0 +1,59 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /this/is/a/very/long/path/that/continues/with/many/segments/and/ends/at/resource/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+GET     /whitespace-path HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 27
+
+{"name":"Test","value":123}
+
+PATCH /update/あいう HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: application/json
+Content-Length: 25
+
+{"status":"更新成功"}
+
+GET /path/あいう/ümlaut HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit/再試行 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 25
+
+field1=value1&field2=väl
+
+GET /space%20encoded HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*

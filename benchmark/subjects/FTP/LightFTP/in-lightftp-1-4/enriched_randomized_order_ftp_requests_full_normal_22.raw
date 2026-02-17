@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+RNFR oldname.txt
+RNTO newname.txt
+EPSV
+LIST
+RNFR tést-αβ.txt
+RNTO tést-αβ_renamed.txt
+PORT 255,255,255,255,255,255
+EPSV
+MKD test
+QUIT

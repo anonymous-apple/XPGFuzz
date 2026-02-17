@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+TYPE I
+PWD
+PORT 127,0,0,1,152,193
+LIST
+ALLO 100
+REST 0
+STOU file.txt
+SMNT /data
+REIN
+QUIT
+
+
+

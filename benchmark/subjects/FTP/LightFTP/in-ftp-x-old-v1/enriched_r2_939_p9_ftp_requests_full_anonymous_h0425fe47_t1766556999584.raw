@@ -1,0 +1,19 @@
+USER username
+PASS 123456
+SYST
+FEAT
+PWD
+CWD /
+PORT 192,168,1,2,20,80
+STRU F
+ALLO 1000
+LPSV
+MLSD
+XRMD oldname
+LIST
+RETR file.txt
+STOR file.txt
+QUIT
+
+
+

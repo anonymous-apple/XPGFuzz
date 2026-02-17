@@ -1,0 +1,12 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+NOOP
+DELE /home/user/verylongpath/this/is/a/sample/dir/with/unicode/测试/ファイル名/length_0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.txt
+NOOP
+DELE /var/tmp/пример_данных/файл_длинный_名字.txt
+NOOP
+QUIT

@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RETR file.txt
+QUIT

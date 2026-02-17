@@ -1,0 +1,18 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json-patch+json
+Content-Length: 67
+
+[{"op":"replace","path":"/content","value":"Patched by fuzzing 1"}]
+
+PATCH    /hello.txt  HTTP/1.1
+Host: 127.0.0.1:8080aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Content-Type: application/json-patch+json
+Content-Length: 78
+
+[{"op":"add","path":"/metadata","value":{"edge":true,"note":"boundary test"}}]

@@ -1,0 +1,13 @@
+USER ubuntu
+PASS test
+ACCT ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+XMKD test
+LIST
+MKD test
+QUIT
+
+
+

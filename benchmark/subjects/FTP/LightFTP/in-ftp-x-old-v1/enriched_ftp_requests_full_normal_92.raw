@@ -1,0 +1,10 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,132,209
+MLSD
+LIST
+MKD test
+QUIT

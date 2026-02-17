@@ -1,0 +1,25 @@
+OPTIONS /this/is/a/very/long/path/that/exceeds/normal/length/expectations/and/tests/boundaries
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+PUT /newfile.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 15
+Content-Type: text/plain
+Hello, World!
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 10
+Content-Type: text/plain
+New content
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

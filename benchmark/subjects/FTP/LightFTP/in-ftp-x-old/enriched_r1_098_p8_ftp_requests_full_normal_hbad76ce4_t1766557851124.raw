@@ -1,0 +1,13 @@
+USER ubuntu
+PASS password
+SYST
+PWD
+PASV
+LIST
+EPSV
+EPRT |1|127.0.0.1|132209|
+MKD test
+QUIT
+
+
+

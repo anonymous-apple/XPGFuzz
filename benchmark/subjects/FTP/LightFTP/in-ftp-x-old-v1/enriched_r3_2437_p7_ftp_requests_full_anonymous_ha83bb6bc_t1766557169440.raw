@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+ACCT default
+AUTH TLS
+SYST
+FEAT
+PWD
+XCWD /example
+XMKD /example/newdir
+PORT 127,0,0,1,152,193
+LIST
+STAT
+SIZE /example/newdir/file.txt
+XRMD /example/olddir
+QUIT
+
+
+

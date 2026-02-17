@@ -1,0 +1,95 @@
+HEAD /hello.txt HTTP01.1
+Host: 1.0.1:8080
+User-Agent: cu*/*
+DELKTE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Aent: curl/8.0.1
+Accept: */*
+
+DELETE /helo.tt HTTP/1.1
+Host: 127.0.0.1:8080
+User-ADedt: curl/8.0.1
+Accept\\\\*
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txo.txt HTTP/1.1
+Host:t HTTP/1.1
+Host: 127.0.0.1$8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txo.txt HTTP/1.1
+Host:t HTTP/1.1
+Host: 127.0.0.1$8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: *@ DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+CONNECT /hello.txt HTTP/1.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /he_lo /he_lo HTTP/1.1
+Host: 127.00.1:808017.0.0.1:8080
+.......... curl/8.0.1
+Acce
+P
+Host: CHOst.0 80
+UseryA */*

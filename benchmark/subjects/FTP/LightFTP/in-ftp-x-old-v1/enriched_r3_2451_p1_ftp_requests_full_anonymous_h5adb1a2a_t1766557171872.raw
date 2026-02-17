@@ -1,0 +1,20 @@
+USER admin
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+XCWD /example
+XMKD /example/newdir
+TYPE I
+STRU F
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 0
+SMNT /example
+LIST
+XRMD /example/olddir
+QUIT
+
+
+

@@ -1,0 +1,51 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Range: bytes=0-100
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Range: bytes=100-200
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Range: bytes=0-50
+Connection: keep-alive
+
+PUT /range.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 10
+Content-Range: bytes 0-9/100
+Connection: keep-alive
+
+0123456789
+
+POST /range.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 10
+Content-Range: bytes 10-19/100
+Connection: keep-alive
+
+abcdefghij
+
+PATCH /range.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+Content-Range: bytes 20-24/100
+Connection: keep-alive
+
+patch
+

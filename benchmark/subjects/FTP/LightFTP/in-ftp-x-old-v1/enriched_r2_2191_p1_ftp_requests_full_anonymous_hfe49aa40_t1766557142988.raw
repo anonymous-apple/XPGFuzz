@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+SYST
+AUTH TLS
+OPTS UTF8 ON
+PWD
+XCWD /example
+CDUP
+XMKD new_directory
+MODE S
+SITE CHMOD 755 new_directory
+ALLO 1000
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

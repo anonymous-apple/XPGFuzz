@@ -1,0 +1,45 @@
+TRACE /fuzz/space HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: whitespace	 test
+
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1 æøå
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+Content-Length: 13
+Accept: */*
+
+field1=value1
+
+DELETE /hello.txt HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+Content-Length: 10
+User-Agent: curl/8.0.1
+Accept: */*
+X-Unusual: こんにちは世界
+
+data=hello
+
+TRACE /ping HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Trace: test
+
+POST /submit-α HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+Content-Length: 8
+User-Agent: curl/8.0.1 αβγ
+Accept: */*
+X-Unusual: ☃ snow
+
+data=abc

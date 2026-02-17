@@ -1,0 +1,29 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+STOR file1.txt
+PASV
+STOR file2.txt
+PASV
+STOR file3.txt
+SIZE file1.txt
+SIZE file2.txt
+SIZE file3.txt
+REST 0
+RETR file1.txt
+REST 10
+RETR file2.txt
+REST 20
+RETR file3.txt
+RNFR file1.txt
+RNTO renamed1.txt
+RNFR file2.txt
+RNTO renamed2.txt
+RNFR file3.txt
+RNTO renamed3.txt
+DELE renamed1.txt
+DELE renamed2.txt
+DELE renamed3.txt
+QUIT
+

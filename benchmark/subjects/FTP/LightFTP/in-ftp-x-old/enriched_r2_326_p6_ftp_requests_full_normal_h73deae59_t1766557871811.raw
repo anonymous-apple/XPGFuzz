@@ -1,0 +1,17 @@
+USER ftp
+PASS ubuntu
+ACCT ubuntu
+SYST
+HELP
+PWD
+NOOP
+PORT 127,0,0,1,132,209
+OPTS UTF8 ON
+PBSZ 0
+REST 0
+LIST
+MKD test
+QUIT
+
+
+

@@ -1,0 +1,18 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*  
+X-Whitespace:    value
+
+PUT /upload/this/is/a/very/long/path/that/continues/into/the/edge/cases/with/unicode/%E4%BD%A0%E5%A5%BD.html?param=1&param2=two HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/octet-stream
+Content-Length: 5
+
+abcde

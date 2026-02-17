@@ -1,0 +1,10 @@
+EHLO localhost
+250-CHUNKING
+MAIL FROM:<ubuntu@ubuntu> BODY=8BITMIME
+250 DSN
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE
+DATA
+354 End data with <CR><LF>.<CR><LF>
+abc
+.
+QUIT

@@ -1,0 +1,13 @@
+USER ftp
+PASS ubuntu
+SYST
+PWD
+PASV
+LIST
+EPRT |1|127.0.0.1|132209|
+LPRT 4,127,0,0,1,2,5,185
+MKD test
+QUIT
+
+
+

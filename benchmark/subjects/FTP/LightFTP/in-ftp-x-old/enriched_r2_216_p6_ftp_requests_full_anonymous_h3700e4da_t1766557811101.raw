@@ -1,0 +1,12 @@
+USER
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+XMKD /new_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

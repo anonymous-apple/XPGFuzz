@@ -1,0 +1,16 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+CWD /uploads
+XCWD /uploads
+MKD new_folder
+XMKD new_folder
+CDUP
+PORT 127,0,0,1,152,193
+LIST
+XRMD old_folder
+QUIT
+
+
+

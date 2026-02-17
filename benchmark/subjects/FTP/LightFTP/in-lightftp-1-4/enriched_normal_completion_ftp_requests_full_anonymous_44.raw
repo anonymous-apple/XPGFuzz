@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RNFR /home/ftp/user/测试文件.txt
+RNTO /home/ftp/user/测试文件_renamed.txt
+RNFR /home/ftp/user/Documents/Projects/VeryLongDirectoryNameThatExceedsNormalLengths/ExampleFileNameThatWouldBeRenamedToDemonstrateBoundaryConditions.txt
+RNTO /home/ftp/user/Documents/Projects/VeryLongDirectoryNameThatExceedsNormalLengths/ExampleFileNameThatWouldBeRenamedToDemonstrateBoundaryConditions_updated.txt
+RNFR /path/with spaces/filename with spaces.txt
+RNTO /path/with spaces/filename with spaces_renamed.txt
+RNFR "/special chars/fi le with spaces!.txt"
+RNTO "/special chars/fi le with spaces!.txt_renamed.txt"
+QUIT

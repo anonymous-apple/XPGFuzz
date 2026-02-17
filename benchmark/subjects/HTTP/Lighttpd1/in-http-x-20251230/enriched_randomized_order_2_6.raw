@@ -1,0 +1,17 @@
+DELETE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+PROPPATCH /resource HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Content-Length: 0  
+Content-Type: application/xml  
+
+<propertyupdate><set><prop><name>value</name></prop></set></propertyupdate>  
+POST /submit HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 27  
+Content-Type: application/x-www-form-urlencoded  
+
+key1=value1&key2=value2

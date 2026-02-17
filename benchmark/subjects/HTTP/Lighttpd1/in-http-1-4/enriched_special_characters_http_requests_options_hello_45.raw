@@ -1,0 +1,22 @@
+CONNECT 127.0.0.1:443 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Proxy-Connection: keep-alive
+
+DELETE /delete/this/is/a/very/long/path/that/continues/with/many/segments/and/characters/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host:  127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /replay.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: тест

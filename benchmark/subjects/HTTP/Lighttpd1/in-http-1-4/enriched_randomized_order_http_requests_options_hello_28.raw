@@ -1,0 +1,35 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Content-Type: application/json
+Content-Length: 39
+
+{"op":"replace","path":"/","value":"X"}
+
+OPTIONS /this/is/a/very/long/path/that/keeps/going/and/going/and/edge/cases?q=boundary HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PATCH /empty/body HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Content-Type: application/json
+Content-Length: 0
+X-Whitespace:    value-with-spaces
+
+TRACE /hello%CE%B1.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+X-Emoji: 🚀

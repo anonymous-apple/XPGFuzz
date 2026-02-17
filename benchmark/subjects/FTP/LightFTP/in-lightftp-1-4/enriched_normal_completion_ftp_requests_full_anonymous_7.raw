@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+SYST
+EPSV
+PWD
+LIST
+PORT 127,0,0,1,152,193
+LIST /файл-испытания/测试
+CDUP
+EPSV
+PWD
+LIST /path/with/very/long/segments/that/keep/going/adding/over/1000/characters/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+CDUP
+QUIT

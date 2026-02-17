@@ -1,0 +1,21 @@
+PATCH /very/long/path/that/exceeds/typical/length/limits/and/includes/many/subdirectories/for/testing/purposes/file.json
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 28
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 11
+Hello World
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

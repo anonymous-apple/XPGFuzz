@@ -1,0 +1,14 @@
+USER
+PASS ubuntu
+SYST
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+RNFR old_file.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

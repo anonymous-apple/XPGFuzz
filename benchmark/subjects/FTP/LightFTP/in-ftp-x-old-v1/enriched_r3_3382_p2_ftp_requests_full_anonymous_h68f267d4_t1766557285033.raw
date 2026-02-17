@@ -1,0 +1,17 @@
+USER user
+PASS ubuntu
+ACCT default
+AUTH TLS
+FEAT
+SYST
+PWD
+PORT 127,0,0,1,152,193
+RNFR oldfile.txt
+RNTO newfile.txt
+SIZE newfile.txt
+LIST
+STAT
+QUIT
+
+
+

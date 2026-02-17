@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+SYST
+AUTH TLS
+PBSZ 0
+PROT P
+PWD
+PORT 127,0,0,1,152,193
+LIST
+OPTS UTF8 ON
+SITE HELP
+APPE newfile.txt
+DELE oldfile.txt
+STOU
+QUIT
+
+
+

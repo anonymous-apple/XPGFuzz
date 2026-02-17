@@ -1,0 +1,11 @@
+USER user
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

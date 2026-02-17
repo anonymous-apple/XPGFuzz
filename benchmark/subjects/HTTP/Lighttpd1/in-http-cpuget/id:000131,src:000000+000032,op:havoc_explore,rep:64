@@ -1,0 +1,5 @@
+GET /hello3txt HTTP/1.1
+Host: 127.0.0.1Ut: curl/88080
+User-Agent: curl/8.0.1
+Accept: */*
+

@@ -1,0 +1,35 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: text/plain
+Content-Length: 19
+
+This is fuzz data 1
+
+GET /this/is/a/very/long/path/that/keeps/going/and/going/for/boundary/testing/edgecase/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /path/%E2%9C%93/encoded-%C3%B3.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /boundary/with/long/path/for/host HTTP/1.1
+Host: 127.0.0.1:8080aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+User-Agent: fuzz/2.0
+Content-Type: text/plain
+Content-Length: 5
+
+abcde

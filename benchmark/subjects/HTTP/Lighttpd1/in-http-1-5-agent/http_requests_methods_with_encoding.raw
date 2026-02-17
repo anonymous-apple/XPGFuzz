@@ -1,0 +1,72 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: br
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+POST /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 8
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+data123
+
+PUT /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 16
+Accept-Encoding: gzip
+Connection: keep-alive
+
+Uploaded content
+
+DELETE /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: deflate
+Connection: keep-alive
+
+PATCH /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+patch
+
+OPTIONS /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: gzip
+Connection: keep-alive
+
+TRACE /compress.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: deflate
+Connection: keep-alive
+

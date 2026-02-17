@@ -1,0 +1,17 @@
+USER guest
+PASS ubuntu
+ACCT default
+SYST
+AUTH TLS
+PWD
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+RETR download.txt
+SITE UMASK 022
+STOU
+QUIT
+
+
+

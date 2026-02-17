@@ -1,0 +1,26 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+X-Note: こんにちは世界
+Accept-Encoding: gzip, deflate
+
+DELETE /hello.txt?longparam=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*      
+Connection: keep-alive
+X-Emoji: 😺
+Content-Length: 0
+
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 14
+Connection: keep-alive
+X-Note: Привет
+
+name=world&x=1

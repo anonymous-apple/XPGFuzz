@@ -1,0 +1,17 @@
+USER anonymous
+PASS test
+SYST
+PWD
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+REIN
+REST 100
+STRU F
+DELE file.txt
+RETR download.txt
+STOU
+QUIT
+
+
+

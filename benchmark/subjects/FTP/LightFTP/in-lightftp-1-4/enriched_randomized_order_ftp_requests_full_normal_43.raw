@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNFR oldname.txt
+RNTO newname.txt
+APPE extremely_long_filename_name_exceeding_normal_lengths_to_test_boundary_conditions_and_whitespace_spaces_in_command_arg.txt
+APPE tést-файл.txt
+LIST
+LIST
+QUIT

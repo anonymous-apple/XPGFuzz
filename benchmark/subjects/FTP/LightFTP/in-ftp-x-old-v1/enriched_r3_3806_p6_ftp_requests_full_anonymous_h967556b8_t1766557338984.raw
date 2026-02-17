@@ -1,0 +1,22 @@
+USER
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE HELP
+CWD /
+MKD new_directory
+XCWD another_directory
+RMD old_directory
+CDUP
+MODE S
+STRU F
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 0
+LIST
+QUIT
+
+
+

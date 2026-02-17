@@ -1,0 +1,26 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Non-ASCII: Üñïçødé тест
+
+CONNECT example.com:443 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Proxy-Connection: keep-alive
+Accept: */*
+
+GET /this/is/a/very/long/path/that/looks/like/it/will/trigger/long-URL-limit/boundary/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /path%20with%20spaces HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

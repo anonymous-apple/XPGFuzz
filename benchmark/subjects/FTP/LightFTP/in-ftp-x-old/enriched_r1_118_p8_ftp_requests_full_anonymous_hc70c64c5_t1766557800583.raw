@@ -1,0 +1,12 @@
+USER anonymous
+PASS test
+SYST
+PWD
+PASV
+LPSV
+EPRT |1|127.0.0.1|152193|
+LIST
+QUIT
+
+
+

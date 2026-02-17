@@ -1,0 +1,7 @@
+USER upload
+PASS upload
+TYPE I
+PASV
+STOR existing.txt
+QUIT
+

@@ -1,0 +1,24 @@
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+ charset=utf-8
+
+GET /test HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0
+ (Windows NT 10.0)
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: text/html,
+ application/json
+
+GET /test HTTP/1.1
+Host: example.com
+	Content-Length: 100
+
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name=value
+ ; path=/
+

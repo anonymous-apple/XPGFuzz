@@ -1,0 +1,10 @@
+USER readonly
+PASS readonly
+PWD
+TYPE I
+PASV
+LIST
+RETR test.txt
+SIZE test.txt
+QUIT
+

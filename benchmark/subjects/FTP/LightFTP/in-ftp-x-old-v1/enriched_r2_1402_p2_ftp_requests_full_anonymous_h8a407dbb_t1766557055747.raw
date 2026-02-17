@@ -1,0 +1,15 @@
+USER user
+PASS password
+ACCT default
+AUTH TLS
+SYST
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

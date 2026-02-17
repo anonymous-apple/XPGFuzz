@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+TYPE A
+PASV
+LIST
+TYPE I
+LIST
+TYPE A
+RETR test.txt
+TYPE I
+RETR test.txt
+TYPE A
+STOR upload.txt
+TYPE I
+STOR upload.txt
+QUIT
+

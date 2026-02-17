@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+SITE CHMOD 755 /example
+MODE S
+PORT 127,0,0,1,152,193
+STRU F
+REST 1024
+LIST
+XRMD /old_directory
+QUIT
+
+
+

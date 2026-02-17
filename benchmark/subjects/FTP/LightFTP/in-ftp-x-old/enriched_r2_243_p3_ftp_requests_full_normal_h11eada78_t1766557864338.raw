@@ -1,0 +1,14 @@
+USER user
+PASS ubuntu
+ACCT ubuntu
+SYST
+HELP
+PWD
+PORT 127,0,0,1,132,209
+MDTM file.txt
+LIST
+MKD test
+QUIT
+
+
+

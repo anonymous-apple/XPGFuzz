@@ -1,0 +1,19 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+CDUP
+XMKD new_directory
+SITE CHMOD 755 new_directory
+ALLOC 1024
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+RNFR oldfile.txt
+RNTO newfile.txt
+QUIT
+
+
+

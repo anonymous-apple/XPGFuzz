@@ -1,0 +1,16 @@
+USER ftp
+PASS ubuntu
+SYST
+AUTH TLS
+OPTS UTF8 ON
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+SITE HELP
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

@@ -1,0 +1,5 @@
+GET /hello.txt/hello.txt HTTP/1.1
+Host: 120
+User-Agent: cqrl/8.0.1
+Accept: 	 he*
+

@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+OPTS UTF8 ON
+SITE HELP
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+LPSV
+XRMD /old_directory
+QUIT
+
+
+

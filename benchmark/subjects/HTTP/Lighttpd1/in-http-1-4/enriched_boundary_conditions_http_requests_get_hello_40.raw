@@ -1,0 +1,46 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+
+CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: fuzz/2.0
+Proxy-Connection: keep-alive
+Connection: keep-alive
+
+GET /this/is/a/very/long/path/that/continues/without/restrictions/and/aims/to/test/server/limits/edge/cases/for/robustness HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/longpath/agent
+Accept: */*
+
+GET /path?param=äöüß HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Nonce: äöüß€€
+
+GET /hello.txt HTTP/1.1
+Host: [2001:db8:85a3::8a2e:370:7334]:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/opts
+Accept: */*
+
+CONNECT [fe80::1%eth0]:443 HTTP/1.1
+Host: [fe80::1%eth0]:443
+User-Agent: fuzz/ipv6
+Proxy-Connection: close
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,16 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+CWD /home/anonymous
+LIST
+PORT 127,0,0,1,152,193
+CWD /this/is/a/long/path/with spaces/测试/路径/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+LIST
+PORT 127,0,0,1,0,53
+CWD /目录/子目录/データ
+LIST
+PORT 255,255,255,255,1,2
+LIST
+QUIT

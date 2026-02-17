@@ -1,0 +1,18 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+SITE HELP
+SITE INFO äöüß
+RMD /very/long/directory/path/that/serves/as/a/fuzz/test/edge/case/abcdefghij/klmnopqrstuvwxyz/0123456789/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+PORT  127,0,0,1,152,194
+LIST
+SITE CPFR /src/dir/路径/edgecase/longname/with/mixed/字符/测试
+SITE CPTO /dest/dir/路径/edgecase/longname/with/mixed/字符/测试
+RMD /path/with spaces/dir
+PWD
+SITE CHMOD 0777 /path/for/permissions
+LIST
+QUIT

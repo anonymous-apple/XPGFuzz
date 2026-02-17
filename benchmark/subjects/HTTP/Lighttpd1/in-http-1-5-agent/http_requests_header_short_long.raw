@@ -1,0 +1,24 @@
+GET /test HTTP/1.1
+Host: example.com
+TE: trailers
+
+GET /test HTTP/1.1
+Host: example.com
+Age: 3600
+
+GET /test HTTP/1.1
+Host: example.com
+Host: example.com
+
+GET /test HTTP/1.1
+Host: example.com
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Security-Policy: default-src 'self'; script-src 'unsafe-inline'
+
+GET /test HTTP/1.1
+Host: example.com
+Access-Control-Allow-Origin: https://example.com
+

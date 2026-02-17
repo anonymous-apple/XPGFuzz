@@ -1,0 +1,19 @@
+TRACE /this/is/a/very/long/path/that/tests/the/server/handling/of/traces/and/edge/cases/with/many/segments/and/query/parameters/like/%E2%9C%93/and/%F0%9F%98%80/plus/symbols HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Whitespace:     multiple spaces
+X-Note: テスト
+
+PATCH /this/is/a/very/long/path/for/patch/requests/testing/edge/cases/with/segments/and/numbers/0123456789/abcdefghijklmnopqrstuvwxyz HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json-patch+json
+Content-Length: 0
+X-Note: 漢字
+
+GET /this/is/a/very/long/path/for/get/requests/testing/edge/cases/with/many/segments/and/nonascii/%CE%B1%CE%B2%CE%B3?param=foo HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Repeat: yes
+X-Note: тест

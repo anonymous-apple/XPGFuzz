@@ -1,0 +1,12 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+MKCOL /newcollection/ HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0  
+
+LOCK /resource HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Type: application/xml  
+Content-Length: 50

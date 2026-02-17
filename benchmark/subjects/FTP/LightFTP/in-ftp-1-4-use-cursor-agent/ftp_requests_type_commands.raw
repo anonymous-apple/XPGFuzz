@@ -1,0 +1,6 @@
+USER anonymous
+PASS ubuntu
+TYPE A
+TYPE I
+QUIT
+

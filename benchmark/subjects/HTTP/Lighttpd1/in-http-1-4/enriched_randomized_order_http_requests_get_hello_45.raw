@@ -1,0 +1,46 @@
+GET /extra/spaces HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept:  */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-NonAscii: 测试
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /very/long/path/%E3%83%86%E3%83%BC%E3%83%88 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept:  */*
+
+GET /path/with/very/long/name/and/characters/that/exceed/normal/length/for/testing/lighttpd%20with%20spaces HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept:  */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-NonAscii: тестирование

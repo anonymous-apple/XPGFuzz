@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+AUTH TLS
+SYST
+PWD
+CWD /tmp
+CDUP
+XMKD new_directory
+MODE S
+EPRT |1|127.0.0.1|39041|
+REST 0
+PORT 127,0,0,1,152,193
+LIST
+SITE UMASK 022
+QUIT
+
+
+

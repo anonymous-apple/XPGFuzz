@@ -1,0 +1,13 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+PASV
+EPSV
+LPSV
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

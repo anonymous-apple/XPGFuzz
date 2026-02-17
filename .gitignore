@@ -1,0 +1,48 @@
+# Environment files containing API keys
+.env
+.env.local
+.env.*.local
+
+# API key files
+*api*key*
+*API*KEY*
+*.key
+*.secret
+
+# Backup files
+*.bak
+*.backup
+
+# HTML files
+*.html
+**/*.html
+
+# Directories starting with 'res_'
+res_*/
+
+# Specific files to ignore
+# chatafl/chat-llm.h
+# xpgfuzz/chat-llm.h
+# **/chat-llm.h
+
+# Directories to ignore
+ProSeedsBench/
+lighttpd1.4/
+live555/
+
+
+# 环境变量本地存储
+myenv/
+
+replay_proftpd_12月07日/
+
+seeds_enrich/
+
+# 协议代码
+bftpd/
+live555/
+kamailio/
+forked-daapd/
+
+
+

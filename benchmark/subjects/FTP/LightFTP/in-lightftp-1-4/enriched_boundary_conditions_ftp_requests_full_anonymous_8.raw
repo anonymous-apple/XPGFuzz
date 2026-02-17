@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+EPSV
+RNFR "/data/very_long_path_name_that_tests_boundary_conditions_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_测试_ファイル名_with_非常長_chars_abcdefghijklmnopqrstuvwxyz0123456789.txt"
+RNTO "/data/very_long_path_name_that_tests_boundary_conditions_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_测试_ファイル名_with_非常長_chars_abcdefghijklmnopqrstuvwxyz0123456789_renamed.txt"
+LIST
+PORT 127,0,0,1,152,193
+PWD
+SYST
+LIST
+RNFR "/data/重复路径/old name with spaces.txt"
+RNTO "/data/重复路径/new name with spaces.txt"
+QUIT

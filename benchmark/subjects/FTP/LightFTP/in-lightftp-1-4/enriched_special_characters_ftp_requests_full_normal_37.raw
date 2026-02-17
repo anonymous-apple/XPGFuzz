@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNTO test_renamed
+MLSD
+MLSD "/path with spaces/テスト😊"
+MLSD "/very/long/path/name/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+QUIT

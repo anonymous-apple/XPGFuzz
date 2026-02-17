@@ -1,0 +1,27 @@
+GET /test HTTP/1.1
+Host: example.com
+HOST: example.com
+host: example.com
+HoSt: example.com
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+CONTENT-TYPE: application/json
+content-type: text/plain
+CoNtEnT-TyPe: image/png
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: text/html
+ACCEPT: application/json
+accept: */*
+AcCePt: text/xml
+
+GET /test HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0
+USER-AGENT: curl/7.0
+user-agent: wget/1.0
+UsEr-AgEnT: python-requests/2.0
+

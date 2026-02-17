@@ -1,0 +1,32 @@
+GET /this/is/a/very/long/path/that/continues/to/extend/for/testing/potential/buffer/overflow?param1=value1&param2=value2 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Notes: boundary_test_αβγ
+Connection: keep-alive
+
+POST /submit?name=%E6%97%A5%E6%9C%AC HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+Accept: */*
+X-Non-ASCII: 漢字テスト
+Connection: close
+
+field1=value1&field2=value2
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
+X-Extra: !@#$%^&*()_+-=[]
+Connection: keep-alive
+
+GET /hello%20world.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Or-Note: こんにちは
+Connection: close

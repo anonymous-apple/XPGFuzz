@@ -1,0 +1,31 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+Connection: keep-alive
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: [2001:db8:85a3::8a2e:370:7334]:8080
+User-Agent: curl/8.0.1
+Accept: text/plain
+Connection: close
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-NonASCII: тестирование
+X-Symbols: !@#$%^&*()_+-=[]{}|;':",.<>?
+Connection: close

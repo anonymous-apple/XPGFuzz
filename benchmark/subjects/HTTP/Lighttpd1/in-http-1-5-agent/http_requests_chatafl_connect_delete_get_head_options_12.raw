@@ -1,0 +1,115 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txo.txt HTTP/1.1
+Host:t HTTP/1.1
+Host: 127.0.0.1$8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HE^D /hello.txo.txt HTTP/1.1
+Host:t HTTP/1.1
+Host: 127.0.0.1$8080
+User-Agent: curl/8.0.1.0.1
+Ac: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.01
+Host: 127.0.0.1:8080
+User-A.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: *@ DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+CONNECT /hello.txt HTTP/1.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /he_lo /he_lo HTTP/1.1
+Host: 127.00.1:808017.0.0.1:8080
+.......... curl/8.0.1
+Acce
+P
+Host: CHOst.0 80
+UseryA */*
+
+HEAD /hello.txt HTTP/1.1
+Hos: 127.0.0.1:8080
+User-Agen: curl/8.0.1
+AccepN: */*
+DELETE /h
+Host: 1*7.0.0.1:8080
+Uer-Agent: curl/8.0. 
+Accet: /*
+
+HEAD /hello.txt HTTP/1.1
+Hos: 127.0.0.1:8080
+User-Agen: curl/8.0.1
+AccepN: */*
+DELETE /h
+Host: 1*7.0.0.1:8080
+Uer-Agent: curl/8.0. 
+Accet: /*
+
+DELETE /hello.txt HTTP/1.1
+Host: 080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Lser-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,18 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+TYPE I
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+ALLO 1024
+STOU file.txt
+SMNT /dev/null
+REIN
+QUIT
+
+
+

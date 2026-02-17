@@ -1,0 +1,24 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*   
+X-Long-Path: /short/a/boundary/test/this/is/a/very/long/path/that/keeps/going/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+X-Note: тест
+Connection: keep-alive
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 11
+X-Long-Path: /this/is/a/long/path/for/boundary/conditions/step/2/with/repeated/headers
+X-Note: тест
+
+Sample data
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*   
+X-Short: 1
+X-Note: тест

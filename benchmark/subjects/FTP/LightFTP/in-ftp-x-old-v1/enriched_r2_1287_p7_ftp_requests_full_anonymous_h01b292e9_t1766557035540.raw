@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+OPTS UTF8 ON
+MODE S
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+SITE UMASK 022
+XRMD /old_directory
+QUIT
+
+
+

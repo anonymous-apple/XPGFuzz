@@ -1,0 +1,14 @@
+DELETE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+COPY /new_file.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Type: application/json  
+Content-Length: 25  
+{"data": "Special charéctérs!"}  
+PATCH /update_info HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Type: application/json  
+Content-Length: 30  
+{"info": "Updating with new data."}

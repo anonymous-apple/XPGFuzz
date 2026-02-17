@@ -1,0 +1,8 @@
+GET http://127.0.0.1:8080/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+
+GET https://127.0.0.1:8080/path/to/resource HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+

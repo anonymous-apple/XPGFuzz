@@ -1,0 +1,14 @@
+USER
+PASS ubuntu
+SYST
+PWD
+CWD /uploads
+MKD new_folder
+CDUP
+LPSV
+EPRT |1|127.0.0.1|39089|
+LIST
+QUIT
+
+
+

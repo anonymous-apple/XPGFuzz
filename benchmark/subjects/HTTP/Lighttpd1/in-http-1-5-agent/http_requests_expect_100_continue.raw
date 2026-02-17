@@ -1,0 +1,16 @@
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+Expect: 100-continue
+Content-Length: 10
+
+data123456
+
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+Expect: 100-continue
+Transfer-Encoding: chunked
+
+5
+hello
+0
+

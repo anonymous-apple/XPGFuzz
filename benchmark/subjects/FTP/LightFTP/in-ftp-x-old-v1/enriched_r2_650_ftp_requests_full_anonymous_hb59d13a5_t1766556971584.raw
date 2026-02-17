@@ -1,0 +1,16 @@
+USER test
+PASS ubuntu
+SYST
+PWD
+CWD /uploads
+MKD new_folder
+CDUP
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+REIN
+QUIT
+
+
+

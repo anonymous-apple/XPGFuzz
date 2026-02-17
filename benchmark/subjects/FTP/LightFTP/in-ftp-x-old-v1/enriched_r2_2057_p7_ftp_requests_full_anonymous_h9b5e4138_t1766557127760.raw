@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+SYST
+PWD
+XCWD /example
+CDUP
+XMKD new_directory
+MODE S
+STRU F
+ALLO 100
+REST 0
+PORT 127,0,0,1,152,193
+LIST
+REIN
+QUIT
+
+
+

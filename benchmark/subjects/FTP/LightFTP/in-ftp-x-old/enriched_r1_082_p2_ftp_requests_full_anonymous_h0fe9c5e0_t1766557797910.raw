@@ -1,0 +1,13 @@
+USER user
+PASS ubuntu
+SYST
+PWD
+CWD /tmp
+MKD new_directory
+XMKD another_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

@@ -1,0 +1,13 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Digest username="cacheuser", realm="Cache Realm", nonce="cache1234567890:rnd", uri="/hello.txt", algorithm=MD5, response="cacheresp1", qop=auth, nc=00000001, cnonce="cachecn1"
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Authorization: Digest username="cacheuser", realm="Cache Realm", nonce="cache1234567890:rnd", uri="/hello.txt", algorithm=MD5, response="cacheresp1", qop=auth, nc=00000001, cnonce="cachecn1"
+

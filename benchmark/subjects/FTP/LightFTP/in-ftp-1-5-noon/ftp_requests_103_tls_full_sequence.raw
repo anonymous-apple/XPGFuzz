@@ -1,0 +1,29 @@
+USER ubuntu
+PASS ubuntu
+AUTH TLS
+PBSZ 0
+PROT P
+SYST
+FEAT
+PWD
+NOOP
+TYPE I
+PASV
+LIST
+MLSD
+CWD /tmp
+MKD tls_dir
+CWD tls_dir
+STOR tls_file.txt
+APPE tls_file.txt
+RNFR tls_file.txt
+RNTO tls_file2.txt
+SIZE tls_file2.txt
+REST 100
+RETR tls_file2.txt
+DELE tls_file2.txt
+CDUP
+RMD tls_dir
+PROT C
+QUIT
+

@@ -1,0 +1,18 @@
+USER anonymous
+PASS 123456
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /uploads
+MKD new_folder
+XCWD /downloads
+XMKD another_folder
+XRMD old_folder
+PORT 127,0,0,1,152,193
+SIZE file.txt
+LIST
+QUIT
+
+
+

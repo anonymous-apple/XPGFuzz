@@ -1,0 +1,23 @@
+HEAD /file%20with%20spaces.txt
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 12
+Hello World!
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+Patch
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

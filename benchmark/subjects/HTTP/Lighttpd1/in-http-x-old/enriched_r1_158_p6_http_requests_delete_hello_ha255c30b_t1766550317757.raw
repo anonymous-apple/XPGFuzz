@@ -1,0 +1,21 @@
+HEAD /a/very/long/path/with/many/subdirectories/and/a/very_long_filename_that_exceeds_normal_length_limits.txt
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json
+Content-Length: 28
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

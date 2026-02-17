@@ -1,0 +1,34 @@
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept:  */
+
+GET /path%20with%20spaces.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /%F0%9F%92%A9.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /very/long/path/that/continues/with/many/segments/to/test/boundaries/and/trailing.txt HTTP/1.1
+Host: Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.longhost.example:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /repeat.txt HTTP/1.1
+Host: Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.longhost.example:8080
+User-Agent: curl/8.0.1
+Accept: */*

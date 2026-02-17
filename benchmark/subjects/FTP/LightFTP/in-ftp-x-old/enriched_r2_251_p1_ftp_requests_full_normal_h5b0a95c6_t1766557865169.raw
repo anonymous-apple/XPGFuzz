@@ -1,0 +1,15 @@
+USER test
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+NOOP
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+REST 100
+SMNT /data
+QUIT
+
+
+

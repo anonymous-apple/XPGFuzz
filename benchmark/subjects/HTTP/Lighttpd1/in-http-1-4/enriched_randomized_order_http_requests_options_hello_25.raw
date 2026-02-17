@@ -1,0 +1,16 @@
+GET /this/is/a/very/long/path/for/fuzzing/purposes/that/aims/to/test/the/server/handling/of/long/urls_and/query?param=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+CONNECT 127.0.0.1:8080 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+X-Emoji: 😊
+Proxy-Connection: keep-alive
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

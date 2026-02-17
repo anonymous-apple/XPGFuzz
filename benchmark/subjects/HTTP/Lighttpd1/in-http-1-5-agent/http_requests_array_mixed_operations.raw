@@ -1,0 +1,51 @@
+GET /test HTTP/1.1
+Host: example.com
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Cookie: session=abc123; user=john; lang=en
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+
+GET /test HTTP/1.1
+Host: example.com
+If-Modified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+If-None-Match: "etag-value"
+Range: bytes=0-100
+If-Range: "etag-value"
+Authorization: Bearer token123
+X-Forwarded-For: 192.168.1.1, 10.0.0.1
+X-Real-IP: 172.16.0.1
+Via: 1.1 proxy.example.com
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html; charset=utf-8
+Content-Length: 100
+Content-Encoding: gzip
+Content-Range: bytes 0-100/1000
+Content-Location: /test.html
+Content-Disposition: attachment; filename="test.html"
+
+GET /test HTTP/1.1
+Host: example.com
+Set-Cookie: name1=value1; Path=/; Domain=.example.com
+Set-Cookie: name2=value2; Path=/api; Secure; HttpOnly
+Set-Cookie: name3=value3; Path=/; Max-Age=3600
+
+GET /test HTTP/1.1
+Host: example.com
+X-Custom-1: value1
+X-Custom-2: value2
+X-Custom-3: value3
+X-Custom-4: value4
+X-Custom-5: value5
+X-Custom-6: value6
+X-Custom-7: value7
+X-Custom-8: value8
+X-Custom-9: value9
+X-Custom-10: value10
+

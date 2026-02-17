@@ -1,0 +1,24 @@
+POST /chunked HTTP/1.1
+Host: 127.0.0.1:8080
+Transfer-Encoding: chunked
+
+5;key=value
+hello
+0
+
+POST /chunked HTTP/1.1
+Host: 127.0.0.1:8080
+Transfer-Encoding: chunked
+
+a;charset=utf-8
+hello world
+0
+
+POST /chunked HTTP/1.1
+Host: 127.0.0.1:8080
+Transfer-Encoding: chunked
+
+5;q=0.9
+hello
+0
+

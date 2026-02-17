@@ -1,0 +1,17 @@
+USER
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+NLST
+MLSD
+RETR important_file.zip
+DELE old_file.txt
+STOU file.txt
+QUIT
+
+
+

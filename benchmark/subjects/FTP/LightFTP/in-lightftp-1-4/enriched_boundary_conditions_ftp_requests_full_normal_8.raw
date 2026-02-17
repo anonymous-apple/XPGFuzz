@@ -1,0 +1,21 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+APPE test_append.txt
+STOR /uploads/VeryLongFilenameThatExceedsNormalLengths_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+STOR /uploads/данные_ファイル.bin
+APPE /uploads/新しいファイル.dat
+LIST
+LIST     
+PORT 127,0,0,1,132,210
+STOR /uploads/edge_case_name_with_spaces_in_name.txt
+APPE /uploads/スペシャル_ファイル.dat
+APPE /uploads/unicode_测试.dat
+LIST
+MKD boundary_test_!
+LIST
+QUIT

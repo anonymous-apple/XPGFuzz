@@ -1,0 +1,38 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /upload/test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: text/plain
+Content-Length: 12
+Accept: */*
+X-Note: café
+
+test content
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /repeat.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Content-Type: text/plain
+Content-Length: 10
+Accept: */*
+
+moredata!!
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

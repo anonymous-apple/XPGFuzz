@@ -1,0 +1,53 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEHost: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: *@ DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cul/8.0.1
+Acc pt: */*
+DELETE /hello.txt>HTTP/3.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE / o 0te_lo HTTP/1.1
+Host: 127.00.1.808017.0.0.1:89 0H27.00.1.808017.0.0.1:8980
+.......... curl/8.0.1
+Sc8e
+P
+Host: CHOst.0 H /hello.t/*
+
+HEAD80
+/*
+PATCH /hello.t/*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0r-Agent: curl48.0.1
+Accept: */*
+DELETE /1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

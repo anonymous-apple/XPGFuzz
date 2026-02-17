@@ -1,0 +1,8 @@
+USER anonymous
+PASS ubuntu
+EPSV
+EPSV 2
+TYPE I
+LIST
+QUIT
+

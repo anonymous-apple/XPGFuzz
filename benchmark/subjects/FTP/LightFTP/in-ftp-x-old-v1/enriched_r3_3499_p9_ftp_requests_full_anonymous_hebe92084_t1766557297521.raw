@@ -1,0 +1,21 @@
+USER anonymous
+PASS 123456
+ACCT default
+AUTH TLS
+SYST
+PWD
+MODE S
+LPSV
+REST 0
+ALLO 1024
+PORT 127,0,0,1,152,193
+SITE HELP
+APPE file.txt
+DELE oldfile.txt
+RETR download.txt
+STOU
+LIST
+QUIT
+
+
+

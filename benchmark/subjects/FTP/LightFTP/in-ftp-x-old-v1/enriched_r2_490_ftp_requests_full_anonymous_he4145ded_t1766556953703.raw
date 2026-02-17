@@ -1,0 +1,17 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+SITE CHMOD 644 file.txt
+REST 100
+RETR download.txt
+STRU F
+STOU
+QUIT
+
+
+

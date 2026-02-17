@@ -1,0 +1,31 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTPhello.txt/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agt: *
+
+GET /àWllo.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: User-Agent
+Accept: */*
+
+GET /hte127.0.0.1Ahello.txtgenttxt HTTP/1.1
+1Wst: 127.GET0.0.Û:80ù0
+r0.0.1:8@80
+User-Agent: User-Agent
+AcT0.0.ˇ:80ù0
+rs s curl/8.0.1r0.0.1:8@80
+User-Agent: User-Agent
+AcT0.0.ˇ:80ù0
+rs s curl/8.0.1
+Accept: H%1Wst] 1:808hello.txt0H%1Wst] 1:8080
+User-Agent: uˇË
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+

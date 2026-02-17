@@ -1,0 +1,19 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /pub
+CDUP
+MKD new_directory
+XCWD /uploads
+XMKD another_dir
+PORT 127,0,0,1,152,193
+RNFR oldfile.txt
+RNTO newfile.txt
+LIST
+QUIT
+
+
+

@@ -1,0 +1,16 @@
+USER root
+PASS password
+SYST
+FEAT
+PWD
+EPSV
+EPRT |2|::1|1234|
+LPSV
+CWD /data
+LIST
+RETR file.txt
+STOR file2.txt
+QUIT
+
+
+

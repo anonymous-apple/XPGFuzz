@@ -1,0 +1,14 @@
+USER test
+PASS ubuntu
+SYST
+PWD
+PASV
+PORT 127,0,0,1,132,209
+EPRT |1|127.0.0.1|33953|
+LPSV
+LIST
+MKD test
+QUIT
+
+
+

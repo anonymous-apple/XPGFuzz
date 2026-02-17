@@ -1,0 +1,13 @@
+USER anonymous
+PASS test
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RETR file.txt
+STOU
+DELE oldfile.txt
+QUIT
+
+
+

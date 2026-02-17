@@ -1,0 +1,12 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+POST /submit HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Type: application/x-www-form-urlencoded  
+Content-Length: 22  
+
+DELETE /resource/unwanted_file.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0

@@ -1,0 +1,18 @@
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+Content-Length: 50
+X-Fuzz-Note: привет
+
+{"op":"replace","path":"/hello.txt","value":"new"}
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+X-Note: Привет
+If-Unmodified-Since: Wed, 21 Oct 2015 07:28:00 GMT
+Content-Length: 0
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,16 @@
+USER user
+PASS ubuntu
+SYST
+PWD
+NOOP
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+APPE newfile.txt
+SMNT /newvolume
+DELE oldfile.txt
+STOU
+QUIT
+
+
+

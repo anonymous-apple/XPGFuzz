@@ -1,0 +1,18 @@
+USER guest
+PASS ubuntu
+AUTH TLS
+SYST
+SITE HELP
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+PORT 127,0,0,1,152,193
+MODE S
+REST 100
+LIST
+STOU test.txt
+QUIT
+
+
+

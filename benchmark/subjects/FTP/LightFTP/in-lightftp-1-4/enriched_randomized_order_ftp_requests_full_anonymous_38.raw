@@ -1,0 +1,13 @@
+USER anonymous
+PASS ubuntu
+NOOP
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+SIZE "/very/long/path/with spaces/данные_файл_многоцифр_0123456789_ファイル.txt"
+NOOP
+SIZE "/path/with/verylongname/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt"
+NOOP
+SIZE ""
+QUIT

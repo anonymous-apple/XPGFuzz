@@ -1,0 +1,15 @@
+USER ubuntu
+PASS password
+SYST
+XPWD
+PORT 127,0,0,1,132,209
+LIST
+XMKD test
+PWD
+APPE existingfile.txt
+DELE file_to_delete.txt
+STOU
+QUIT
+
+
+

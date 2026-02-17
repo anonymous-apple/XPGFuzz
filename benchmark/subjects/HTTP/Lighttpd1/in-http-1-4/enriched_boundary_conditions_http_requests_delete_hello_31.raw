@@ -1,0 +1,32 @@
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: image/png, image/*;q=0.9
+X-Non-ASCII: café
+Connection: close
+
+GET /a/really/long/path/that/keeps/going/and/going/for/fuzzing/edge/cases/file.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Whitespace: a   lot   of   spaces
+Connection: close
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close
+
+GET /path/with%20spaces/and%20unicode/%E2%9C%93 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Non-ASCII: 測試
+Connection: close
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close

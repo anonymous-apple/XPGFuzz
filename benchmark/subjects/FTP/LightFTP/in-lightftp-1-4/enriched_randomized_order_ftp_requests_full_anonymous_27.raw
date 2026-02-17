@@ -1,0 +1,18 @@
+USER anonymous
+PASS ubuntu
+HELP
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+APPE /tmp/テスト-ファイル.txt
+APPE /edge-case/longpath/with/many/components/and/end/filename-abcdefghijklmnopqrstuvwxyz0123456789-0123456789-0123456789.txt
+APPE /path/with spaces/filename with spaces.txt
+APPE /非常用/文件-测试-😊.txt
+LIST
+PWD
+PORT  127,0,0,1,152,193
+HELP
+APPE /repeated/repeat/repeat/repeat/filename.txt
+APPE /this/should/resemble/edgecases/long/filename-😊-✈️-标题-测试.txt
+QUIT

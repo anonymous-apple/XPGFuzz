@@ -1,0 +1,13 @@
+DELETE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+POST /submit HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Type: application/json  
+Content-Length: 27  
+
+{"data": "example data"}  
+MOVE /old_location/hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+Destination: /new_location/hello.txt

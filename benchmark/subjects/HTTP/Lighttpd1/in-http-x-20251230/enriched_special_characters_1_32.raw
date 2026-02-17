@@ -1,0 +1,11 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+MKCOL /collection/space HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0  
+
+MKCOL /collection/%20%20%20%20%20 HTTP/1.1  
+Host: 127.0.0.1:8080  
+Content-Length: 0

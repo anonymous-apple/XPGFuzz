@@ -1,0 +1,16 @@
+USER admin
+PASS ubuntu
+AUTH TLS
+SYST
+OPTS UTF8 ON
+PWD
+SITE HELP
+CWD /uploads
+MKD new_folder
+CDUP
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

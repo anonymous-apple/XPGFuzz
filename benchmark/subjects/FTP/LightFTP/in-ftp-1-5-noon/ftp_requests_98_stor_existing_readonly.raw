@@ -1,0 +1,7 @@
+USER readonly
+PASS readonly
+TYPE I
+PASV
+STOR existing.txt
+QUIT
+

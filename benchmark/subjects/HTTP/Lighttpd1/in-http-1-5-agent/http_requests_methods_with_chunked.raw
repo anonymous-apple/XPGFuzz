@@ -1,0 +1,50 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+POST /chunked.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+5
+hello
+0
+
+PUT /chunked.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+a
+chunked data
+0
+
+PATCH /chunked.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+5
+patch
+0
+
+POST /chunked.json HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+10
+{"key":"value"}
+0
+

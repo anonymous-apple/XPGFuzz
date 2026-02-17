@@ -1,0 +1,19 @@
+TRACE / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+
+PUT /path/%E6%95%B0%E6%8D%AE%E5%AD%97%E6%9C%AC.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 12
+X-Notes: Привет мир
+
+Hello World!
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

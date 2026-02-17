@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+TYPE A
+SIZE /home/ubuntu
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+TYPE I
+SIZE test
+QUIT

@@ -1,0 +1,38 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /uploads/averylongfilename_that_exceeds_normal_length_and_tests_boundary_conditions_1234567890_abcdefghijklmnopqrstuvwxyz_abcdefghijklmnopqrstuvwxyz HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: text/plain; charset=utf-8
+Content-Length: 20
+X-Test: 漢字字符
+
+0123456789abcdef12
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 0
+
+GET /path%20with%20spaces HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /unicode/测试.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: text/plain; charset=utf-8
+Content-Length: 7
+X-Unicode: 測試字符
+
+UNICODE
+
+GET /a/very/long/path/that/keeps/going/and/keeps/going/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 0

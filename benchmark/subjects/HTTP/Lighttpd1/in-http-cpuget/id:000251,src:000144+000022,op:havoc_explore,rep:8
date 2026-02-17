@@ -1,0 +1,51 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt/hello(txt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.„t/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept: *
+
+GE_ /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.: curl/8.0.1
+Accept: /*
+
+HEAD/hello.txt HTTP/1.1
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1 
+Accept: */*
+
+TET /hello.txt HTTP/1.1
+PUT /hello.txt ZTTP/1.
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+

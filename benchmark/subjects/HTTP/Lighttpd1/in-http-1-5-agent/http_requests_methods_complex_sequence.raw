@@ -1,0 +1,68 @@
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-None-Match: "abc123"
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Modified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+Connection: keep-alive
+
+POST /submit.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+Connection: keep-alive
+
+key1=value1
+
+PUT /upload.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 16
+If-Match: "etag123"
+Connection: keep-alive
+
+Uploaded content
+
+DELETE /delete.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Unmodified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+Connection: keep-alive
+
+PATCH /patch.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 20
+Connection: keep-alive
+
+{"op":"replace","value":"new"}
+
+TRACE /trace.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Max-Forwards: 10
+Connection: keep-alive
+
+GET /hello.txt?param1=value1&param2=value2 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+

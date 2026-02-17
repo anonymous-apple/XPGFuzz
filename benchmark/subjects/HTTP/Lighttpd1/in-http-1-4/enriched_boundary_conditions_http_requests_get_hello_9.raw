@@ -1,0 +1,56 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+GET /this/is/a/really/long/path/that/aims/to/test/url/length/limits/which/is/quite/verbose?param=value HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+field1=value1&field2=value2
+
+POST /submit-utf HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: text/plain; charset=utf-8
+Content-Length: 13
+
+Привет!
+
+GET /emoji HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+X-Emoji: 漢字🚀
+
+HEAD /space.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /space%20name.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /repeat HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD  /hello.txt  HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*

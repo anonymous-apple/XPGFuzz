@@ -1,0 +1,33 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit-form HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+field1=value1&field2=value2
+
+GET /this/is/a/really/really/long/path/that/keeps/going/on/and/on/and/more HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+X-NonASCII: äöü
+
+POST /upload HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example.invalid
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/octet-stream
+Content-Length: 32
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

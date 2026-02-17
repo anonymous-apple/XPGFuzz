@@ -1,0 +1,17 @@
+USER anonymous
+PASS ubuntu
+SYST
+HELP
+SIZE /home/user/файл.txt
+PWD
+PORT 127,0,0,1,152,193
+LIST
+SIZE README.txt
+HELP SIZE
+LIST /
+SIZE
+SIZE /very/long/path/with/many/characters/abcdefghijklmnopqrstuvwxyz0123456789.ext
+PORT 127,0,0,1,000,001
+LIST -la
+LIST
+QUIT

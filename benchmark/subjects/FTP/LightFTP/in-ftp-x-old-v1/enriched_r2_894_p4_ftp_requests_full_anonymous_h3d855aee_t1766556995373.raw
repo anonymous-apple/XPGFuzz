@@ -1,0 +1,19 @@
+USER guest
+PASS password
+SYST
+FEAT
+PWD
+PORT 192,168,1,2,14,178
+STRU F
+ALLO 10000
+CWD /data
+LIST
+LPSV
+SIZE example.txt
+RETR example.txt
+XRMD /old_dir
+STOR newfile.txt
+QUIT
+
+
+

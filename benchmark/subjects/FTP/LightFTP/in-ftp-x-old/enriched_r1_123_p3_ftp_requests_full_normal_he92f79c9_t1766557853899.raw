@@ -1,0 +1,14 @@
+USER user
+PASS ubuntu
+SYST
+PWD
+PASV
+LIST
+EPSV
+LPSV
+PORT 127,0,0,1,132,209
+MKD test
+QUIT
+
+
+

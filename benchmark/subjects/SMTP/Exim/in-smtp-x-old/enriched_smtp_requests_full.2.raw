@@ -1,0 +1,10 @@
+EHLO localhost
+SIZE 35882577
+STARTTLS
+EHLO localhost
+MAIL FROM:<ubuntu@ubuntu> SIZE=150
+RCPT TO:<ubuntu@ubuntu>
+DATA
+abc
+.
+QUIT

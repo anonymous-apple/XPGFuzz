@@ -1,0 +1,18 @@
+USER user
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /tmp
+CDUP
+XMKD new_directory
+MODE S
+PORT 127,0,0,1,152,193
+REST 0
+SITE HELP
+LIST
+QUIT
+
+
+

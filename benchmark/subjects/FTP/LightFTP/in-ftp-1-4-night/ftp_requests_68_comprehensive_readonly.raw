@@ -1,0 +1,15 @@
+USER readonly
+PASS readonly
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+SIZE test.txt
+REST 0
+RETR test.txt
+NOOP
+HELP
+QUIT
+

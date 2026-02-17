@@ -1,0 +1,23 @@
+PATCH /path/with/a/very/long/name/that/keeps/going/on/and/around/the/server/for/testing/purpose/edge/cases/0123456789abcdefghijklmnopqrstuvwxyz/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: application/json-patch+json
+Content-Length: 45
+
+[{"op":"replace","path":"/title","value":""}]
+
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+X-NonASCII: Café
+
+DELETE     /hello.txt     HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

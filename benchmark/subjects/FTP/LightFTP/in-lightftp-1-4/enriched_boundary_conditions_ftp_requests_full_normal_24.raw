@@ -1,0 +1,17 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PORT 127,0,0,1,132,209
+PWD
+LIST
+MKD test
+RETR /etc/passwd
+RETR /秘密/archivo.txt
+CDUP
+PWD
+LIST
+PORT  127,0,0,1,132,209
+RETR /very/long/path/that/keeps/going/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+MKD xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+LIST
+QUIT

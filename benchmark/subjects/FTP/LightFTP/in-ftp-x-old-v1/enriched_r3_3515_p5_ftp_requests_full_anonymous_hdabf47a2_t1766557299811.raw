@@ -1,0 +1,22 @@
+USER ftp
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /tmp
+MKD new_folder
+XCWD uploads
+CDUP
+RMD old_folder
+MODE S
+LPSV
+REST 0
+ALLO 1024
+PORT 127,0,0,1,152,193
+SITE HELP
+LIST
+QUIT
+
+
+

@@ -1,0 +1,41 @@
+Protocol,Protocol_Code,Fuzzer,Branch_Coverage_Count,Branch_Coverage_Percent,Line_Coverage_Count,Line_Coverage_Percent,State_Count,State_Transition_Count
+FTP (BFTPd),bftpd,AFLNET,417.8,31.00%,1092.4,43.02%,24.0,160.0
+FTP (BFTPd),bftpd,chatafl,414.2,30.74%,1072.0,42.24%,23.8,180.8
+FTP (BFTPd),bftpd,XPGFUZZ,424.2,31.48%,1097.6,43.24%,24.0,202.2
+FTP (BFTPd),bftpd,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+SMTP (Exim),exim,AFLNET,1512.0,4.00%,2566.0,5.90%,11.0,38.0
+SMTP (Exim),exim,chatafl,1512.0,4.00%,2566.0,5.90%,14.0,73.0
+SMTP (Exim),exim,XPGFUZZ,3795.0,9.90%,6359.0,14.60%,20.0,136.0
+SMTP (Exim),exim,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+DAAP (Forked-daapd),forked-daapd,AFLNET,1187.0,8.40%,3976.0,12.60%,9.0,15.0
+DAAP (Forked-daapd),forked-daapd,chatafl,825.0,5.90%,2286.0,7.30%,N/A,N/A
+DAAP (Forked-daapd),forked-daapd,XPGFUZZ,765.0,5.40%,2127.0,6.80%,2.0,1.0
+DAAP (Forked-daapd),forked-daapd,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+SIP (Kamailio),kamailio,AFLNET,8394.0,1.50%,15047.0,6.30%,13.0,48.0
+SIP (Kamailio),kamailio,chatafl,8025.0,1.40%,14624.0,6.20%,11.0,22.0
+SIP (Kamailio),kamailio,XPGFUZZ,8691.0,1.50%,15300.0,6.50%,15.0,48.0
+SIP (Kamailio),kamailio,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+FTP (LightFTP),lightftp,AFLNET,77.0,11.40%,190.0,17.80%,23.0,155.0
+FTP (LightFTP),lightftp,chatafl,77.0,11.40%,190.0,17.80%,21.0,174.0
+FTP (LightFTP),lightftp,XPGFUZZ,112.0,16.50%,276.0,25.80%,13.0,47.0
+FTP (LightFTP),lightftp,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+lightftp-replay,lightftp-replay,AFLNET,N/A,N/A,N/A,N/A,N/A,N/A
+lightftp-replay,lightftp-replay,chatafl,N/A,N/A,N/A,N/A,N/A,N/A
+lightftp-replay,lightftp-replay,XPGFUZZ,N/A,N/A,N/A,N/A,N/A,N/A
+lightftp-replay,lightftp-replay,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+HTTP (Lighttpd1),lighttpd1,AFLNET,1845.0,9.60%,3854.0,13.60%,7.0,9.0
+HTTP (Lighttpd1),lighttpd1,chatafl,1853.0,9.70%,3867.0,13.70%,8.0,22.0
+HTTP (Lighttpd1),lighttpd1,XPGFUZZ,1806.0,9.40%,3811.0,13.50%,8.0,18.0
+HTTP (Lighttpd1),lighttpd1,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+RTSP (Live555),live555,AFLNET,1443.0,7.80%,2816.0,11.90%,8.0,41.0
+RTSP (Live555),live555,chatafl,1395.0,7.50%,2777.0,11.70%,8.0,46.0
+RTSP (Live555),live555,XPGFUZZ,2867.0,15.50%,5792.0,24.30%,12.0,105.0
+RTSP (Live555),live555,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+FTP (ProFTPd),proftpd,AFLNET,5312.2,20.42%,11584.8,27.16%,23.4,148.4
+FTP (ProFTPd),proftpd,chatafl,5366.6,20.62%,11671.8,27.36%,26.4,187.8
+FTP (ProFTPd),proftpd,XPGFUZZ,5852.2,22.50%,12682.2,29.74%,29.4,317.4
+FTP (ProFTPd),proftpd,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A
+FTP (Pure-FTPd),pure-ftpd,AFLNET,1123.0,23.90%,2023.0,31.20%,29.0,246.0
+FTP (Pure-FTPd),pure-ftpd,chatafl,914.0,19.40%,1705.0,26.30%,27.0,214.0
+FTP (Pure-FTPd),pure-ftpd,XPGFUZZ,1295.0,27.50%,2245.0,34.60%,30.0,305.0
+FTP (Pure-FTPd),pure-ftpd,XPGFUZZ-ENRICHONLY,N/A,N/A,N/A,N/A,N/A,N/A

@@ -1,0 +1,18 @@
+USER anonymous
+PASS test
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+SITE CHMOD 755 /example
+MODE S
+PORT 127,0,0,1,152,193
+REST 100
+LIST
+STOU file.txt
+XRMD /old_directory
+QUIT
+
+
+

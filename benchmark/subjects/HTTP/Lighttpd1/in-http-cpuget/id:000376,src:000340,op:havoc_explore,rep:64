@@ -1,0 +1,56 @@
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xttxt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcepHTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xttxt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent:*cuÿl/hello.txtcept:/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+t: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept:/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcGET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xttxt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcepHTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xttxt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept:/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+t: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept:/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Uept: *
+

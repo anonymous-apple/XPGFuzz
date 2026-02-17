@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SMNT /pub
+MODE S
+STRU F
+ALLO 1024
+EPRT |1|127.0.0.1|39041|
+LPSV
+LIST
+REIN
+QUIT
+
+
+

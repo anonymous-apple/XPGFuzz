@@ -1,0 +1,17 @@
+USER ftp
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /uploads
+MKD new_folder
+SITE CHMOD 755 new_folder
+CDUP
+OPTS UTF8 ON
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+QUIT
+
+
+

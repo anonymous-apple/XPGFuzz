@@ -1,0 +1,22 @@
+USER root
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+REIN
+USER anonymous
+PASS ubuntu
+SMNT /pub
+PORT 127,0,0,1,152,193
+STRU F
+ALLO 1024
+LIST
+REST 1024
+RETR important_file.zip
+DELE old_file.txt
+STOU file.txt
+QUIT
+
+
+

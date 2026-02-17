@@ -1,0 +1,19 @@
+GET /test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/plain, text/html, application/json, application/xml, image/png, image/jpeg, video/mp4, audio/mpeg
+
+GET /test.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8
+Connection: keep-alive
+
+GET /test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/plain
+Accept: text/html
+Accept: application/json
+Connection: keep-alive
+

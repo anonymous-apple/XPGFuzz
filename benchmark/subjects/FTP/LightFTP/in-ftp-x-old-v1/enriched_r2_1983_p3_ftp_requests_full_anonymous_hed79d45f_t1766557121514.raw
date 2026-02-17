@@ -1,0 +1,17 @@
+USER guest
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+MODE S
+SITE CHMOD 755 new_folder
+EPRT |1|127.0.0.1|39041|
+REST 100
+LIST
+QUIT
+
+
+

@@ -1,0 +1,42 @@
+TRACE / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit/файл HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 10
+
+field=edge
+
+DELETE /hello.txt HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /long-path-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5
+
+a=1
+
+TRACE / HTTP/1.1
+Host: 1234567890abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz1234567890:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit-with-nonascii HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: 測試非 ASCII 字符
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 13
+
+text=тест

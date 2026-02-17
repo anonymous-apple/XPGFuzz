@@ -1,0 +1,10 @@
+USER upload
+PASS upload
+DELE denied.txt
+RMD denied
+APPE denied.txt
+RNFR denied.txt
+RNTO denied.txt
+SITE CHMOD 755 denied.txt
+QUIT
+

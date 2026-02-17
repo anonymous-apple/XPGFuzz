@@ -1,0 +1,14 @@
+USER anonymous
+PASS test
+SYST
+PWD
+CWD /tmp
+CDUP
+XMKD new_directory
+EPRT |1|127.0.0.1|39089|
+LPSV
+LIST
+QUIT
+
+
+

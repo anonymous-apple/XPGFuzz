@@ -1,0 +1,20 @@
+GET /large_file.bin HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-1000,2000-3000
+
+GET /large_file.bin HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-500,1000-1500,2000-2500
+
+GET /large_file.bin HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-1000,1500-2000,3000-4000
+
+GET /large_file.bin HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-1000,2000-3000,4000-5000,6000-7000
+
+GET /large_file.bin HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-500,1000-1500,2000-2500,3000-3500,4000-4500
+

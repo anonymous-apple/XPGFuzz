@@ -1,0 +1,14 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+CWD /tmp
+CDUP
+XMKD new_directory
+PORT 127,0,0,1,152,193
+LIST
+STOU unique.txt
+QUIT
+
+
+

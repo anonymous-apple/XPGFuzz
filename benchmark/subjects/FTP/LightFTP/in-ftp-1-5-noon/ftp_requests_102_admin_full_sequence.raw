@@ -1,0 +1,33 @@
+USER admin
+PASS admin
+SYST
+FEAT
+PWD
+NOOP
+TYPE A
+PASV
+LIST
+TYPE I
+EPSV 2
+MLSD
+CWD /tmp
+MKD admin_dir1
+MKD admin_dir2
+CWD admin_dir1
+STOR admin_file1.txt
+APPE admin_file1.txt
+RNFR admin_file1.txt
+RNTO admin_file2.txt
+SIZE admin_file2.txt
+REST 50
+RETR admin_file2.txt
+DELE admin_file2.txt
+CDUP
+RMD admin_dir1
+RMD admin_dir2
+SITE CHMOD 755 test.txt
+SITE CHMOD 644 test.txt
+SITE HELP
+OPTS UTF8 ON
+QUIT
+

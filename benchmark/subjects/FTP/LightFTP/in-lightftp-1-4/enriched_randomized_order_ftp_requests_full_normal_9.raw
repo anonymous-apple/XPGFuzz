@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNFR test
+RNTO test_renamed
+SITE HELP
+SITE CHMOD 0777 "/test/файл с пробелами.txt"
+LIST
+RNFR /very/long/path/that/keeps/adding/segments/and/target/is/file.txt
+RNTO /very/long/path/that/keeps/adding/segments/and/target/is/file_renamed.txt
+SITE UMASK 022
+SITE ASCII
+LIST
+QUIT

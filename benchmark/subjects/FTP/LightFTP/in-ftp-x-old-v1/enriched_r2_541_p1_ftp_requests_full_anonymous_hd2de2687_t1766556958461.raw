@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,152,193
+MODE S
+LIST
+REST 100
+RETR download.txt
+SITE CHMOD 644 file.txt
+DELE file.txt
+STOU
+REIN
+QUIT
+
+
+

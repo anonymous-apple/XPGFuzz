@@ -1,0 +1,20 @@
+USER user
+PASS password
+SYST
+FEAT
+PWD
+PORT 192,168,1,2,3,4
+STRU F
+ALLO 10000
+CWD /data
+LIST
+NLST
+LPSV
+RETR file.txt
+STOR file2.txt
+XRMD /olddir
+MKD /newdir
+QUIT
+
+
+

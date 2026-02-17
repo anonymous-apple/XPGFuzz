@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNTO /renamed_file
+HELP
+RNTO /this/is/a/very/long/path/that/looks/like/a/rename/target/and/continues/for/more/than/one/hundred/characters/added/to/test/boundaries/abcdefghijklmnopqrstuvwxyz0123456789_€§±/edgecase
+LIST
+MKD test
+PWD
+PORT 127,0,0,1,132,209    
+RNTO /path with spaces/and"quotes"
+RNTO /路径/测试
+HELP RNTO
+QUIT

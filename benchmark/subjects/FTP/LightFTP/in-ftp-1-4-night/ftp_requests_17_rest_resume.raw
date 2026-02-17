@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+REST 100
+PASV
+RETR test.txt
+QUIT
+

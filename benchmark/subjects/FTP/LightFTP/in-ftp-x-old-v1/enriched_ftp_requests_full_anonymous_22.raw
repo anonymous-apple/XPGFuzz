@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+NOOP
+SYST
+PWD
+SIZE /path/to/file.txt
+PORT 127,0,0,1,152,193
+LIST
+NOOP
+QUIT

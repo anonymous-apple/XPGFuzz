@@ -1,0 +1,31 @@
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: application/json
+Accept: */*
+Content-Length: 47
+
+[{"op":"replace","path":"/","value":"patched"}]
+
+GET  /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/plain, */*
+Connection: close
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /café.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+
+GET /this/is/a/very/long/path/containing/multiple/segments/to/test/long-uri/handling/in/lighttpd/http/segment/test/edge/case/sequence.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+Connection: keep-alive

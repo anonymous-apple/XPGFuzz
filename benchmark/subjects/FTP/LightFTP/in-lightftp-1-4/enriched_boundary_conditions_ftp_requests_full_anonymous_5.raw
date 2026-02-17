@@ -1,0 +1,17 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+MLSD /home/anonymous/long/路径/ファイル名-テスト-非常長.txt
+PORT 127,0,0,1,152,193
+LIST
+DELE /tmp/edge-case/ファイル.txt
+LIST
+MLSD /path/with spaces/未使用/ファイル.txt
+DELE /very/long/path/with/many/segments/文件-测试-テスト-ファイル.txt
+PWD
+PORT 127,0,0,1,10,44
+MLSD /中文/测试/路径/文件.txt
+DELE /tmp/重复/重复的/空格 文件.txt
+MLSD /path/含有空格/测试 文件 2.txt
+QUIT

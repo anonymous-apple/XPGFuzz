@@ -1,0 +1,15 @@
+GET /hello.txt HTTP/1.1
+Host: 12r-Agent: cur
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET ®òOPTIONS HTTP/1.1
+Host: 127.0.0.1:808012T.0.0..:808$
+User-Agent: cc‘Cccc0.1
+Accept: */*
+
+GET .òllPOSTt HTTP/1.1
+Host: 127.0.0.1:8080127.0.0.1:8080
+User-Agent: cc‘Cccc0.1
+Accept: */*
+

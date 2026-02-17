@@ -1,0 +1,20 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+Ghello+txt HTTP/1.1
+Host: 127.0.0.1:8080
+UserHEAD;Agent: curl/8.0.1
+Tccept:$*/*
+
+Ghello+txt HTTP/1.1
+Host: 127.0.0.1:8080
+UserHEAD;Agent: curl/8.0.1
+Tccept:$*/*
+

@@ -1,0 +1,14 @@
+GET /hello.SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSStxt HTTP/1ö1POST /hello.txt HTTP/1.1
+Host: 127ÿ0.0.1:8080
+Use_OSTr-Agent: curl/8.0.1
+Accept: POST*/*
+
+GET /hyl/hello.txt HTTP/1.1
+Host: 127.0.0.1:80‹0
+User-Agent: cu/*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0Å0.1:8080
+User-Agent: curl/8.0.1
+Accept: *ÿ*
+

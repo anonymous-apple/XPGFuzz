@@ -1,0 +1,5 @@
+GET /hello.t€t HTTP/1.1
+Host: 127.0.PUT:8080
+User-Agent: curl/8.0.1
+Accept: *8*
+

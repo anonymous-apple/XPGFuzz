@@ -1,0 +1,16 @@
+USER test
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+NOOP
+OPTS UTF8 ON
+PBSZ 0
+XMKD /new_directory
+PORT 127,0,0,1,152,193
+LPRT 6,16,127,0,0,1,16,152,193
+LIST
+QUIT
+
+
+

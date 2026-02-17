@@ -1,0 +1,31 @@
+GET /hello%20world%F0%9F%98%81.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Emoji: 😊
+X-Special: ~!@#$%^&*()_+-=[]{}|;:,./?
+
+PATCH /update/%F0%9F%92%A9%20data%20with%20spaces.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json
+Content-Length: 49
+X-Whitespace:    a    b    c
+
+{"op":"replace","path":"/content","value":"/new"}
+
+POST /submit/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json
+Content-Length: 39
+
+{"action":"create","payload":"example"}
+
+GET /space%20and%20symbols%20%E6%97%A5%E6%9C%AC.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Whitespace:    leading   and   trailing    

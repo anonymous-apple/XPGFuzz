@@ -1,0 +1,22 @@
+AUTH TLS
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST     
+MLSD
+MKD test
+CWD /this/is/a/really/long/path/that/continues/through/the/server/edge-case/测试/документы/longdirname_with_symbols_αβγ_長い文字列
+MKD xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+LIST     
+MLSD /path/with/unicode/测试
+PORT 255,255,255,255,2,2
+LIST / 
+AUTH TLS
+MLSD
+CWD /normal/path
+MKD aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+MLSD
+LIST     
+QUIT

@@ -1,0 +1,18 @@
+USER user
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+SITE CHMOD 755 new_folder
+MODE S
+PORT 127,0,0,1,152,193
+LPSV
+REST 0
+LIST
+QUIT
+
+
+

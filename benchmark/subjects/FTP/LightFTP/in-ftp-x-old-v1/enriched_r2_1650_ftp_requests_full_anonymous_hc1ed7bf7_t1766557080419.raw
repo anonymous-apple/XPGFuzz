@@ -1,0 +1,17 @@
+USER test
+PASS ubuntu
+SYST
+PWD
+CDUP
+MKD new_directory
+XMKD another_directory
+MODE S
+STRU F
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+REIN
+QUIT
+
+
+

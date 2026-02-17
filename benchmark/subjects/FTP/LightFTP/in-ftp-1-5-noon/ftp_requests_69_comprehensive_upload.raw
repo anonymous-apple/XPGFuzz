@@ -1,0 +1,16 @@
+USER upload
+PASS upload
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+MKD newdir
+CWD newdir
+PWD
+STOR newfile.txt
+CDUP
+PWD
+QUIT
+

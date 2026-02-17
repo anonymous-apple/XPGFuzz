@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+REST 0
+SIZE test/file.txt
+MKD rümöuf
+LIST
+LIST
+PORT 127,0,0,1,132,210
+LIST
+REST  12345
+SIZE /test/тестовый файл.txt
+MKD test-€-dir
+MKD test
+QUIT

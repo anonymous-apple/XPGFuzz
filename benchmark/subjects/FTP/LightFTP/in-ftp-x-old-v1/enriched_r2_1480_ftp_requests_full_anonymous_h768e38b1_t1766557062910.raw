@@ -1,0 +1,18 @@
+USER test
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+OPTS UTF8 ON
+MODE S
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+SITE CHMOD 755 new_directory
+QUIT
+
+
+

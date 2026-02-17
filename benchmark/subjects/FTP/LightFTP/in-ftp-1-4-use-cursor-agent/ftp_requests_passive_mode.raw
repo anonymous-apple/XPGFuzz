@@ -1,0 +1,7 @@
+USER anonymous
+PASS ubuntu
+TYPE I
+PASV
+LIST
+QUIT
+

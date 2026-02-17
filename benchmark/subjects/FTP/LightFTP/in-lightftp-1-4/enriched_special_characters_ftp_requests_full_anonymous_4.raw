@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+RMD /home/测试目录/更深层/边界条件/目录-删除-边界-1234567890-字符-ファイル
+PORT 127,0,0,1,152,193
+APPE /uploads/this_is_a_very_long_filename_that_is_meant_to_test_boundary_conditions_and_contains_non_ascii_字符_测试_ファイル名_abcdefghijklmnopqrstuvwxyz_0123456789_ABCDEFGHIJKLMNOPQRSTUVWXYZ.txt
+LIST
+QUIT

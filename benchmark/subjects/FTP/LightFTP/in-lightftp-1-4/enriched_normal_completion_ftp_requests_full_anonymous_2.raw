@@ -1,0 +1,10 @@
+USER anonymous
+PASS ubuntu
+EPSV
+PBSZ 0
+SYST
+PWD /very/long/path/that/continues/and/expands/beyond/typical/length/for/fuzz/testing/путь/テスト/测试
+PORT     127,0,0,1,152,193
+LIST
+LIST
+QUIT

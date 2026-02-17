@@ -1,0 +1,14 @@
+USER anonymous
+PASS test
+SYST
+PWD
+CWD /tmp
+CDUP
+XMKD new_directory
+SIZE /file.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

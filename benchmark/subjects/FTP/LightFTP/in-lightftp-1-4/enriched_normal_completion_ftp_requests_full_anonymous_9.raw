@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+CWD        /home/ftp/public
+PORT 127,0,0,1,152,193
+CWD /这是一个极端长的路径/用来测试边界条件/含多字节字符/长度测试/超长
+LIST
+QUIT

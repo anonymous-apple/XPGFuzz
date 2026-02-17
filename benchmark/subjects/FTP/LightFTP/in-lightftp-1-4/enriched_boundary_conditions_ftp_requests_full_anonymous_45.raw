@@ -1,0 +1,12 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT   127,0,0,1,152,193
+LIST
+MLSD /home/user/very/long/path/that/continues/edge/cases/deeply/nested/level1/level2/level3/level4/level5/level6/level7/level8/level9/level10/edgecase_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+DELE /home/user/very/long/path/that/continues/edge/cases/deeply/nested/level1/level2/level3/edgecase_long_filename_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+DELE テストファイル.txt
+MLSD /home/用户/测试/目录/ファイル
+DELE 파일_유니코드.txt
+QUIT

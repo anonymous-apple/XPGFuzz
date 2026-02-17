@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+PBSZ 0
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+LIST
+DELE testfile.txt
+DELE "test file with spaces.txt"
+DELE ファイル名.txt
+DELE /very/long/path/with/a/very/long/name/that/should/test/edge/cases/ファイル名-超级长名字-abcdefghijklmnopqrstuvwxyz-0123456789.txt
+PBSZ 0
+QUIT

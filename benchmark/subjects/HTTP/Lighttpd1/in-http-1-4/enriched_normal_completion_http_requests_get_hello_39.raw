@@ -1,0 +1,20 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*   
+
+TRACE / HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: */*
+
+TRACE /path%20with%20spaces HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Accept: */*
+X-Non-ASCII: Café
+X-Symbols: @#$%^&*()_+-=[]{}|;:'",.<>/? 
+
+GET /this/is/a/very/long/path/that/continues/and/continues/and/continues/and/continues.txt HTTP/1.1
+Host: 127.0.0.1:8080aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+User-Agent: curl/8.0.1
+Accept: */*

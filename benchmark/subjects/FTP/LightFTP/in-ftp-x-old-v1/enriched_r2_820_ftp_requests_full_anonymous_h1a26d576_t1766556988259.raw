@@ -1,0 +1,14 @@
+USER anonymous
+PASS password
+SYST
+FEAT
+PWD
+CWD /
+PORT 192,168,1,2,123,45
+MLSD
+NLST
+LIST
+QUIT
+
+
+

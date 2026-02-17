@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+CWD /var/www/html
+DELE obsolete.html
+PORT 127,0,0,1,152,193
+LIST
+QUIT

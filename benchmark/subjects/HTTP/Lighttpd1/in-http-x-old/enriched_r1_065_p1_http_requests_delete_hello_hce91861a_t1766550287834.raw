@@ -1,0 +1,23 @@
+CONNECT 127.0.0.1:443
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/example
+Content-Length: 11
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 14
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+
+

@@ -1,0 +1,59 @@
+FROM ubuntu:20.04
+
+# 1. Install only essential dependencies for building and debugging
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y libcrypt-dev
+
+RUN apt-get -y update && \
+    apt-get -y install sudo \ 
+    apt-utils \
+    build-essential \
+    openssl \
+    clang \
+    graphviz-dev \
+    git \
+    autoconf \
+    libgnutls28-dev \
+    libssl-dev \
+    llvm \
+    python3-pip \
+    nano \
+    net-tools \
+    vim \
+    gdb \
+    netcat \
+    strace \
+    libcap-dev \
+    libpcre2-dev \
+    libpcre2-8-0 \
+    libcurl4-openssl-dev \
+    libjson-c-dev \
+    wget
+
+# 2. Add a standard user for good practice
+RUN groupadd ubuntu && \
+    useradd -rm -d /home/ubuntu -s /bin/bash -g ubuntu -G sudo -u 1000 ubuntu -p "$(openssl passwd -1 ubuntu)"
+
+# 3. Set up environment variables for ASAN (AddressSanitizer)
+# This tells the sanitizer to abort on error for easier debugging in GDB
+ENV ASAN_OPTIONS='abort_on_error=1:symbolize=1'
+
+# 4. Switch to the standard user
+USER ubuntu
+WORKDIR /home/ubuntu
+
+# 5. Clone and build ProFTPD with debug symbols and sanitizers
+# This is the most critical step. We use clang and inject the necessary flags.
+RUN git clone https://github.com/proftpd/proftpd.git && \
+    cd proftpd && \
+    git checkout 61e621e743346 && \
+    # Set CC to clang and inject CFLAGS/LDFLAGS for debugging and sanitizers
+    CC="clang" \
+    CFLAGS="-g -fsanitize=address,undefined" \
+    LDFLAGS="-fsanitize=address,undefined" \
+    ./configure --enable-devel=nodaemon:nofork && \
+    make
+
+# 6. Set the default command to drop into a shell for easy access
+CMD ["/bin/bash"]

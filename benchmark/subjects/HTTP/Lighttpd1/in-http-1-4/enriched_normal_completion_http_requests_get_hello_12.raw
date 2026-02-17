@@ -1,0 +1,28 @@
+POST /submit/hello%20world HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 11
+
+field=value
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Language: en-US
+X-Custom-Header: value with spaces
+
+OPTIONS /this/is/a/really/long/path/that/continues/without/limits/test?param=1 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Special-Header: 漢字-Ω-★
+Allow: GET, POST, OPTIONS
+
+GET /hello.txt?param=1 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Cache-Control: no-cache

@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+SIZE /path/to/file
+REST 100
+PORT 127,0,0,1,152,193
+LIST
+QUIT

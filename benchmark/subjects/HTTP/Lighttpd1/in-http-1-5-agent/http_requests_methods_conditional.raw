@@ -1,0 +1,75 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-None-Match: "abc123"
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Match: "abc123"
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Modified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+Connection: keep-alive
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Unmodified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+Connection: keep-alive
+
+PUT /conditional.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 10
+If-Match: "etag123"
+Connection: keep-alive
+
+conditional
+
+PUT /conditional.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 10
+If-None-Match: "*"
+Connection: keep-alive
+
+conditional
+
+DELETE /conditional.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+If-Match: "etag123"
+Connection: keep-alive
+
+PATCH /conditional.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 5
+If-Match: "etag123"
+Connection: keep-alive
+
+patch
+
+POST /conditional.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 8
+If-Unmodified-Since: Mon, 01 Jan 2024 00:00:00 GMT
+Connection: keep-alive
+
+postdata
+

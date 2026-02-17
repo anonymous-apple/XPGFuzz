@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SYST
+TYPE A
+PASV
+PWD
+PORT 127,0,0,1,132,209
+LIST
+TYPE I
+MKD test
+QUIT

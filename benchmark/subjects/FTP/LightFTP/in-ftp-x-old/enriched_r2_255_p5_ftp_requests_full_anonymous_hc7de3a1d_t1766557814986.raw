@@ -1,0 +1,13 @@
+USER ftp
+PASS ubuntu
+ACCT ubuntu
+SYST
+PWD
+NOOP
+SMNT /
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

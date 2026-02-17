@@ -1,0 +1,13 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+PORT   127,0,0,1,132,209
+LIST
+MKD test
+PROT P
+STOR файл.txt
+STOR /uploads/データ/テスト-路径/long-name-这是一个测试-ファイル.bin
+STOR /path/to/verylong目录/中文/路径/文件-测试-9999-abcdef1234567890-このテキスト.txt
+PORT 127,0,0,1,132,209
+QUIT

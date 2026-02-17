@@ -1,0 +1,16 @@
+USER test
+PASS ubuntu
+SYST
+HELP
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+MDTM existingfile.txt
+APPE existingfile.txt
+DELE file_to_delete.txt
+STOU
+QUIT
+
+
+

@@ -1,0 +1,17 @@
+USER user
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE UMASK 022
+MODE S
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 0
+LIST
+XRMD /old_directory
+QUIT
+
+
+

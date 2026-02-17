@@ -1,0 +1,18 @@
+USER
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /pub
+CWD ..
+MKD new_folder
+XRMD old_folder
+SITE UMASK 022
+PORT 127,0,0,1,152,193
+MODE S
+REST 100
+LIST
+QUIT
+
+
+

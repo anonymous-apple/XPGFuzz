@@ -1,0 +1,13 @@
+USER guest
+PASS ubuntu
+SYST
+PWD
+CWD /tmp
+MKD new_folder
+XRMD old_folder
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

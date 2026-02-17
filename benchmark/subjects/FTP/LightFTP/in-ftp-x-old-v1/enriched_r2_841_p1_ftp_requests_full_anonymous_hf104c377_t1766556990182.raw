@@ -1,0 +1,15 @@
+USER test
+PASS password
+SYST
+FEAT
+PWD
+CWD /data
+PORT 192,168,1,2,7,8
+LIST
+SIZE fashion-mnist.zip
+RETR fashion-mnist.zip
+STAT
+QUIT
+
+
+

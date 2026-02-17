@@ -1,0 +1,12 @@
+USER user
+PASS ubuntu
+SYST
+PWD
+LPRT 6,16,127,0,0,1,2,152,193
+LPSV
+PASV
+LIST
+QUIT
+
+
+

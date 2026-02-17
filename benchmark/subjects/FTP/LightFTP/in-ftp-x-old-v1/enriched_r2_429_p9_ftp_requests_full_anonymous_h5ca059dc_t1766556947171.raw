@@ -1,0 +1,14 @@
+USER anonymous
+PASS 123456
+SYST
+PWD
+EPRT |1|127.0.0.1|39089|
+LIST
+DELE file.txt
+LPSV
+RETR download.txt
+STOU
+QUIT
+
+
+

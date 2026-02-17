@@ -1,0 +1,20 @@
+GET /medium.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-10,20-30
+
+GET /medium.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-5,10-15,20-25
+
+GET /medium.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-10,15-25,30-40
+
+GET /medium.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-10,20-30,40-50,60-70
+
+GET /medium.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Range: bytes=0-5,10-15,20-25,30-35,40-45
+

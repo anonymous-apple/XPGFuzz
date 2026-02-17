@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+PWD
+CDUP
+PWD
+QUIT
+

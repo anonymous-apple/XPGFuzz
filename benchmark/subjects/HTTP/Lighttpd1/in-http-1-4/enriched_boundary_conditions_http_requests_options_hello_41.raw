@@ -1,0 +1,35 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+X-Fuzz: Ω≈ç√∫
+
+DELETE /this/is/a/very/long/path/that/continues/with/many/segments/for/fuzzing/purposes/and/testing/parser/robustness/0001/0002/0003/0004/0005/0006/0007/0008/0009/0010 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Length: 0
+
+GET /hello%20world HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Emoji: 💥
+
+DELETE /repeat/one?param=value&param2=value2 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1-β
+Accept: */*
+X-Whitespace: a    b

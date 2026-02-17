@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+REST 0
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RNFR /home/user/資料 最新版/データ-テスト_測定-αβγ_このパスはとても長いので境界条件として使用します_日本語_abcdefghijklmnopqrstuvwxyz_0123456789.txt
+QUIT

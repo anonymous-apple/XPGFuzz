@@ -1,0 +1,29 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 52
+
+Sample content with unicode café and numbers 12345.
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: text/plain
+
+GET /aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: */*
+
+PUT /upload/%C3%A4 HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 0
+X-Note: café
+
+GET /path/%E2%98%83 HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: */*

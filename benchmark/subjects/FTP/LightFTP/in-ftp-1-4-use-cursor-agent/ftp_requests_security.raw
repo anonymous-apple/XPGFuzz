@@ -1,0 +1,7 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+PBSZ 0
+PROT P
+QUIT
+

@@ -1,0 +1,10 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+HELP
+PORT 127,0,0,1,132,209
+SIZE /home/ubuntu
+LIST
+MKD test
+QUIT

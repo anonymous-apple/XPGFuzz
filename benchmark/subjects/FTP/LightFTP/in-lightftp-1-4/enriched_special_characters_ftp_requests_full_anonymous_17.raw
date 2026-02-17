@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+PBSZ 0
+DELE /tmp/oldfile.txt
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+DELE /uploads/文件.txt
+DELE /path/with spaces/edge.txt
+DELE /edge/edge_case_ß_𝔘.txt
+DELE /verylongfilename_that_is_intentionally_repeated_across_the_filesystem_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt
+DELE /dup.txt
+DELE /dup.txt
+QUIT

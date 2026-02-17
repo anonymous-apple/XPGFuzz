@@ -1,0 +1,84 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTPhello.txt/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agt: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/he127.0.0.1llo.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET=/hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/helpo.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+

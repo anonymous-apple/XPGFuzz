@@ -1,0 +1,18 @@
+USER
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+MODE S
+PORT 127,0,0,1,152,193
+REST 100
+RNFR oldfile.txt
+SITE CHMOD 755 new_directory
+LIST
+QUIT
+
+
+

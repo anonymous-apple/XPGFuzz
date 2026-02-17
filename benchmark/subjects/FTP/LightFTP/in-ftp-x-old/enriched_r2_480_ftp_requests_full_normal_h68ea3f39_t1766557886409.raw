@@ -1,0 +1,20 @@
+USER anonymous
+PASS ubuntu
+SYST
+AUTH TLS
+PBSZ 0
+PROT P
+OPTS UTF8 ON
+NOOP
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+REST 100
+APPE existingfile.txt
+DELE file_to_delete.txt
+STOU
+QUIT
+
+
+

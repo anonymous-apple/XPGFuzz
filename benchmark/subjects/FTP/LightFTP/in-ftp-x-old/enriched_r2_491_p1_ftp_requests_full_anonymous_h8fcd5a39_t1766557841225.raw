@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+SYST
+PWD
+NOOP
+OPTS UTF8 ON
+PBSZ 0
+PORT 127,0,0,1,152,193
+LIST
+MLSD
+REST 100
+APPE newfile.txt
+DELE oldfile.txt
+STOU
+QUIT
+
+
+

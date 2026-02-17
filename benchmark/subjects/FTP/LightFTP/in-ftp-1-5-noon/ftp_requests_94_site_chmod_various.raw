@@ -1,0 +1,12 @@
+USER admin
+PASS admin
+SITE CHMOD 000 test.txt
+SITE CHMOD 111 test.txt
+SITE CHMOD 222 test.txt
+SITE CHMOD 333 test.txt
+SITE CHMOD 444 test.txt
+SITE CHMOD 555 test.txt
+SITE CHMOD 666 test.txt
+SITE CHMOD 777 test.txt
+QUIT
+

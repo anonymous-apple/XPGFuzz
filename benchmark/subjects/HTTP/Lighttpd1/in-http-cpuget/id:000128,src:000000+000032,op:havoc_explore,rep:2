@@ -1,0 +1,10 @@
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept:OPTIONS *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/8.0.1
+Accept:OPTIONS *
+

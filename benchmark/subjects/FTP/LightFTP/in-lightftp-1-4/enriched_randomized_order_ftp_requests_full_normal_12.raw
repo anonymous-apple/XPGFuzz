@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+PORT 127,0,0,1,132,209
+LIST   -la
+RETR café_very_long_filename_abcdefghijklmnopqrstuvwxyz_0123456789_!@#$%^&*().txt
+NOOP
+NOOP
+SYST
+PWD
+MKD test
+QUIT

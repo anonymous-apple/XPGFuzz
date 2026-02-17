@@ -1,0 +1,43 @@
+USER readonly
+PASS readonly
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+MLSD
+CWD /tmp
+PWD
+SIZE test.txt
+REST 0
+RETR test.txt
+QUIT
+USER upload
+PASS upload
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+STOR upload_file.txt
+APPE append_file.txt
+QUIT
+USER admin
+PASS admin
+SYST
+FEAT
+PWD
+TYPE I
+PASV
+LIST
+MKD admin_dir
+CWD admin_dir
+STOR admin_file.txt
+DELE admin_file.txt
+CDUP
+RMD admin_dir
+SITE CHMOD 755 test.txt
+QUIT
+

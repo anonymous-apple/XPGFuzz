@@ -1,0 +1,18 @@
+USER anonymous
+PASS 123456
+SYST
+AUTH TLS
+PWD
+CWD /uploads
+XCWD /uploads
+MKD new_folder
+SITE CHMOD 755 new_folder
+CDUP
+PORT 127,0,0,1,152,193
+MODE S
+REST 0
+LIST
+QUIT
+
+
+

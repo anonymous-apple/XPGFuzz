@@ -1,0 +1,21 @@
+USER
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /pub
+CDUP
+MKD new_directory
+XCWD /uploads
+XMKD another_dir
+PORT 127,0,0,1,152,193
+LIST
+RETR downloaded_file.txt
+APPE appended_file.txt
+STOU file.txt
+DELE old_file.txt
+QUIT
+
+
+

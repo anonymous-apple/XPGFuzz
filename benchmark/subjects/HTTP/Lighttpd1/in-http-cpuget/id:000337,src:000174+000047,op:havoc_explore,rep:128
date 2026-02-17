@@ -1,0 +1,13 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hyl/šedli.txdllllæææææææææææææææææææææll€t/hyl/šedli.txdllllæææææææææææææææææææææll€t HTTP/1.1
+Host: Stav†Stav†
+User-Agent: hwp*htxthellmwp*hwp*
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+

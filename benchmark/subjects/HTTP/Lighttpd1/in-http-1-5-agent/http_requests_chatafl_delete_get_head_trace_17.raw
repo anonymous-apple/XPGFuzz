@@ -1,0 +1,67 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: *1
+
+HEADer-Agent: ct: */url/8/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-^gent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1cept: */*8080
+User-Agent: curl/ 1
+/8.0.1
+Accept: * *
+DELETE /hellurl/8.0.1
+Accept: */*
+
+DELETE%txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+7ser-Agent: curl/8.0.1
+Accept: */*
+
+GET /h\llo.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent:"curl/8.0.1
+Accept: */*
+TRACE /hello.tcept: */*1
+
+HEADer-Agent: ct: */url/8/1. curl/8.0.1
+Accept: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-^gent: burl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 1:8080
+User-Agent: curl/ 1
+/80.1
+Accept: */*
+DELETE /hell.txt HTTP/1cept: */*.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEADer-Agent: ct: */url/8/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-^gent: curl/8.0.1
+Accept: */*

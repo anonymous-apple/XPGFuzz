@@ -1,0 +1,10 @@
+GET /hGET /hello.txtello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hel,o.txt HTTP/1.1
+Host: 167.0Å0.1:8080
+User-Agent: curl/8.0.1
+Accept: *ÿ*
+

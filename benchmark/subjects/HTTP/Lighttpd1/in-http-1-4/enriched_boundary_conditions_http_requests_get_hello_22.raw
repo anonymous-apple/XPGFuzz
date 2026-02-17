@@ -1,0 +1,21 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*  
+
+HEAD /very/long/path/that/keeps/going/with/many/segments/for/boundary/testing/edgecases/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/0.2
+X-Unicode: 測試
+X-Long-Test: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Accept: */*  
+
+POST /submit-form HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Content-Length: 27
+X-Emoji: 😃
+X-NonAscii: тест
+
+field1=value1&field2=value2

@@ -1,0 +1,24 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Range: bytes=0-0
+X-Notes: тест
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+User-Agent: curl/8.0.1
+Content-Type: application/json-patch+json
+Content-Length: 52
+X-Emoji: 🚀
+X-Notes: こんにちは
+
+[blank line]
+[{"op":"replace","path":"/title","value":"Updated"}]
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Non-ASCII: привет
+X-Symbols: ¢£¥€

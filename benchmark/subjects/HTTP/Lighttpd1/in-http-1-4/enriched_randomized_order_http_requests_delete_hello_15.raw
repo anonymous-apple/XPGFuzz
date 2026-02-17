@@ -1,0 +1,22 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /upload/こんにちは.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 39
+Accept: */*
+
+sample data with utf-8: こんにちは
+
+POST /this/is/a/really/really/really/long/path/that/seems/to.never/end/and/continues/through/numerous/directories/for/chatgpt/fuzzing/test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+Accept: */*
+
+foo=bar&baz=qux

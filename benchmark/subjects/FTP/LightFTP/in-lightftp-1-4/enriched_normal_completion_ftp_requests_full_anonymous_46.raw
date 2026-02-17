@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+MKD /new_dir
+MKD long_dir_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+SYST
+PWD
+PORT  127,0,0,1,152,193
+LIST
+DELE oldfile.txt
+MKD /测试目录
+DELE /tmp/파일이름.txt
+LIST
+MKD extremely_long_mkd_name_with_multiple_characters_and_symbols_!@#$%^&*()_+1234567890.txt
+DELE verylongfilename_for_testing_purposes_abcdefghijklmnopqrstuvwxyz_0123456789.txt
+QUIT

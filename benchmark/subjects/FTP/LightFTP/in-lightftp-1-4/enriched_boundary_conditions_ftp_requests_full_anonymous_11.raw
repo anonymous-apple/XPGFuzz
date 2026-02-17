@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+APPE /uploads/very_long_filename_that_is_intentionally_designed_to_test_boundary_conditions_and_fuzzing_append_operations_abcdefghijklmnopqrstuvwxyz0123456789.txt
+NOOP
+APPE résumé.txt
+NOOP
+APPE /uploads/emoji_🚀_ファイル_测试_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.txt
+NOOP
+LIST
+PORT  127,0,0,1,152,193
+QUIT

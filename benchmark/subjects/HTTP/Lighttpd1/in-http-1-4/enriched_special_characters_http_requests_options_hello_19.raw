@@ -1,0 +1,18 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PATCH /%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json-patch+json
+Content-Length: 52
+
+[{"op":"replace","path":"/hello","value":"patched"}]
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

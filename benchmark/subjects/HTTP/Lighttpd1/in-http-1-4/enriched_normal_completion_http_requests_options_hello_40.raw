@@ -1,0 +1,15 @@
+HEAD /this/is/a/very/long/path/that/serves/to/test/boundary%20conditions/on/lighttpd/servers/for/fuzzing/requests/edge-case/index.html HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: тест

@@ -1,0 +1,11 @@
+USER ftp
+PASS password
+SYST
+FEAT
+PWD
+PORT 192,168,1,2,20,21
+STOU file.txt
+QUIT
+
+
+

@@ -1,0 +1,15 @@
+USER ftp
+PASS password
+SYST
+FEAT
+PWD
+PORT 192,168,1,2,3,4
+XCWD /newdir
+LPSV
+NLST
+ALLO 1000
+XRMD /olddir
+QUIT
+
+
+

@@ -1,0 +1,21 @@
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name1=value1; name2=value2
+
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name1=value1;name2=value2;name3=value3
+
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name1=value1
+Cookie: name2=value2
+
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name1=value1; path=/; domain=.example.com
+
+GET /test HTTP/1.1
+Host: example.com
+Cookie: name1=value1; name2=value2; name3=value3
+

@@ -1,0 +1,22 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+REST 0
+RETR test.txt
+REST 100
+RETR test.txt
+REST 200
+RETR test.txt
+REST 500
+RETR test.txt
+REST 1000
+RETR test.txt
+REST 0
+STOR upload.txt
+REST 50
+STOR upload.txt
+REST 100
+STOR upload.txt
+QUIT
+

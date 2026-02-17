@@ -1,0 +1,22 @@
+USER ubuntu
+PASS ubuntu
+FEAT
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+STOR normalfile.txt
+FEAT
+STOR VeryLongFilenameThatExceedsNormalLengthsToTestBoundaryConditions_2026-01-04.txt
+STOR file_with_spaces.txt
+STOR file@#$%^&*.txt
+STOR ファイル.txt
+PORT 192,168,1,100,10,20
+LIST
+FEAT
+MKD edge case dir
+LIST
+STOR edge_case_ünicode_δοκιμή.txt
+FEAT
+QUIT

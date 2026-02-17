@@ -1,0 +1,14 @@
+USER guest
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LPRT 6,16,127,0,0,1,2,5,81
+LPSV
+EPSV
+LIST
+MKD test
+QUIT
+
+
+

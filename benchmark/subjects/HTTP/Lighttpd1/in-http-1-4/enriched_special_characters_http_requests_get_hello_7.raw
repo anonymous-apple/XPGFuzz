@@ -1,0 +1,34 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Language: en-US
+X-Non-ASCII: Üñîçødê
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Trace: 1
+
+POST /submit?param=space%20test HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Accept: */*
+X-Emoji: 😺
+
+param1=value1&param2=%23test
+
+GET /a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z/longfilenameabcdefghijklmnopqrstuvwxyz123456 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Whitespace:     value with spaces
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Trace: 2

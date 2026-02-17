@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+MLSD
+MLSD /
+MLSD /tmp
+MLSD /var
+MLSD /home
+EPSV
+MLSD
+MLSD /tmp
+QUIT
+

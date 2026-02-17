@@ -1,0 +1,24 @@
+GET /test HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (compatible; +http://example.com)
+
+GET /test HTTP/1.1
+Host: example.com
+Referer: http://example.com/page?query=value&other=data
+
+GET /test HTTP/1.1
+Host: example.com
+Authorization: Basic dXNlcjpwYXNz
+
+GET /test HTTP/1.1
+Host: example.com
+If-Match: "abc123", "def456"
+
+GET /test HTTP/1.1
+Host: example.com
+If-None-Match: W/"weak-etag", "strong-etag"
+
+GET /test HTTP/1.1
+Host: example.com
+Link: </style.css>; rel=stylesheet; type=text/css
+

@@ -1,0 +1,21 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SMNT /newvolume
+REIN
+USER anonymous
+PASS ubuntu
+MODE S
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 512
+RNFR oldfile.txt
+RNTO newfile.txt
+LIST
+QUIT
+
+
+

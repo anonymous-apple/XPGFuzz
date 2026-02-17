@@ -1,0 +1,19 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+User-Agent: curl/8.0.1
+Accept: */*
+Access-Control-Request-Method: PATCH
+Access-Control-Request-Headers: Content-Type
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+X-Note: こんにちは
+Content-Length: 0
+Accept: */*
+
+DELETE  /hello.txt   HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

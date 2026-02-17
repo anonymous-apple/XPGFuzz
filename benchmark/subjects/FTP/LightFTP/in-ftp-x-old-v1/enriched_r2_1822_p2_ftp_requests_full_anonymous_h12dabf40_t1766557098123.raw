@@ -1,0 +1,14 @@
+USER user
+PASS ubuntu
+SYST
+PWD
+XCWD /example
+CDUP
+XMKD new_folder
+XRMD old_folder
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

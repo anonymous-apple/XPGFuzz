@@ -1,0 +1,20 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+SMNT /data
+MODE S
+STRU F
+PORT 127,0,0,1,152,193
+ALLO 1024
+LIST
+REST 0
+RETR important_file.zip
+DELE old_file.txt
+STOU file.txt
+QUIT
+
+
+

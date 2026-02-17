@@ -1,0 +1,18 @@
+USER anonymous
+PASS test
+SYST
+AUTH TLS
+SITE HELP
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+PORT 127,0,0,1,152,193
+MODE S
+STRU F
+REST 100
+LIST
+QUIT
+
+
+

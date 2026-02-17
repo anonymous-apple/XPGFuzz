@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+SIZE /example/file.txt
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+QUIT

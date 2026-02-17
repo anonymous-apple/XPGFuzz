@@ -1,0 +1,23 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+LIST
+PASV
+RETR test.txt
+PASV
+STOR upload1.txt
+PASV
+APPE append1.txt
+PASV
+MLSD
+PASV
+LIST /tmp
+EPSV
+RETR test2.txt
+EPSV 2
+STOR upload2.txt
+EPSV
+APPE append2.txt
+QUIT
+

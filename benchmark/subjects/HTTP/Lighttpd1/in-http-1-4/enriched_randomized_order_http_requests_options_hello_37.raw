@@ -1,0 +1,18 @@
+POST     /submit/very/long/path/that/exceeds/typical/length/and/contains/multiple/segments/for/fuzzing/lighttpd/protocol/edge/cases/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 0
+
+CONNECT     www.example.com:443 HTTP/1.1
+Host: www.example.com:443
+Proxy-Connection: keep-alive
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Non-ASCII: こんにちは

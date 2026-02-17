@@ -1,0 +1,8 @@
+USER admin
+PASS admin
+TYPE I
+PASV
+APPE append.txt
+ABOR
+QUIT
+

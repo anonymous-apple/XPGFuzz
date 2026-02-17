@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+OPTS UTF8 ON
+PORT 127,0,0,1,132,209
+LIST
+ABOR
+MKD test
+OPTS MLST type;size;modify;UNIX.mode;UNIX.uid;UNIX.gid;
+QUIT

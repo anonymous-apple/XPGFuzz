@@ -1,0 +1,14 @@
+USER anonymous
+PASS password
+ACCT ubuntu
+SYST
+PWD
+OPTS UTF8 ON
+PBSZ 0
+PORT 127,0,0,1,152,193
+SITE HELP
+LIST
+QUIT
+
+
+

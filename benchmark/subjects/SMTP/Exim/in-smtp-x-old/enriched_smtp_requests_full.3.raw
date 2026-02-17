@@ -1,0 +1,10 @@
+HELO localhost
+EHLO example.com
+MAIL FROM:<ubuntu@ubuntu> RET=HDRS ENVID=QQ314159
+RCPT TO:<ubuntu@ubuntu> NOTIFY=SUCCESS,FAILURE ORCPT=rfc822;ubuntu@ubuntu
+DATA
+Subject: Test Email
+
+This is a test email.
+.
+QUIT

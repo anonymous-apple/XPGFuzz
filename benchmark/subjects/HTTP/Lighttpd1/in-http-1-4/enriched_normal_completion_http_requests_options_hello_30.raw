@@ -1,0 +1,20 @@
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 11
+X-Note: こんにちは
+Accept: */*
+
+param=world
+
+OPTIONS /hello.txt/this/is/a/very/long/path/that/should/test/buffer/edge/conditions/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Custom-Whitespace:    value with    multiple spaces

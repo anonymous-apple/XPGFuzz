@@ -1,0 +1,18 @@
+GET /hGET /hello.txtello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.xt/hello.txt/h                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ello.txt HTTP/1.1
+Host: 127.0.0.,:8080
+User-Agent: auÿl/hello.txtcIpt: *
+
+GET /hyl/hello.txt HTTP/1.1
+Host: 127.0.0.1:80‹0
+User-Agent: cu/*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:808L1808L
+User-Agent: curl/8.StarWars3.wav
+Accept: */*
+

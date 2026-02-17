@@ -1,0 +1,19 @@
+USER anonymous
+PASS 123456
+ACCT default
+AUTH TLS
+PBSZ 0
+PROT P
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+OPTS UTF8 ON
+RETR important_file.zip
+DELE old_file.txt
+STOU file.txt
+SITE UMASK 022
+QUIT
+
+
+

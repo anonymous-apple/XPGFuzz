@@ -1,0 +1,18 @@
+USER
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+OPTS UTF8 ON
+SITE HELP
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+LPSV
+QUIT
+
+
+

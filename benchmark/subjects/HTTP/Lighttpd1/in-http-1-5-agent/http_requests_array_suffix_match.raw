@@ -1,0 +1,30 @@
+GET /test HTTP/1.1
+Host: example.com
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+
+GET /test HTTP/1.1
+Host: example.com
+X-Request-ID: 12345
+X-Session-ID: abcdef
+X-Transaction-ID: xyz789
+
+GET /test HTTP/1.1
+Host: example.com
+X-API-Key: secret123
+X-Auth-Token: token456
+X-Client-Version: 1.0.0
+
+GET /test HTTP/1.1
+Host: example.com
+X-Forwarded-For: 192.168.1.1
+X-Real-IP: 10.0.0.1
+X-Forwarded-Proto: https
+
+GET /test HTTP/1.1
+Host: example.com
+X-Custom-Header: value1
+X-Another-Header: value2
+X-Final-Header: value3
+

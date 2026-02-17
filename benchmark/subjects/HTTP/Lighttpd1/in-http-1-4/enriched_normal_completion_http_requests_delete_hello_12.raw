@@ -1,0 +1,22 @@
+PATCH /this/is/a/very/long/path/for/fuzzing/lighttpd/edge/cases/longpath1/longpath2/longpath3/longpath4/longpath5 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain
+Content-Length: 14
+X-Emoji: 漢字🚀
+X-Whitespace:     multiple   spaces
+
+patch-data-123
+
+GET /this/is/a/very/long/path/that/serves/to/test/boundaries/length/for/fuzzing/lighttpd/edge/conditions HTTP/1.1
+Host:     127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-NonASCII: üñîçødé
+Connection: keep-alive
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

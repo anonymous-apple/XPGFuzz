@@ -1,0 +1,10 @@
+GET /hello.txt HTTP/1.0
+Host: 127.0.0.1:8080
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.0
+Host: 127.0.0.1:8080
+Connection: keep-alive
+
+GET /hello.txt HTTP/1.0
+

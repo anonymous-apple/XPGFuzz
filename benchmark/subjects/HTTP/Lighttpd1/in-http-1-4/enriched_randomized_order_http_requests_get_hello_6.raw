@@ -1,0 +1,23 @@
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Long-URI: /trace/this/is/a/very/long/path/that/continues/and/keeps/going/0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+X-White-Space:     a    b   c
+X-Extra-Note: fuzz-trace-ð
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Long-URI: /option/this/is/a/very/long/path/for/boundary/conditioning/edge/case/abcdefg1234567
+X-White-Space:    
+X-Extra-Note: fuzz-options-ß
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Long-URI: /get/long/path/with/many/segments/and/characters/ä/ë/ì
+X-NonASCII: αβγ
+X-Extra-Note: fuzz-get-ƒ

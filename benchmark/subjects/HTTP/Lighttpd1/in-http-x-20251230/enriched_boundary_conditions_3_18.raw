@@ -1,0 +1,8 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+PROPFIND /long/path/that/exceeds/the/normal/limits/and/may/include/unusual/characters/<>?* HTTP/1.1  
+Host: 127.0.0.1:8080  
+TRACE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080

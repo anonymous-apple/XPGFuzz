@@ -1,0 +1,14 @@
+USER ubuntu
+PASS password
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RETR file.txt
+APPE file2.txt
+DELE oldfile.txt
+QUIT
+
+
+

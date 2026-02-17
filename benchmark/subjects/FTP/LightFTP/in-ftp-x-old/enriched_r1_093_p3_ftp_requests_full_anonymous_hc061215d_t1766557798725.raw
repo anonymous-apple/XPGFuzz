@@ -1,0 +1,13 @@
+USER guest
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+NLST
+MLSD
+MLST file.txt
+QUIT
+
+
+

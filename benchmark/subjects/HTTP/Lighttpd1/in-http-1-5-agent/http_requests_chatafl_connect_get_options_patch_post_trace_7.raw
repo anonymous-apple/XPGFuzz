@@ -1,0 +1,46 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0 (8080
+Uxer-Agent: curl/8.0.1
+Ascept: */*Ascepa: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127er-Age:8080
+User-Agent: curl/8.0.1Uier-Agent: curl/ .0.1
+AccXpt'*/*
+
+HLAD t HTTP/1.1
+Host: 127 0. .1:8080
+UseAscept: */*Ascr-Agent:0UseAscept: */*Ascr-Agent:0
+t: 127. /
+_ELET) /hello.txt>HTTP13.1
+Host: 1~ .0;ser-Agnt: dtrl/8 .1
+++
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+TRACE /hello.txt HTTP/1.1
+
+GET /hello.txt HTTP/1.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+CONNECT 127.0.0.1:8080 HTTP/1.1
+Host: 127.0.0.1:8080
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /hello.txt HTTP/1.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,16 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PWD
+HELP
+PORT 127,0,0,1,132,209
+CWD /home/ubuntu
+LIST
+MKD test
+CWD /this/is/a/very/long/path/that/exists/to/test/boundary/conditions/and/edge/cases/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+CWD /test with spaces
+HELP
+LIST
+CWD /
+CWD /unicode/こんにちは
+QUIT

@@ -1,0 +1,23 @@
+PATCH /update/long/path/edge-case/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa?q=%E2%9C%93&note=%F0%9F%98%80 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json
+Content-Length: 0
+X-Whitespace:      
+
+ 
+
+POST /api/v1/submit/edge-case?lang=%E6%BC%A2%E5%AD%97 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json
+Content-Length: 30
+
+{"name":"test","role":"admin"}
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

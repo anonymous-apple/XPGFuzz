@@ -1,0 +1,30 @@
+GET /test HTTP/1.1
+Host: example.com
+Accept: text/html
+Accept: application/json
+Accept: */*
+
+GET /test HTTP/1.1
+Host: example.com
+Connection: keep-alive
+Connection: close
+Connection: upgrade
+
+GET /test HTTP/1.1
+Host: example.com
+Cache-Control: no-cache
+Cache-Control: no-store
+Cache-Control: max-age=3600
+
+GET /test HTTP/1.1
+Host: example.com
+Set-Cookie: name1=value1
+Set-Cookie: name2=value2
+Set-Cookie: name3=value3
+
+GET /test HTTP/1.1
+Host: example.com
+X-Custom: value1
+X-Custom: value2
+X-Custom: value3
+

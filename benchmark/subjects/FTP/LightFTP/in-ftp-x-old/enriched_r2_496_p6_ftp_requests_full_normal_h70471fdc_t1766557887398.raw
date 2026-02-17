@@ -1,0 +1,19 @@
+USER ftp
+PASS ubuntu
+SYST
+PWD
+XPWD
+NOOP
+OPTS UTF8 ON
+PORT 127,0,0,1,132,209
+PBSZ 0
+REST 0
+LIST
+MKD test
+APPE existingfile.txt
+DELE file_to_delete.txt
+STOU
+QUIT
+
+
+

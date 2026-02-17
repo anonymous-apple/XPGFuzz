@@ -1,0 +1,20 @@
+PATCH /update HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+X-Translated: こんにちは
+Content-Type: application/json
+Content-Length: 35
+
+{"op":"add","path":"/x","value":42}
+
+CONNECT example.com:443 HTTP/1.1
+Host: example.com:443
+User-Agent: fuzz/1.0
+Proxy-Connection: keep-alive
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

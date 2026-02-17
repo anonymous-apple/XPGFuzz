@@ -1,0 +1,20 @@
+USER root
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+REIN
+USER anonymous
+PASS ubuntu
+SMNT /
+PORT 127,0,0,1,152,193
+MODE S
+STRU F
+ALLO 100
+LIST
+STOU file.txt
+QUIT
+
+
+

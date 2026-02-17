@@ -1,0 +1,8 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+MKCOL /newcollection%20%21 HTTP/1.1  
+Host: 127.0.0.1:8080  
+OPTIONS /resource@123 HTTP/1.1  
+Host: 127.0.0.1:8080

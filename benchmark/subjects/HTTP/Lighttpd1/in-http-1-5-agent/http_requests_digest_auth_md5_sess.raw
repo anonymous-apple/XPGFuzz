@@ -1,0 +1,6 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Digest username="user1", realm="Realm1", nonce="abcdef1234567890:secret", uri="/hello.txt", algorithm="MD5-sess", response="def456ghi789", qop=auth, nc=00000002, cnonce="clientnonce456"
+

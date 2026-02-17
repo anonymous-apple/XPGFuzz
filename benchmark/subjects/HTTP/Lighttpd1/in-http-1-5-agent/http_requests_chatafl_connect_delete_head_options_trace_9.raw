@@ -1,0 +1,30 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+HEAD /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: /8.0.1
+Achello.txt
+DELETE /hello.txt H/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*Accept: */*
+
+CONNECT /hello.txt HTTP/1.1
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+TRACE /hello.txt HTTP/1.1

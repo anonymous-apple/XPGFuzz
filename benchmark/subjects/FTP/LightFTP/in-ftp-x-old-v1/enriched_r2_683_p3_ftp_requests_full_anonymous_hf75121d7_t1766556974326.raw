@@ -1,0 +1,18 @@
+USER guest
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /uploads
+MKD new_folder
+OPTS UTF8 ON
+SITE CHMOD 755 new_folder
+CDUP
+PORT 127,0,0,1,152,193
+MODE S
+REST 0
+LIST
+QUIT
+
+
+

@@ -1,0 +1,6 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Digest username="sha256user", realm="SHA256 Realm", nonce="sha256nonce123456:rnd", uri="/hello.txt", algorithm="SHA-256", response="sha256response", qop=auth, nc=00000001, cnonce="sha256cn"
+

@@ -1,0 +1,12 @@
+USER ubuntu
+PASS ubuntu
+PBSZ 0
+SYST
+PWD
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+RNFR "/home/ubuntu/dir/this_is_a_very_long_directory_name_that_is_intentionally_verbose_and_contains_non_ascii_字符_测试/子目录/文件名_with_specials_¡¢£€测试.txt"
+RNTO "/home/ubuntu/dir/this_is_a_renamed_to_directory_name_that_is_even_longer_and_includes_多字节字符/新文件名_with_specials_¿¡Unicode_测试.txt"
+LIST
+QUIT

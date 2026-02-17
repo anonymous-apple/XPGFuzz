@@ -1,0 +1,7 @@
+USER ubuntu
+PASS ubuntu
+AUTH
+AUTH SSL
+AUTH TLSv1
+QUIT
+

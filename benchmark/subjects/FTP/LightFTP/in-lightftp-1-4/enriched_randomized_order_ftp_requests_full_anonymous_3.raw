@@ -1,0 +1,11 @@
+REST 0
+USER anonymous
+PASS ubuntu
+PORT  127,0,0,1,152,193
+LIST
+SYST
+RMD /home/anonymous/旧ディレクトリ
+LIST /var/www
+PWD
+REST 999999
+QUIT

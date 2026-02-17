@@ -1,0 +1,18 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+SITE CHMOD 755 new_folder
+PORT 127,0,0,1,152,193
+MODE S
+REST 0
+LIST
+QUIT
+
+
+

@@ -1,0 +1,14 @@
+OPTIONS /hello.txt HTTP/1.1
+Host:    127.0.0.1:8080
+User-Agent: curl/8.0.1 漢字
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS      /hello.txt    HTTP/1.1
+Host:    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example.org:8080
+User-Agent: curl/8.0.1
+Accept: */*

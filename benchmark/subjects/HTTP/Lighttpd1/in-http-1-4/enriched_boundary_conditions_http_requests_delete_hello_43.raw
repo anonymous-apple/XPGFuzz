@@ -1,0 +1,63 @@
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit-form HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz-test/1.0
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7
+
+a=1&b=2
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/0.0
+Accept: */*
+Max-Forwards: 3
+
+POST /this/is/a/very/long/path/that/keeps/going/and/going/without/ending/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz-test/2.0
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 7
+
+a=1&b=2
+
+OPTIONS / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/bytes
+Accept: */*
+X-Note: こんにちは
+
+POST /path/with/%E2%9C%93 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/utf8
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 5
+
+yes=1
+
+DELETE    /hello.txt    HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /repeat HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 4
+
+r=ok
+
+OPTIONS /test HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/opts
+Accept: */*
+Access-Control-Request-Method: POST

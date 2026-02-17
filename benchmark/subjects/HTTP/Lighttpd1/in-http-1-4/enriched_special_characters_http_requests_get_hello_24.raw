@@ -1,0 +1,28 @@
+GET /hello.txt HTTP/1.1
+Host: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.example:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+Content-Length: 7
+
+{"a":1}
+Connection: keep-alive
+
+POST /submit?param=%E3%81%82 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+
+field1=value1&field2=value2
+Connection: close
+
+GET /こんにちは.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: close

@@ -1,0 +1,15 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+DELE normalfile.txt
+DELE /really/long/path/that/serves/as/a/test/of/edge/cases/abcdefghijklmnopqrstuvwxyz0123456789/tail_end_dele_test_file_name_that_is_purposefully_extremely_long_to_test_boundary_conditions_and_parsing.txt
+DELE '/path/with/space/filename with spaces.txt'
+DELE /path/with/unicode/ファイル名.txt
+DELE       spacedname.txt
+DELE longname_with_nonascii_äöüß.txt
+DELE a_very_long_filename_to_test_boundary_conditions_and_parsing_with_special_characters_!@#$%^&*()_+-=[]{};',.txt
+QUIT

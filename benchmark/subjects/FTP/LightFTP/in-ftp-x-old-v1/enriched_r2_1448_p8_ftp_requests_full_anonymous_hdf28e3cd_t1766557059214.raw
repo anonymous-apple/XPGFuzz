@@ -1,0 +1,14 @@
+USER anonymous
+PASS test
+SYST
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+SIZE /example/file.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

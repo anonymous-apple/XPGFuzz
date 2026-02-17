@@ -1,0 +1,18 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+CWD /
+EPSV
+PORT 127,0,0,1,152,193
+LIST
+CWD /this/is/a/very/long/path/that/exceeds/boundaries/for/fuzzing/purpose/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+EPSV
+CWD /测试/路径/含非ASCII字符/ファイル名/😊
+LIST
+PORT 127,0,0,1,10,20
+CWD      /whitespace/edge /path
+LIST
+EPSV
+PWD
+QUIT

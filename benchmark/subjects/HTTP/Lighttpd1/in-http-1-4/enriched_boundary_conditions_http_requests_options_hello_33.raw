@@ -1,0 +1,39 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET  /hello.txt?name=world%20fuzz&param=123 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Whitespace: \t\ttabbed
+
+POST /submit-form HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 40
+X-Note: café
+
+field1=value1&field2=value2&field3=%C3%A9
+
+GET /search?q=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa HTTP/1.1
+Host: 12345678901234567890123456789012345678901234567890.local
+User-Agent: curl/8.0.1
+Accept: */*
+Random-Header: 1234567890
+
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 8
+X-Note: 漢字
+
+field=10
+
+GET /café HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

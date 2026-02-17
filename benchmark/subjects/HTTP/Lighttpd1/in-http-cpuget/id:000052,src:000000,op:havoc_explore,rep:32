@@ -1,0 +1,15 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0J.1:8°80
+User-Agent: cuzPUT&0.1cuzPUT&0.1
+Accept: */*
+
+CONNECT /hello.txt HTTP/1.1
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hyl/hello.txt HTTP/1.1
+Host: 127.0.0.1:80‹0
+User-Agent: curl/8.0.1Accept: */*
+

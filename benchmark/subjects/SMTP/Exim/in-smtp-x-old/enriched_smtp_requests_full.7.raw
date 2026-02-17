@@ -1,0 +1,12 @@
+EHLO localhost
+250-Hello localhost
+250-CHUNKING
+MAIL FROM:<ubuntu@ubuntu>
+250 OK
+RCPT TO:<ubuntu@ubuntu>
+250 Accepted
+BDAT 3 LAST
+abc
+250 OK
+QUIT
+221 Bye

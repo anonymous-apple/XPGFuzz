@@ -1,0 +1,44 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+POST /submit-form HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 24
+
+name=Alice&message=Hello
+
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: application/json-patch+json
+Content-Length: 54
+
+[{"op":"replace","path":"/title","value":"New Title"}]
+
+GET /this/is/a/very/long/path/that/continues/with/many/more/segments/and/numbers/0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef/endpoint HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /path/with%20space HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: text/plain
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Emoji: café
+X-Special-Chars: ~!@#$%^&*()_+-={}[]|;:'",.<>/?`~
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*

@@ -1,0 +1,16 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+DELE "/home/anonymous/文档/旧文件名.txt"
+RNTO "/home/anonymous/文档/新文件名.txt"
+DELE "/tmp/a-very-long-path-name-that-is-intended-to-test-boundaries-abcdefghijklmnopqrstuvwxyz-0123456789-abcdefghijklmnopqrstuvwxyz-0123456789-abcdefghijklmnopqrstuvwxyz-0123456789.txt"
+RNTO "/home/anonymous/文档/新文件名-带有-非ASCII-файл-😀.txt"
+LIST
+DELE "/path/with spaces/space file.txt"
+RNTO "/path/rename/新建文件名-测试-ファイル.txt"
+DELE "/path/重复/文件   名称   with   extra   spaces.txt"
+RNTO "/目标/重命名/新名-测试-やファイル.txt"
+QUIT

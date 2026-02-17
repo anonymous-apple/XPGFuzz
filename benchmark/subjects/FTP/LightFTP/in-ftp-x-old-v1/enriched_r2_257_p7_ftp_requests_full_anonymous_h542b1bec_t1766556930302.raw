@@ -1,0 +1,13 @@
+USER anonymous
+PASS password
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE HELP
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

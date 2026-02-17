@@ -1,0 +1,24 @@
+GET /test HTTP/1.1
+Host: example.com
+Accept: text/html
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: application/json
+
+GET /test HTTP/1.1
+Host: example.com
+Accept: */*
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: image/png
+

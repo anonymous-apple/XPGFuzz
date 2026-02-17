@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+MKD new_directory
+PWD
+SITE CHMOD 755 new_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT

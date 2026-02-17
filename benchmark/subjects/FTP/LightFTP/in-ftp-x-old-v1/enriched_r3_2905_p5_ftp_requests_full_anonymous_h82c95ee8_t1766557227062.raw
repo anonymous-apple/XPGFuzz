@@ -1,0 +1,20 @@
+USER ftp
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+REIN
+USER anonymous
+PASS ubuntu
+SMNT /default
+PORT 127,0,0,1,152,193
+ALLO 1024
+MODE S
+STRU F
+SIZE file.txt
+LIST
+QUIT
+
+
+

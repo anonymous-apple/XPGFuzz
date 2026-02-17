@@ -1,0 +1,36 @@
+PUT /this/is/a/very/long/path/that/keeps/going/and/going/beyond/normal/limits/to/test/length/handling_and_characters HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain; charset=utf-8
+Content-Length: 22
+X-Notes: こんにちは
+
+this is a test payload
+
+POST /submit/endpoint HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 18
+X-Notes: テスト 🚀
+
+field1=value1&f2=2
+
+DELETE /hello.txt HTTP/1.1
+Host:     127.0.0.1:8080     
+User-Agent: curl/8.0.1
+Accept: */*
+
+DELETE /hello.txt HTTP/1.1
+Host:127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /update/me.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: text/plain
+Content-Length: 11
+X-Notes: edge-case-测试
+
+update=true

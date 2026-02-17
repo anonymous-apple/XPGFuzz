@@ -1,0 +1,9 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+MKD new_folder
+PORT 127,0,0,1,152,193
+LIST
+RETR example_file.txt
+QUIT

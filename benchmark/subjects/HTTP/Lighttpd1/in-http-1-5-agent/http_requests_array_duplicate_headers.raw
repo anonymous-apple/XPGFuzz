@@ -1,0 +1,13 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+User-Agent: Mozilla/5.0
+User-Agent: Chrome/120.0
+Accept: text/plain
+Accept: text/html
+Cookie: session=abc123
+Cookie: session=def456
+Cookie: user=test
+Connection: keep-alive
+

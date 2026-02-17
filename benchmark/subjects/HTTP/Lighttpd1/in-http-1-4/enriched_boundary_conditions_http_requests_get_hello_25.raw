@@ -1,0 +1,35 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: */*
+X-Note: boundary_test
+X-Whitespace:     multiple spaces
+
+CONNECT sub.sub.sub.sub.sub.sub.sub.sub.sub.sub.sub.sub.sub.sub.example.org:443 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Proxy-Connection: keep-alive
+X-NonAscii: 测试
+
+GET /path/with/a/very/long/name/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Note: long_path_edge
+X-Bytes: 12345678901234567890
+X-Unusual: !@#$%^&*()_+ 漢字 — тест
+
+OPTIONS * HTTP/1.1
+Host: 127.0.0.1:8080
+Accept: */*
+X-Ascii: 漢字
+
+CONNECT sub1.sub2.sub3.sub4.sub5.sub6.sub7.sub8.sub9.sub10.sub11.sub12.sub13.sub14.sub15.example.net:8443 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/2.0
+Proxy-Connection: close
+X-NonAscii: тестирование

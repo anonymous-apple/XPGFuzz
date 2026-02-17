@@ -1,0 +1,33 @@
+PUT /upload/長い名前/ファイル-テスト-あいうえお.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain; charset=utf-8
+Content-Length: 32
+X-Fuzz: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+0123456789ABCDEF0123456789ABCD
+
+DELETE /hello.txt HTTP/1.1
+Host:  127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+CONNECT [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:443 HTTP/1.1
+Host: [2001:0db8:85a3:0000:0000:8a2e:0370:7334]:443
+User-Agent: fuzz/1.0
+Proxy-Connection: keep-alive
+
+PUT /path/with/very/long/name/这是一个测试/ファイル.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Content-Type: text/plain; charset=utf-8
+Content-Length: 16
+
+0123456789ABCDEF
+
+CONNECT another.example.local:8080 HTTP/1.1
+Host: another.example.local:8080
+User-Agent: curl/8.0.1
+Proxy-Connection: keep-alive

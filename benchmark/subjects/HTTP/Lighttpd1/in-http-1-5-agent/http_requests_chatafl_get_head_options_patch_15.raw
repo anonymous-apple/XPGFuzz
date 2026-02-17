@@ -1,0 +1,30 @@
+GET /hello.txt HT@P/1.1
+Host: 127.0.0.1:8080
+
+User-Agent: curl/8.0.1
+AccH
+ept: */*
+PATCHPATCH
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0 (8080
+User-Agent: curl/8.0.1
+Ascept: */*Ascept: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127er-Age:8080
+User-Agent: curl/8.0.1Uier-Agent: curl/8.0.1
+AccXpt'*/*
+
+HEAD t HTTP/1.1
+Host: 127 0. .1:8080
+UseAscept: */*Ascr-Agent:0UseAscept: */*Ascr-Agent:0
+t: 127. /
+_ELET) /hello.txt>HTTP13.1
+Host: 1~ .0
+;ser-Agnt: dtrl/8 .1
++

@@ -1,0 +1,19 @@
+GET /test HTTP/1.1
+Host: example.com
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+
+GET /test HTTP/1.1
+Host: example.com
+Content-Type: text/html
+

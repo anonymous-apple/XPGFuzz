@@ -1,0 +1,19 @@
+USER anonymous
+PASS password
+SYST
+FEAT
+PWD
+PORT 192,168,1,2,3,4
+STRU F
+ALLO 1024
+CWD /data
+LIST
+LPSV
+STAT
+XRMD /data
+RETR file.txt
+STOR file2.txt
+QUIT
+
+
+

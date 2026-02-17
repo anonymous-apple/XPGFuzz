@@ -1,0 +1,20 @@
+USER root
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+XCWD /example
+XMKD /example/newdir
+PORT 127,0,0,1,152,193
+LIST
+RETR /example/file.txt
+STOR /example/upload.txt
+APPE /example/append.log
+STOU
+DELE /example/oldfile.txt
+XRMD /example/olddir
+QUIT
+
+
+

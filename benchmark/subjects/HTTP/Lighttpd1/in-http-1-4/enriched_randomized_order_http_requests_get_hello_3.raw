@@ -1,0 +1,43 @@
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Accept: */*
+Content-Length: 0
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+Content-Type: text/plain
+Content-Length: 12
+
+Hello World!
+
+GET /hello.txt?version=1.0 HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /this/is/a/really/long/path/that/keeps/going/with/many/components/and/segments/that/are/used/for/testing/lighttpd/httprequest/edge/cases/and/boundary/testing/long/url/path HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+PUT /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: fuzz/1.0
+X-Emoji: 😎
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 5
+
+abcde
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Emoji: 😃

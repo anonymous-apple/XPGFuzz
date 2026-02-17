@@ -1,0 +1,15 @@
+USER test
+PASS ubuntu
+ACCT default
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+DELE file.txt
+RETR download.txt
+STOU
+AUTH TLS
+QUIT
+
+
+

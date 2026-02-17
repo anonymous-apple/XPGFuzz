@@ -1,0 +1,8 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+EPSV
+PASV
+LIST
+QUIT
+

@@ -1,0 +1,14 @@
+USER ubuntu
+PASS ubuntu
+HELP
+SYST
+PORT 255,255,255,255,255,255
+RETR ファイル.txt
+PWD
+LIST /this/is/a/very/long/path/that/keeps/going/on/and/more/and/more/and/more/file_list_when_testing_boundary_conditions.txt
+MKD verylongdirectoryname/that/keeps/going/long/verylongdirectoryname/that/keeps/going/edgecase_labelling
+LIST
+RETR /path/with spaces/file name.txt
+PWD
+SYST
+QUIT

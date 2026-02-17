@@ -1,0 +1,6 @@
+GET /hello.txt HTTP/1.1
+POST /hello.txt HTTP/1.1Host: 12D.0.0.1:8080
+User-Agent:1
+Accept:0
+User */*
+

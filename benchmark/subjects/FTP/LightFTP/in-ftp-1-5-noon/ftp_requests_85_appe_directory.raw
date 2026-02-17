@@ -1,0 +1,7 @@
+USER admin
+PASS admin
+TYPE I
+PASV
+APPE /tmp
+QUIT
+

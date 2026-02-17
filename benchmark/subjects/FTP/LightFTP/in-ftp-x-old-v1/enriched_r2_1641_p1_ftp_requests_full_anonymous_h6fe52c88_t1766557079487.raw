@@ -1,0 +1,14 @@
+USER admin
+PASS ubuntu
+SYST
+PWD
+CDUP
+MKD new_directory
+XMKD another_directory
+SIZE somefile.txt
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

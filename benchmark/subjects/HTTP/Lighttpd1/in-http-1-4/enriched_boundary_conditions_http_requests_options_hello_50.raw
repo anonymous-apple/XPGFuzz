@@ -1,0 +1,62 @@
+OPTIONS /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+TRACE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+DELETE /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+TRACE /path%20with%20spaces.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+DELETE /a/very/long/path/that/continues/to/saturate/the/url/through/many/segments/and/ends/with/a/lengthyname1234567890abcdefghijklmnopqrstuvwxyz.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+TRACE /%E4%BD%A0%E5%A5%BD.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+DELETE /data?query=param HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+TRACE /%E2%98%83/test HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0
+
+DELETE /this/contains/very/long%20path/%F0%9F%92%A9.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Connection: keep-alive
+Content-Length: 0

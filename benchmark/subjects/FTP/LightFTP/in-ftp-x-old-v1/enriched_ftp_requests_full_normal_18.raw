@@ -1,0 +1,11 @@
+USER ubuntu
+PASS ubuntu
+SYST
+PBSZ 0
+PWD
+CWD /home/ubuntu
+PORT 127,0,0,1,132,209
+LIST
+MKD test
+CWD test
+QUIT

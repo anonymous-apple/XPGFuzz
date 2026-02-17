@@ -1,0 +1,18 @@
+USER guest
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+MODE S
+LPSV
+PORT 127,0,0,1,152,193
+REST 0
+LIST
+SITE UMASK 022
+XRMD /old_directory
+QUIT
+
+
+

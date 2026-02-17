@@ -1,0 +1,14 @@
+USER anonymous
+PASS test
+SYST
+PWD
+XCWD /example
+CDUP
+XMKD new_directory
+RNFR new_directory
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

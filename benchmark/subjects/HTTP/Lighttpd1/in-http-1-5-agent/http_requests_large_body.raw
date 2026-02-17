@@ -1,0 +1,12 @@
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 65537
+
+POST /upload HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 100000
+
+PUT /upload HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Length: 70000
+

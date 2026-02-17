@@ -1,0 +1,15 @@
+USER admin
+PASS admin
+PWD
+TYPE I
+PASV
+LIST
+STOR existing.txt
+APPE existing.txt
+DELE temp.txt
+MKD testdir
+RMD testdir
+RNFR old.txt
+RNTO new.txt
+QUIT
+

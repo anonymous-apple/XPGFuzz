@@ -1,0 +1,11 @@
+USER anonymous
+PASS ubuntu
+SYST
+FEAT
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RMD /home/ftp/public/删除目录/层级1/层级2/层级3/abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ/夹符号-铁-Ω-테스트-こんにちは-😊
+RMD /data/with spaces/edge-case-directory
+FEAT
+QUIT

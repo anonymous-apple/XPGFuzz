@@ -1,0 +1,18 @@
+USER admin
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+SITE CHMOD 755 /example
+MODE S
+PORT 127,0,0,1,152,193
+REST 100
+SIZE file.txt
+LIST
+XRMD /old_directory
+QUIT
+
+
+

@@ -1,0 +1,19 @@
+USER
+PASS ubuntu
+ACCT default
+AUTH TLS
+PBSZ 0
+PROT P
+SYST
+PWD
+XCWD /example
+XMKD /example/newdir
+PORT 127,0,0,1,152,193
+OPTS UTF8 ON
+LIST
+SITE UMASK 0022
+XRMD /example/olddir
+QUIT
+
+
+

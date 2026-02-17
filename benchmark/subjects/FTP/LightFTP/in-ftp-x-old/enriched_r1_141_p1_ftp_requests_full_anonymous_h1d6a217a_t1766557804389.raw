@@ -1,0 +1,12 @@
+USER admin
+PASS ubuntu
+SYST
+PWD
+PASV
+EPSV
+LPRT 4,127,0,0,1,152,193
+LIST
+QUIT
+
+
+

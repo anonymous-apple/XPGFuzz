@@ -1,0 +1,15 @@
+DELETE /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+POST /submit/data HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Content-Type: application/json  
+Content-Length: 27  
+
+{"key1":"value1","key2":"value2"}  
+PATCH /update/resource HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*

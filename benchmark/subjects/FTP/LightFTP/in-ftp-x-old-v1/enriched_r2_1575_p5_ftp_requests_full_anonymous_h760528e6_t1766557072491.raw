@@ -1,0 +1,18 @@
+USER ftp
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+XCWD /example
+MKD new_directory
+CDUP
+SITE CHMOD 755 new_directory
+PORT 127,0,0,1,152,193
+MODE S
+REST 100
+LIST
+XRMD old_directory
+QUIT
+
+
+

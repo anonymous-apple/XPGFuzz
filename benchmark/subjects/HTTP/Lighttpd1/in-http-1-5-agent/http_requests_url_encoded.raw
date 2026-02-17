@@ -1,0 +1,12 @@
+GET /path%20with%20spaces HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path%2Fwith%2Fslashes HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path%3Fwith%3Dequals HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path%26with%26ampersands HTTP/1.1
+Host: 127.0.0.1:8080
+

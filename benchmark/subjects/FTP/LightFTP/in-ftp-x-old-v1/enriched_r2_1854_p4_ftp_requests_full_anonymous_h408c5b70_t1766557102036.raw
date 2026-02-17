@@ -1,0 +1,17 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+CDUP
+MKD new_folder
+XRMD old_folder
+MODE S
+STRU F
+PORT 127,0,0,1,152,193
+LIST
+REST 100
+REIN
+QUIT
+
+
+

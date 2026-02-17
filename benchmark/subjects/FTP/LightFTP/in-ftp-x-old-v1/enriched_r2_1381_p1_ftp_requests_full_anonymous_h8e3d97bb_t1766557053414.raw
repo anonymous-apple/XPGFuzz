@@ -1,0 +1,17 @@
+USER admin
+PASS ubuntu
+SYST
+AUTH TLS
+PWD
+CWD /example
+CDUP
+MODE S
+EPRT |1|127.0.0.1|39089|
+LIST
+REST 100
+SITE CHMOD 755 /example/file.txt
+XRMD /old_directory
+QUIT
+
+
+

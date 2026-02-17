@@ -1,0 +1,22 @@
+USER test
+PASS ubuntu
+ACCT default
+AUTH TLS
+SYST
+PWD
+CWD /tmp
+MKD new_folder
+RMD old_folder
+XCWD /var
+CDUP
+MODE S
+STRU F
+PORT 127,0,0,1,152,193
+ALLO 1024
+REST 0
+LIST
+REIN
+QUIT
+
+
+

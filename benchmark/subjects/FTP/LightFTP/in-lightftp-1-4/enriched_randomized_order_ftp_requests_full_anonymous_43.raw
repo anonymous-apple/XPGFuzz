@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+AUTH TLS
+SYST
+PWD
+AUTH TLS
+PORT 127,0,0,1,152,193
+LIST
+APPE /uploads/verylongfilename_abcdefghijklmnopqrstuvwxyz0123456789_ABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789_0123456789_0123456789_end.txt
+APPE /space in name/файл_测试.txt
+APPE /edge-case/☃-test-ファイル-ßile.txt
+APPE /repeat/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+AUTH TLS
+QUIT

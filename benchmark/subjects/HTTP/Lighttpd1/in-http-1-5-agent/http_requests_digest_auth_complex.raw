@@ -1,0 +1,6 @@
+GET /test.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Authorization: Digest username="complexuser", realm="Complex Realm", nonce="complex1234567890abcdef:secretkey", uri="/test.txt", algorithm="MD5-sess", response="complexresponsevalue123456", qop=auth, nc=00000003, cnonce="complexcnonce789", opaque="opaquevalue123"
+

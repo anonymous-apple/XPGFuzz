@@ -1,0 +1,12 @@
+USER anonymous
+PASS ubuntu
+NOOP
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+RETR extremely_long_filename_that_is_intentionally_designed_to_test_edge_cases_and_includes_non_ascii_файл_ファイル_测试_0123456789.txt
+NOOP
+RETR file_with_unicode_тест_テスト_測試.txt
+RETR another_extremely_long_filename_to_test_boundary_conditions_and_randomization_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.txt
+QUIT

@@ -1,0 +1,20 @@
+GET /%E2%9C%93%20fuzz%20path%20with%20unicode%20%E2%AD%90 HTTP/1.1
+Host: 1234567890123456789012345678901234567890.example.com:8080
+User-Agent: curl/8.0.1
+Accept: */*
+X-Long-Header: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+X-Emoji: 🚀
+Connection: close
+
+CONNECT 1234567890123456789012345678901234567890.example.com:8443 HTTP/1.1
+Host: 1234567890123456789012345678901234567890.example.com:8443
+User-Agent: curl/8.0.1
+Proxy-Connection: keep-alive
+X-Whitespace: value with    multiple   spaces, and\ttab
+
+OPTIONS /hello.txt HTTP/1.1
+Host: 1234567890123456789012345678901234567890.example.com:8080
+User-Agent: curl/8.0.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: keep-alive

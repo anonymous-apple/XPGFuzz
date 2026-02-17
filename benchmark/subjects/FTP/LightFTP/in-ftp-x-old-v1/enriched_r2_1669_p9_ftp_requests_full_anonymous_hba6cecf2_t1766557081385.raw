@@ -1,0 +1,16 @@
+USER anonymous
+PASS 123456
+SYST
+AUTH TLS
+OPTS UTF8 ON
+PWD
+CDUP
+MKD new_directory
+XMKD another_directory
+SITE UMASK 022
+PORT 127,0,0,1,152,193
+LIST
+QUIT
+
+
+

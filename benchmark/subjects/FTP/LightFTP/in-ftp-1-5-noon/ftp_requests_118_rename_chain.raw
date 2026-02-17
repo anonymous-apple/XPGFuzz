@@ -1,0 +1,18 @@
+USER ubuntu
+PASS ubuntu
+TYPE I
+PASV
+STOR original.txt
+RNFR original.txt
+RNTO renamed1.txt
+RNFR renamed1.txt
+RNTO renamed2.txt
+RNFR renamed2.txt
+RNTO renamed3.txt
+RNFR renamed3.txt
+RNTO final.txt
+SIZE final.txt
+RETR final.txt
+DELE final.txt
+QUIT
+

@@ -1,0 +1,21 @@
+OPTIONS /this/is/a/very/deeply/nested/path/that/exceeds/typical/lengths/and/should/be/tested/for/proper/parsing
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+PATCH /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/json
+Content-Length: 28
+POST /submit HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 15
+
+
+

@@ -1,0 +1,16 @@
+USER ftp
+PASS password
+SYST
+FEAT
+PWD
+CWD /data
+STRU F
+EPRT |1|132.235.1.2|6275|
+LPSV
+LIST
+ALLO 10000
+RETR fashion-mnist.zip
+QUIT
+
+
+

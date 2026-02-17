@@ -1,0 +1,43 @@
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: cuÿl/hello.txtcept: *
+
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080OPTIONS
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.t1
+Host:12.0.000000000000127.0.0.10.1127.0.0.1:8HEAD0‰00.1127.0.0.1:8HEAD0‰0User-gent: StarWars3.wavccept: Agent: curl/8.0.1
+CONNECTAccept: */*
+-00 00ÿÿÿ0000000
+POSTGET /hello.txt HTTP/1.xt/hellccept: */*
+
+GET /hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.txt HTTP/1.1
+Host: 127.0.0.1:8080OPTIONS
+User-Agent: curl/8.0.1
+Accept: */*
+
+GET /hello.t1
+Host:12.0.00000000000012+.0.0.10.1127.0.0.1:8HEAD0‰00.1127.0.0.1:8HEAD0‰0User-gent: StarWars3.wavccept: Agent: curl/8.0.1
+CONNECTAccept: */*
+-00 00ÿÿÿ0000000
+POST

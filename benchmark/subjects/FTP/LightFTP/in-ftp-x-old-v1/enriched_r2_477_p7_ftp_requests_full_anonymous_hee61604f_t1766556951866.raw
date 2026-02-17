@@ -1,0 +1,18 @@
+USER anonymous
+PASS password
+SYST
+AUTH TLS
+PWD
+OPTS UTF8 ON
+MODE S
+PORT 127,0,0,1,152,193
+LIST
+SITE CHMOD 644 file.txt
+DELE file.txt
+REST 1024
+RETR download.txt
+STOU
+QUIT
+
+
+

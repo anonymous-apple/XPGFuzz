@@ -1,0 +1,12 @@
+USER root
+PASS ubuntu
+SYST
+PWD
+PASV
+LIST
+EPRT |2|127.0.0.1|58401|
+LPRT 6,2,127,0,0,1,35,97,1
+QUIT
+
+
+

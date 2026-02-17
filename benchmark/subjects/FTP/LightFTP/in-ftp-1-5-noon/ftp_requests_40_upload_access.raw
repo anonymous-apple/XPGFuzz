@@ -1,0 +1,10 @@
+USER upload
+PASS upload
+PWD
+TYPE I
+PASV
+LIST
+STOR newfile.txt
+MKD newdir
+QUIT
+

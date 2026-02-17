@@ -1,0 +1,15 @@
+USER anonymous
+PASS test
+ACCT default
+AUTH TLS
+SYST
+PWD
+SITE HELP
+PORT 127,0,0,1,152,193
+LIST
+MLSD
+NLST
+QUIT
+
+
+

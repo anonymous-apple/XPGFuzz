@@ -1,0 +1,12 @@
+GET /path/../hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path/./to/../resource HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path//double//slashes HTTP/1.1
+Host: 127.0.0.1:8080
+
+GET /path/../../etc/passwd HTTP/1.1
+Host: 127.0.0.1:8080
+

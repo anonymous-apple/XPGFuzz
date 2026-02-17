@@ -1,0 +1,12 @@
+USER anonymous
+PASS ubuntu
+MKD /uploads
+APPE /uploads/newfile.txt
+SYST
+PWD
+PORT 127,0,0,1,152,193
+LIST
+MKD /this/is/a/very/long/directory/path/that/keeps/going/on/and/ending/edge-case/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+APPE /uploads/ファイル名-テスト-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ.txt
+APPE /uploads/dup.txt
+QUIT

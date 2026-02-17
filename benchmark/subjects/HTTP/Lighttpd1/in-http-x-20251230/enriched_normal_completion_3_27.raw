@@ -1,0 +1,12 @@
+GET /hello.txt HTTP/1.1  
+Host: 127.0.0.1:8080  
+User-Agent: curl/8.0.1  
+Accept: */*  
+MOVE /oldresource HTTP/1.1  
+Host: 127.0.0.1:8080  
+Destination: /newresource  
+
+PROPFIND /collection HTTP/1.1  
+Host: 127.0.0.1:8080  
+Depth: 1  
+Content-Length: 0

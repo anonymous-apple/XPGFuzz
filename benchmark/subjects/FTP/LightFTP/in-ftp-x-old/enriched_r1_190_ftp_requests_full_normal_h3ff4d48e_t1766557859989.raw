@@ -1,0 +1,14 @@
+USER anonymous
+PASS ubuntu
+SYST
+PWD
+TYPE I
+STRU F
+PORT 127,0,0,1,132,209
+ALLO 1024
+LIST
+MKD test
+QUIT
+
+
+

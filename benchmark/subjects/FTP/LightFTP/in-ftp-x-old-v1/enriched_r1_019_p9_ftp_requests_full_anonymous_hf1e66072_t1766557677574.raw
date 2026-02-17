@@ -1,0 +1,13 @@
+USER anonymous
+PASS 123456
+SYST
+PWD
+PORT 127,0,0,1,152,193
+STOR file.txt
+APPE file.log
+RETR download.zip
+LIST
+QUIT
+
+
+

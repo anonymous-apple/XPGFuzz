@@ -1,0 +1,24 @@
+GET /hello.txt HTTP/1.xt/hello.txt/hello.txt HTTP/1.1
+Host: 127.0.0.1:8080
+UseDELETEt: cuÿl/8.0.1
+Accept: *
+
+GET /hello.t€t HTTP/1.0
+Host: 127.0.PUT:80POST80
+User-Agent: cGET/8.Q.1
+Accept: */*
+
+GE7.0.PUT:8080
+User-Agent: cGET/8.0.1
+Accept: */*
+
+GET /hello.t€t HTTP/1.1
+Host: 127.0.PUT:80POST80
+User-Agent: cGET/8.Q.1
+Accept: */*
+ GET /hello.t€t HTTP/1.1
+Host: 127.0.PUT:8080
+User-Agent:st: 127.0.PUT:8080
+User-Agent: cGET/8.0.1
+Accept: */*
+
