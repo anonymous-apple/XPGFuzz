@@ -4,7 +4,7 @@ Language: **English** | [中文](README.zh.md)
 
 XPGFuzz is a stateful network protocol fuzzing artifact built on a modified AFLNet-style workflow and integrates two LLM-assisted capabilities:
 
-- **Seed enrichment**: enrich recorded client request sequences by inserting missing message types using retrieved protocol documentation.
+- **Seed enrichment**: agent enriches recorded client request sequences by inserting missing message types using retrieved protocol documentation.
 - **Structure-aware mutation & scheduling**: mutate messages with template/constraint guidance and adaptive scheduling (explore vs. exploit; optional bandit-based operator selection).
 
 This repository is intended to be shared as an **anonymous artifact**. It contains **no hardcoded API keys**.
