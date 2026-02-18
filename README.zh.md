@@ -2,8 +2,10 @@
 
 XPGFuzz 是一个面向有状态网络协议的 fuzzing 系统，在 AFLNet 风格流程上融合了两类 LLM 能力：
 
-- **种子丰富（seed enrichment）**：根据协议文档检索结果补全请求序列中的缺失消息类型。
+- **种子丰富（seed enrichment）**：种子丰富智能体根据协议文档检索结果补全请求序列中的缺失消息类型。
 - **结构感知变异与自适应调度**：结合模板/约束信息进行变异，并在探索与利用之间自适应切换。
+
+[油管分享视频](https://www.youtube.com/watch?v=itvrstXCgIc)，由notebooklm制作。
 
 ---
 
