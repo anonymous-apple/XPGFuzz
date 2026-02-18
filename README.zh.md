@@ -1,4 +1,4 @@
-## XPGFuzz Artifact（匿名发布版）
+## XPGFuzz Artifact
 
 XPGFuzz 是一个面向有状态网络协议的 fuzzing 系统，在 AFLNet 风格流程上融合了两类 LLM 能力：
 
