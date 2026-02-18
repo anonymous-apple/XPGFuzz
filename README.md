@@ -1,4 +1,4 @@
-## XPGFuzz Artifact (Anonymous)
+## XPGFuzz Artifact 
 
 Language: **English** | [中文](README.zh.md)
 
