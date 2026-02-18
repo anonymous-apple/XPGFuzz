@@ -9,6 +9,8 @@ XPGFuzz is a stateful network protocol fuzzing artifact built on a modified AFLN
 
 This repository is intended to be shared as an **anonymous artifact**. It contains **no hardcoded API keys**.
 
+Youtube vide to share [XPGFuzz](https://www.youtube.com/watch?v=itvrstXCgIc), made by notebookklm. 
+
 ---
 
 ## TL;DR (Quick start)
