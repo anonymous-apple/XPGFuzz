@@ -7,6 +7,8 @@ XPGFuzz is a stateful network protocol fuzzing artifact built on a modified AFLN
 
 This repository is intended to be shared as an **anonymous artifact**. It contains **no hardcoded API keys**.
 
+To help researchers try it quickly, we built an online **protocol seed enrichment agent** with Dify: [Protocol seed enrichment agent](https://udify.app/chat/M8RJNTTQfaHwWesh).
+
 ---
 
 ## TL;DR (Quick start)

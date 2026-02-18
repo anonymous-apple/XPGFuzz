@@ -7,6 +7,8 @@ XPGFuzz 是一个面向有状态网络协议的 fuzzing 系统，在 AFLNet 风�
 
 [油管分享视频](https://www.youtube.com/watch?v=itvrstXCgIc)，由notebooklm制作。
 
+为了方便研究人员更好地体验，本项目用 Dify 做了一个在线的[协议种子丰富智能体](https://udify.app/chat/M8RJNTTQfaHwWesh)，复刻论文的种子丰富智能体的思路，以方便大家研究和交流。
+
 ---
 
 ## 快速开始（TL;DR）
